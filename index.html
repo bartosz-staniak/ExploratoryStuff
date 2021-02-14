@@ -23,14 +23,17 @@
         This paragraph contains a toolip when you put mouse cursor over it!
     </p>
 </div>
-<button onclick="hideShow()">This page is hideous!</button>
+<button id="button1" onclick="hideShow()">This page is hideous!</button>
 <script>
     function hideShow() {
         var onOff = document.getElementById("remove_it");
+        var buttonName = document.getElementById("button1");
         if (onOff.style.display == "none") {
             onOff.style.display = "block";
+            buttonName.innerHTML = "It is still hideous"
         } else {
-            onOff.style.display = "none"
+            onOff.style.display = "none";
+            buttonName.innerHTML = "Oh well, bring it back";
         }
         
     }
