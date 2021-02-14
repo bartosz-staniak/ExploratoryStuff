@@ -8,8 +8,8 @@
         <br>
         It's got some text in it.
         <div>
-        <img src="image.jpg">
-        <button id="button1" onclick="hideShow()">This page is hideous!</button>
+        <img id="image" src="image.jpg">
+        <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
         </div>
     </p>
     <p>
@@ -37,6 +37,19 @@
         } else {
             onOff.style.display = "none";
             buttonName.innerHTML = "Oh well, bring it back";
+        }
+        
+    }
+
+    function hideShowImg() {
+        var onOff = document.getElementById("image");
+        var buttonName = document.getElementById("buttonImage");
+        if (onOff.style.display == "none") {
+            onOff.style.display = "block";
+            buttonName.innerHTML = "Hide this image"
+        } else {
+            onOff.style.display = "none";
+            buttonName.innerHTML = "Show this image";
         }
         
     }
