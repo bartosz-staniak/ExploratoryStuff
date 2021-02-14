@@ -22,9 +22,18 @@
     <p title="For some reason I really like it.">
         This paragraph contains a toolip when you put mouse cursor over it!
     </p>
-    <button id="button" type="button" onclick='document.getElementById("remove_it").style.display="none"'>This page is hideous!</button>
 </div>
 <button onclick="hideShow()">This page is hideous!</button>
+<script>
+    function hideShow() {
+        var onOff = document.getElementById("remove_it");
+        if (onOff.style.display == "none") {
+            onOff.style.display = "block";
+        } else {
+            onOff.style.display = "none"
+        }
+        
+    }
 </script>
 </body>
 </html>
