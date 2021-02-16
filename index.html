@@ -26,7 +26,18 @@
         This paragraph contains a toolip when you put mouse cursor over it!
     </p>
     <p>
-        
+        Choose the right answer:<br>
+        This page is 
+        <input list="opinions">
+        <datalist id="opinions">
+            <option value="It's nice!">
+            <option value="I've seen better.">
+            <option value="Meh.">
+            <option value="No, please...">
+            <option value="Erase it!">
+            <option value="This is awful">
+            <option value=", Really?">
+        </datalist>
     </p>
 </div>
 <button id="button1" onclick="hideShow()">This page is hideous!</button>
