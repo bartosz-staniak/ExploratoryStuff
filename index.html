@@ -49,12 +49,12 @@
 <button id="button1" onclick="hideShow()">This page is hideous!</button>
 <script>
     function getAnswer() {
-        var opinion = document.getElementById("dataLIst").contains.toString;
+        var opinion = document.getElementById("dataLIst").nodeValue;
         var hideousButton = document.getElementById("button1");
-        if (opinion = "nice!") {
-            hideousButton.style.display === "none"
+        if (opinion === "nice!") {
+            hideousButton.style.display = "none"
         } else {
-            hideousButton.style.display === "block"
+            hideousButton.style.display = "block"
         }
     }
 
