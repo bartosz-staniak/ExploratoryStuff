@@ -28,7 +28,7 @@
     <p>
         Choose the right answer:<br>
         This page is 
-        <input list="opinions" id="dataList">
+        <input list="opinions" id="dataList" onmouseout="getAnswer()">
         <datalist id="opinions">
             <option value="nice!">
             <option value="not nice.">
@@ -48,6 +48,16 @@
 </div>
 <button id="button1" onclick="hideShow()">This page is hideous!</button>
 <script>
+    function getAnswer() {
+        var opinion = document.getElementById("dataLIst").innerText;
+        var hideousButton = document.getElementById("button1");
+        if (opinion = "nice!") {
+            hideousButton.style.display === "none"
+        } else {
+            hideousButton.style.display === "block"
+        }
+    }
+
     function hideShow() {
         var onOff = document.getElementById("remove_it");
         var buttonName = document.getElementById("button1");
