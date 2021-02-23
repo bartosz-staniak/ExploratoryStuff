@@ -28,7 +28,7 @@
     <p>
         Choose the right answer:<br>
         This page is 
-        <input list="opinions" id="dataList" onchange="getAnswer()">
+        <input list="opinions" id="dataList" onchange="getOpinion()">
         <datalist id="opinions">
             <option value="nice!">
             <option value="not nice.">
@@ -48,7 +48,7 @@
 </div>
 <button id="button1" onclick="hideShow()">This page is hideous!</button>
 <script>
-    function getAnswer() {
+    function getOpinion() {
         var opinion = document.getElementById("dataLIst").nodeValue;
         var hideousButton = document.getElementById("button1");
         if (opinion === "nice!") {
