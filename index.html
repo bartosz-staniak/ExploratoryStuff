@@ -3,8 +3,17 @@
 <head></head>
 <style>
     body {
-      margin-top: 30px;
-      margin-left: 20px;
+        width: 600px;
+        border: 5px solid green;
+        padding: 50px;
+        margin: 20px;
+    }
+    div {
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+        background-color: white;
     }
 </style>
 <body>
@@ -14,7 +23,7 @@
     <p>This is my first paragraph!
         <br>
         It's got some text in it.
-        <div>
+        <div id="imageDiv">
         <img id="image" src="image.jpg">
         <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
         </div>
