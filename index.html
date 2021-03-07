@@ -99,11 +99,13 @@
         if (typeof(Storage) !== "undefined") {
             if (localStorage.reportHistory) {
                 localStorage.reportHistory = "" + document.getElementById
-                ("reportHere").getAttribute("value") + " ";
+                ("reportHere").value + " ";
                 document.getElementById("readReport")
                 .innerHTML = "" + localStorage.reportHistory + " ";
             }
             
+        } else {
+            document.getElementById("readReport").innerHTML = "Error";
         }
     }
 </script>
