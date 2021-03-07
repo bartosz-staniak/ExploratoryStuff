@@ -91,6 +91,13 @@
         }
         
     }
+
+    function storeReport() {
+        if (typeof(Storage) !== "undefined") {
+            localStorage.reportHistory = + document.getElementById
+            ("reportHere").getAttribute("value") + " ";
+        }
+    }
 </script>
 </body>
 </html>
