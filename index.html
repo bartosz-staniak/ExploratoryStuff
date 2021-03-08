@@ -118,7 +118,10 @@
             }
         } else {
             document.getElementById("readReport").innerHTML = "Error";
+            return;
         }
+        document.getElementById("readReport")
+        .innerHTML = localStorage.reportHistory;
     }
 </script>
 </body>
