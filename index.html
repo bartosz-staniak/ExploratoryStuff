@@ -113,7 +113,7 @@
     function deleteReport() {
         if (typeof(Storage) !== "undefined") {
             if (localStorage.reportHistory) {
-                localStorage.reportHistory = " ";
+                localStorage.reportHistory = null;
             }
         } else {
             document.getElementById("readReport").innerHTML = "Error";
