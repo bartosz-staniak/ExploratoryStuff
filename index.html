@@ -101,13 +101,13 @@
             if (!localStorage.reportHistory) {
                 localStorage.reportHistory += document.getElementById
                 ("reportHere").value + " ";
-                document.getElementById("readReport")
-                .innerHTML = "" + localStorage.reportHistory + " ";
             }
             
         } else {
             document.getElementById("readReport").innerHTML = "Error";
         }
+        document.getElementById("readReport")
+                .innerHTML = "" + localStorage.reportHistory + " ";
     }
 
     function deleteReport() {
