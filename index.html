@@ -98,10 +98,8 @@
 
     function storeReport() {
         if (typeof(Storage) !== "undefined") {
-            if (!localStorage.reportHistory) {
-                localStorage.reportHistory += document.getElementById
-                ("reportHere").value + " ";
-            }
+            localStorage.reportHistory += document.getElementById
+            ("reportHere").value + " ";
             
         } else {
             document.getElementById("readReport").innerHTML = "Error";
