@@ -100,6 +100,7 @@
         if (typeof(Storage) !== "undefined") {
             localStorage.reportHistory += document.getElementById
             ("reportHere").value + " ";
+            document.getElementById("reportHere").value = "";
             
         } else {
             document.getElementById("readReport").innerHTML = "Error";
