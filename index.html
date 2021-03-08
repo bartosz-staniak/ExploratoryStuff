@@ -98,7 +98,7 @@
 
     function storeReport() {
         if (typeof(Storage) !== "undefined") {
-            if (localStorage.reportHistory) {
+            if (!localStorage.reportHistory) {
                 localStorage.reportHistory += document.getElementById
                 ("reportHere").value + " ";
                 document.getElementById("readReport")
