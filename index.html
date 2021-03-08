@@ -109,6 +109,16 @@
             document.getElementById("readReport").innerHTML = "Error";
         }
     }
+
+    function deleteReport() {
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.reportHistory) {
+                localStorage.reportHistory = "";
+            }
+        } else {
+            document.getElementById("readReport").innerHTML = "Error";
+        }
+    }
 </script>
 </body>
 </html>
