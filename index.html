@@ -6,59 +6,59 @@
 </head>
 <body>
 <div id="slide_it">
-<div id="remove_it">
-<h2>My first html page in a very long time. Or is it?</h2>
-<h3>Added yet another heading. A bit smaller this time.</h3>
-    <p>This is my first paragraph!
-        <br>
-        It's got some text in it.
-        <div id="imageDiv">
-        <img id="image" src="image.jpg">
-        <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
-        </div>
-    </p>
-    <p>
-        Let's twist things a bit more.
-    </p>
-    <p>So I figured I would add another paragraph, to see what the text's XPath looks like when there are no "br" tags.
-        <br>OK, added a "br" tag here, but I learned how a simple change in the HTML structure can affect the XPath...
-    </p>
-    <p>
-        Would it mean that unique Id attributes of elements would make automation scripts more reliable?
-        <br>Uniqe and unchanging for each element...
-    </p>
+    <div id="remove_it">
+        <h2>My first html page in a very long time. Or is it?</h2>
+        <h3>Added yet another heading. A bit smaller this time.</h3>
+            <p>This is my first paragraph!
+                <br>
+                It's got some text in it.
+                <div id="imageDiv">
+                <img id="image" src="image.jpg">
+                <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
+                </div>
+            </p>
+            <p>
+                Let's twist things a bit more.
+            </p>
+            <p>So I figured I would add another paragraph, to see what the text's XPath looks like when there are no "br" tags.
+                <br>OK, added a "br" tag here, but I learned how a simple change in the HTML structure can affect the XPath...
+            </p>
+            <p>
+                Would it mean that unique Id attributes of elements would make automation scripts more reliable?
+                <br>Uniqe and unchanging for each element...
+            </p>
+            <hr>
+            <p title="For some reason I really like it.">
+                This paragraph contains a toolip when you put the mouse cursor over it!
+            </p>
+            <p>
+                Choose the right answer:<br>
+                This page is 
+                <input list="opinions" id="dataList" onchange="getOpinion()">
+                <datalist id="opinions">
+                    <option value="nice!">nice!</option>
+                    <option value="not nice.">
+                    <option value="okay.">
+                    <option value="... it's okay. You'll get there someday.">
+                    <option value="I've seen better.">
+                    <option value="Mhm.">
+                    <option value="no, please...">
+                    <option value="erase it!">
+                    <option value="this is awful">
+                    <option value=", Really?">
+                    <option value="... why?">
+                    <option value="awful.">
+                    <option value="horrible.">
+                </datalist>
+            </p>
+    </div>
+    <button id="button1" onclick="hideShow()">This page is hideous!</button>
     <hr>
-    <p title="For some reason I really like it.">
-        This paragraph contains a toolip when you put the mouse cursor over it!
-    </p>
-    <p>
-        Choose the right answer:<br>
-        This page is 
-        <input list="opinions" id="dataList" onchange="getOpinion()">
-        <datalist id="opinions">
-            <option value="nice!">nice!</option>
-            <option value="not nice.">
-            <option value="okay.">
-            <option value="... it's okay. You'll get there someday.">
-            <option value="I've seen better.">
-            <option value="Mhm.">
-            <option value="no, please...">
-            <option value="erase it!">
-            <option value="this is awful">
-            <option value=", Really?">
-            <option value="... why?">
-            <option value="awful.">
-            <option value="horrible.">
-        </datalist>
-    </p>
-</div>
-<button id="button1" onclick="hideShow()">This page is hideous!</button>
-<hr>
-<textarea id="reportHere"></textarea>
-<br>
-<button id="submitReport" onclick="storeReport()">Send report</button>
-<p id="readReport"></p>
-<button id="clrReportHistory" onclick="deleteReport()">Clear report history</button>
+    <textarea id="reportHere"></textarea>
+    <br>
+    <button id="submitReport" onclick="storeReport()">Send report</button>
+    <p id="readReport"></p>
+    <button id="clrReportHistory" onclick="deleteReport()">Clear report history</button>
 </div>
 <script>
     function getOpinion() {
