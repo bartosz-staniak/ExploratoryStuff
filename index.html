@@ -11,7 +11,9 @@
             return;
         });
         $(document).ready(function(){
-            if (!document.getElementById("slide_it"))
+            while (document.getElementById("slide_it")) {
+                // this one could cause an infinite loop
+            }
             $("body").click(function(){
                 $("#slide_it").slideDown(2000);
             });
