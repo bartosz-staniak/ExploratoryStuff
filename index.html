@@ -4,19 +4,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
-        $('body').trigger('click');
         $(document).ready(function(){
+            $('body').trigger('click');
             var slid = 0;
-          $("#slide_it_button").click(function(){
-            $("#slide_it").slideUp(2000);
+            $("#slide_it_button").click(function(){
+                $("#slide_it").slideUp(2000);
             slid = 1;
-          });
-          if (slid === 1) {
-            $("body").click(function(){
-            $("#slide_it").slideDown(2000);
-            slid = 0;
-          });
-          }
+            });
+            if (slid === 1) {
+                $("body").click(function(){
+                    $("#slide_it").slideDown(2000);
+                    slid = 0;
+                });
+            }
           
         });
     </script>
