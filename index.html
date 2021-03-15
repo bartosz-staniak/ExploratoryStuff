@@ -5,12 +5,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
         $(document).ready(function(){
+            var slid = false;
           $("#slide_it_button").click(function(){
             $("#slide_it").slideUp(2000);
+            slid = true;
           });
-          $("body").click(function(){
+          if (slid === true) {
+            $("body").click(function(){
             $("#slide_it").slideDown(2000);
+            slid = false;
           })
+          }
+          
         });
     </script>
 </head>
