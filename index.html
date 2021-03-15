@@ -5,17 +5,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            var slid = 0;
             $("#slide_it_button").click(function(){
                 $("#slide_it").slideUp(2000);
             slid = 1;
             });
-            if (slid === 0) {
-                $("imageDiv").click(function(){
-                    $("#slide_it").slideDown(2000);
-                    slid = 0;
-                });
-            }
+            $("slide_it").click(function(){
+                $("#slide_it").slideDown(2000);
+            });
           
         });
     </script>
