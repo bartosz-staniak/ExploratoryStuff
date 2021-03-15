@@ -11,9 +11,6 @@
             return;
         });
         $(document).ready(function(){
-            while (document.getElementById("slide_it")) {
-                // this one could cause an infinite loop
-            }
             $("body").click(function(){
                 $("#slide_it").slideDown(2000);
             });
