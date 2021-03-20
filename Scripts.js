@@ -62,3 +62,14 @@ function deleteReport() {
     document.getElementById("readReport")
     .innerHTML = localStorage.reportHistory;
 }
+
+$(document).ready(function(){
+    $("#slide_it_button").click(function(){
+        $("#slide_it").slideUp(2000);
+    });
+});
+$(document).ready(function(){
+    $("body").mouseup(function(){
+        $("#slide_it").slideDown(2000);
+    });
+});
