@@ -65,6 +65,7 @@ function deleteReport() {
 
 $(document).ready(function(){
     $("#slide_it_button").click(function(){
+        $("#slide_it_too").slideUp(2000);
         $("#slide_it").slideUp(2000);
     });
 });
