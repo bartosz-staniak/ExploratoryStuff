@@ -66,12 +66,12 @@ function deleteReport() {
 $(document).ready(function(){
     $("#slide_it_button").click(function(){
         $("#slide_it_too").slideUp(2000);
-        $("#slide_it").slideUp(2200);
+        // $("#slide_it").slideUp(2200);
     });
 });
 $(document).ready(function(){
     $("html").mouseup(function(){
+        // $("#slide_it").slideDown(2000);
         $("#slide_it_too").slideDown(2000);
-        $("#slide_it").slideDown(2200);
     });
 });
