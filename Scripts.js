@@ -1,6 +1,6 @@
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
-    var hideousButton = document.getElementById("button1");
+    var hideousButton = document.getElementById("hideous_btn");
     if (opinion == "nice!") {
         hideousButton.style.display = "none";
     } else  if (opinion == "okay.") {
@@ -12,7 +12,7 @@ function getOpinion() {
 
 function hideShow() {
     var onOff = document.getElementById("remove_it");
-    var buttonName = document.getElementById("button1");
+    var buttonName = document.getElementById("hideous_btn");
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
         buttonName.innerHTML = "It is still hideous"
