@@ -63,6 +63,10 @@ function deleteReport() {
     .innerHTML = localStorage.reportHistory;
 }
 
+function enableEditor() {
+    
+}
+
 $(document).ready(function(){
     $("#slide_it_button").click(function(){
         $("#slide_it_too").slideUp(2000);
