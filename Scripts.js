@@ -64,7 +64,7 @@ function deleteReport() {
 }
 
 function enableEditor() {
-    
+    hideShow();
 }
 
 $(document).ready(function(){
