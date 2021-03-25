@@ -64,7 +64,15 @@ function deleteReport() {
 }
 
 function enableEditor() {
-    
+    var onOff = document.getElementById("remove_it");
+    var buttonName = document.getElementById("hideous_btn");
+    if (onOff.style.display === "none") {
+        onOff.style.display = "block";
+        buttonName.innerHTML = "It is still hideous"
+    } else {
+        onOff.style.display = "none";
+        buttonName.innerHTML = "Oh well, bring it back";
+    }
 }
 
 $(document).ready(function(){
