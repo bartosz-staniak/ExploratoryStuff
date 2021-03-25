@@ -64,7 +64,7 @@ function deleteReport() {
 }
 
 function enableEditor() {
-    var onOff = document.getElementById("remove_it");
+    var onOff = document.getElementById("slide_it_too");
     var buttonName = document.getElementById("hideous_btn");
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
