@@ -64,15 +64,7 @@ function deleteReport() {
 }
 
 function enableEditor() {
-    var onOff = document.getElementById("image");
-    var buttonName = document.getElementById("buttonImage");
-    if (onOff.style.display === "none") {
-        onOff.style.display = "block";
-        buttonName.innerHTML = "Hide this image"
-    } else {
-        onOff.style.display = "none";
-        buttonName.innerHTML = "Show this image";
-    }
+    
 }
 
 $(document).ready(function(){
