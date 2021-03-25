@@ -64,11 +64,11 @@ function deleteReport() {
 }
 
 function enableEditor() {
-    hideShow();
+    hideShow(); // it does not do the job as it should in this case
 }
 
 $(document).ready(function(){
-    $("#slide_it_button").click(function(){
+    $("#slide_it_button" ).click(function(){
         $("#slide_it_too").slideUp(2000);
         // $("#slide_it").slideUp(2200);
     });
