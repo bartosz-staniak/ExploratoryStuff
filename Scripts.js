@@ -72,10 +72,10 @@ function enableEditor() {
     } else {
         onOff.style.display = "none";
     }
-    if (text_editor_switch === "none") {
-        text_editor_switch = "block";
+    if (text_editor_switch.style.display === "none") {
+        text_editor_switch.style.display = "block";
     } else {
-        text_editor_switch = "none";
+        text_editor_switch.style.display = "none";
     }
 }
 
