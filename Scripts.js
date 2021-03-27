@@ -75,7 +75,7 @@ function enableEditor() {
     if (text_editor_switch === "none") {
         text_editor_switch = "block";
     } else {
-        text_editor_switch = "block";
+        text_editor_switch = "none";
     }
 }
 
