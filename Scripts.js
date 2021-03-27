@@ -72,6 +72,11 @@ function enableEditor() {
     } else {
         onOff.style.display = "none";
     }
+    if (text_editor_switch === "none") {
+        text_editor_switch = "block";
+    } else {
+        text_editor_switch = "block";
+    }
 }
 
 $(document).ready(function(){
