@@ -68,10 +68,8 @@ function enableEditor() {
     var buttonName = document.getElementById("hideous_btn");
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
-        buttonName.innerHTML = "It is still hideous"
     } else {
         onOff.style.display = "none";
-        buttonName.innerHTML = "Oh well, bring it back";
     }
 }
 
