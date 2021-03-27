@@ -65,6 +65,7 @@ function deleteReport() {
 
 function enableEditor() {
     var onOff = document.getElementById("slide_it_too");
+    var text_editor_switch = document.getElementById("text_editor");
     var buttonName = document.getElementById("hideous_btn");
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
