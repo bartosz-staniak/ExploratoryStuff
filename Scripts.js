@@ -11,7 +11,7 @@ function getOpinion() {
 }
 
 function hideShow() {
-    var onOff = document.getElementById("space_for_editor"); // used to be remove_it
+    var onOff = document.getElementById("remove_it");
     var buttonName = document.getElementById("hideous_btn");
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
