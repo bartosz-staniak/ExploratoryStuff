@@ -86,7 +86,8 @@ function enableEditor() {
 }
 
 function add_HTML_elements () {
-    
+    document.getElementById("editor_output")
+            .innerHTML = "test";
 }
 
 $(document).ready(function(){
