@@ -78,10 +78,10 @@ function enableEditor() {
     } else {
         text_editor_switch.style.display = "none";
     }
-    if (text_editor_switch.style.display === "none") {
-        text_editor_switch.style.display = "block";
+    if (display_results_btn_switch.style.display === "none") {
+        display_results_btn_switch.style.display = "block";
     } else {
-        text_editor_switch.style.display = "none";
+        display_results_btn_switch.style.display = "none";
     }
 }
 
