@@ -65,7 +65,7 @@ function deleteReport() {
 
 function enableEditor() {
     var onOff = document.getElementById("space_for_editor");
-    var text_editor_switch = document.getElementById("text_editor");
+    var text_editor_switch = document.getElementById("text_editor_txtarea");
 
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
