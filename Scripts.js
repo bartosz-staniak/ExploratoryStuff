@@ -85,6 +85,10 @@ function enableEditor() {
     }
 }
 
+function add_HTML_elements () {
+    
+}
+
 $(document).ready(function(){
     $("#slide_it_button" ).click(function(){
         $("#slide_it_too").slideUp(2000);
