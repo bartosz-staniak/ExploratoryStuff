@@ -87,7 +87,7 @@ function enableEditor() {
 
 function add_HTML_elements () {
     document.getElementById("editor_output")
-            .innerHTML = "test";
+            .innerHTML = document.getElementById("text_editor_txtarea").value;
 }
 
 $(document).ready(function(){
