@@ -83,6 +83,11 @@ function enableEditor() {
     } else {
         display_results_btn_switch.style.display = "none";
     }
+    if (display_results_btn_switch.style.display === "none") {
+        display_results_btn_switch.style.display = "block";
+    } else {
+        display_results_btn_switch.style.display = "none";
+    }
 }
 
 function add_HTML_elements () {
