@@ -84,10 +84,10 @@ function enableEditor() {
     } else {
         display_results_btn_switch.style.display = "none";
     }
-    if (display_results_btn_switch.style.display === "none") {
-        display_results_btn_switch.style.display = "block";
+    if (editor_output_switch.style.display === "none") {
+        editor_output_switch.style.display = "block";
     } else {
-        display_results_btn_switch.style.display = "none";
+        editor_output_switch.style.display = "none";
     }
 }
 
