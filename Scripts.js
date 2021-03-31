@@ -70,10 +70,10 @@ function enableEditor() {
     var editor_output_switch = document.getElementById("editor_output");
     var enable_editor_btn = document.getElementById("enable_editor_btn");
 
-    if (enable_editor_btn.style.display === "none") {
-        enable_editor_btn.style.display = "block";
+    if (enable_editor_btn.innerHTML === "Show the editor") {
+        enable_editor_btn.innerHTML = "Hide the editor";
     } else {
-        enable_editor_btn.style.display = "none";
+        enable_editor_btn.innerHTML = "Show the editor";
     }
 
     if (onOff.style.display === "none") {
