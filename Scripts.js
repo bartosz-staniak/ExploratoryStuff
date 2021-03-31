@@ -68,6 +68,7 @@ function enableEditor() {
     var text_editor_switch = document.getElementById("text_editor_txtarea");
     var display_results_btn_switch = document.getElementById("display_results_btn");
     var editor_output_switch = document.getElementById("editor_output");
+    var enable_editor_btn = document.getElementById("enable_editor_btn");
 
     if (onOff.style.display === "none") {
         onOff.style.display = "block";
