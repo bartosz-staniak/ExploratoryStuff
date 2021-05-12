@@ -63,6 +63,7 @@ function deleteReport() {
     .innerHTML = localStorage.reportHistory;
 }
 
+// such editor would normally pose a serious security risk
 function enableEditor() {
     var onOff = document.getElementById("space_for_editor");
     var text_editor_switch = document.getElementById("text_editor_txtarea");
