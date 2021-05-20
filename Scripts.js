@@ -117,6 +117,7 @@ $(document).ready(function(){
     });
 });
 
-$.getJson("https://localhost:44391/api/weatherforecast/GetWhateverItReturns", function(){
+$.getJson("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
+    function(){
 
 });
