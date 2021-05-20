@@ -119,5 +119,5 @@ $(document).ready(function(){
 
 $.getJson("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
     function(resource){
-
+        console.log(resource);
 });
