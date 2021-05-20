@@ -116,3 +116,7 @@ $(document).ready(function(){
         $("#slide_it_too").slideDown(2000);
     });
 });
+
+$.getJson((){
+
+});
