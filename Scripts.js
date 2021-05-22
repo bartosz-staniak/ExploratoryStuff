@@ -117,6 +117,8 @@ $(document).ready(function(){
     });
 });
 
+// the code below produces some CORS issue
+// to be likely solved on the API side
 $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
     function(resource){
         console.log(resource);
