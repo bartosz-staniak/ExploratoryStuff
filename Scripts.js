@@ -121,6 +121,6 @@ $(document).ready(function(){
 $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
     function(resource){
         console.log(resource);
-        var someData = resource[0].id;
+        var someData = resource[4].id;
         console.log(someData);
 });
