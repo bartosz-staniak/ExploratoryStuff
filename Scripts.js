@@ -163,7 +163,7 @@ function getOneRecord() {
                 + ", Summary: " + record.summary;
             } else if (record.status) {
                 document.getElementById("readRecord").innerHTML
-                = "There is no such record."
+                = "There is no such record.";
             }
     });
 }
