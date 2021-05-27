@@ -151,6 +151,7 @@ function hideDebug () {
 
 function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
+    var initialParagraphValue = document.getElementById("readRecord");
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){ // it appears the error messaging does not work
