@@ -153,7 +153,8 @@ function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
-        + getOneid, function(record){
+        + getOneid, function(record){ // it appears the error messaging does not work
+            // due to jQuery implementation
             document.getElementById("readRecord").innerHTML
             = "Id: " + record.id
             + ", City: " + record.location
