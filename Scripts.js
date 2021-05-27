@@ -125,11 +125,11 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         console.log(someData);
         for (i=0; i<100; i++){
             document.getElementById("debug").innerHTML
-            += "<b>Id: </b>"
-            + resource[i].id + "<b>, City: </b>" + resource[i].location
-            + "<b>, Temperature in C: </b>" + resource[i].temperatureC
-            + "<b>, Chance of rain </b>" + resource[i].rainChance
-            + "<b>, Summary: </b>" + resource[i].summary 
+            += "Id: "
+            + resource[i].id + ", City: " + resource[i].location
+            + ", Temperature in C: " + resource[i].temperatureC
+            + ", Chance of rain " + resource[i].rainChance
+            + ", Summary: " + resource[i].summary 
             + "<br>";
         }
 });
