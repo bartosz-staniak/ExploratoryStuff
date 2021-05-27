@@ -155,7 +155,8 @@ function getOneRecord() {
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){
             if (record[0] != null) {
-                
+                document.getElementById("readRecord").innerHTML
+                + "Id: " + record[0].id;
             }
     });
 }
