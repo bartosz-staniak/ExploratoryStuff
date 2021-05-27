@@ -154,7 +154,7 @@ function getOneRecord() {
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){
-            if (record[0] != null) {
+            if (record != null) {
                 document.getElementById("readRecord").innerHTML
                 + "Id: " + record[0].id;
             }
