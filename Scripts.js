@@ -150,6 +150,6 @@ function hideDebug () {
 }
 
 var getOneid; 
-$.getJSON("https://localhost:44391/api/weatherforecast/" + GetOneid, function(){
+$.getJSON("https://localhost:44391/api/weatherforecast/" + getOneid, function(){
 
 });
