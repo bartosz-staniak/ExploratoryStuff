@@ -151,7 +151,7 @@ function hideDebug () {
 
 function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
-    console.log(getOneid) 
+    console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){
     });
