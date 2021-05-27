@@ -127,9 +127,9 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
             document.getElementById("debug").innerHTML
             += "<b>Id: </b>"
             + resource[i].id + "<b>, City: </b>" + resource[i].location
-            + ", Temperature in C: " + resource[i].temperatureC
-            + ", Chance of rain " + resource[i].rainChance
-            + ", Summary: " + resource[i].summary 
+            + "<b>, Temperature in C: </b>" + resource[i].temperatureC
+            + "<b>, Chance of rain </b>" + resource[i].rainChance
+            + "<b>, Summary: </b>" + resource[i].summary 
             + "<br>";
         }
 });
