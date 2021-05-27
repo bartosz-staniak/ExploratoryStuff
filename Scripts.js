@@ -161,7 +161,7 @@ function getOneRecord() {
                 + ", Temperature in C: " + record.temperatureC +"%"
                 + ", Chance of rain: " + record.rainChance
                 + ", Summary: " + record.summary;
-            } else if (record.status) {
+            } else if (record.type) {
                 document.getElementById("readRecord").innerHTML
                 = "There is no such record.";
             }
