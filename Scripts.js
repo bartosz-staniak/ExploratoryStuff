@@ -156,7 +156,7 @@ function getOneRecord() {
         + getOneid, function(record){
             if (record != null) {
                 document.getElementById("readRecord").innerHTML
-                + "Id: " + record[0].id;
+                + "Id: " + record.id;
             }
     });
 }
