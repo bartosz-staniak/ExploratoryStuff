@@ -123,7 +123,6 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         console.log(resource);
         var someData = resource[4].id;
         console.log(someData);
-        document.getElementById("readReport").innerHTML = "Id: " + resource[0].id;
         for (i=0; i<100; i++){
             document.getElementById("readReport").innerHTML += "Id: "
             + resource[i].id;
