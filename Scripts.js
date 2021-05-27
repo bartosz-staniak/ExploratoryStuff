@@ -125,6 +125,6 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         console.log(someData);
         for (i=0; i<100; i++){
             document.getElementById("debug").innerHTML += "Id: "
-            + resource[i].id + "<br>";
+            + resource[i].id + " " + resource[i].location + "<br>";
         }
 });
