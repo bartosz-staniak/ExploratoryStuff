@@ -153,6 +153,6 @@ function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     console.log(getOneid) 
         $.getJSON("https://localhost:44391/api/weatherforecast/"
-        + getOneid, function(){
+        + getOneid, function(record){
     });
 }
