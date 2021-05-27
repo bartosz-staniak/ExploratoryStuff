@@ -150,7 +150,7 @@ function hideDebug () {
 }
 
 function getOneRecord() {
-    var getOneid; 
+    var getOneid = document.getElementById("RecordId").value; 
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(){
     });
