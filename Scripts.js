@@ -150,9 +150,8 @@ function hideDebug () {
 }
 
 function getOneRecord() {
-    
+    var getOneid; 
+        $.getJSON("https://localhost:44391/api/weatherforecast/"
+        + getOneid, function(){
+    });
 }
-var getOneid; 
-$.getJSON("https://localhost:44391/api/weatherforecast/" + getOneid, function(){
-
-});
