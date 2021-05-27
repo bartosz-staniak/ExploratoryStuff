@@ -132,3 +132,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
             + "<br>";
         }
 });
+
+function hideDebug () {
+    
+}
