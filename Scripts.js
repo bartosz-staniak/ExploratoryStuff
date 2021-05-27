@@ -154,16 +154,11 @@ function getOneRecord() {
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){
-            if (record.id == getOneid) {
-                document.getElementById("readRecord").innerHTML
-                = "Id: " + record.id
-                + ", City: " + record.location
-                + ", Temperature in C: " + record.temperatureC +"%"
-                + ", Chance of rain: " + record.rainChance
-                + ", Summary: " + record.summary;
-            } else {
-                document.getElementById("readRecord").innerHTML
-                = "There is no such record.";
-            }
+            document.getElementById("readRecord").innerHTML
+            = "Id: " + record.id
+            + ", City: " + record.location
+            + ", Temperature in C: " + record.temperatureC +"%"
+            + ", Chance of rain: " + record.rainChance
+            + ", Summary: " + record.summary;
     });
 }
