@@ -156,6 +156,8 @@ function getOneRecord() {
         + getOneid, function(record){
             if (record.id == getOneid) {
                 document.getElementById("readRecord").innerHTML
+                = "There is no such record.";
+                document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
                 + ", City: " + record.location
                 + ", Temperature in C: " + record.temperatureC +"%"
