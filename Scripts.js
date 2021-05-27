@@ -141,8 +141,7 @@ function hideDebug () {
         toggleButtonName.innerHTML = "Show debug";
     }
     else {
-        
-    }
         toggleDebug.style.display = "block";
         toggleButtonName.innerHTML = "Hide debug";
+    }
 }
