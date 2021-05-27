@@ -163,7 +163,7 @@ function getOneRecord() {
             + ", Chance of rain: " + record.rainChance
             + ", Summary: " + record.summary;
     });
-    if (document.getElementById("readRecord").innerHTML === initialParagraphValue) {
+    if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML
     = "There is no such record.";
     }
