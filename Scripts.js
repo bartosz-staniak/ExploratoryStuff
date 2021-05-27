@@ -161,6 +161,9 @@ function getOneRecord() {
                 + ", Temperature in C: " + record.temperatureC +"%"
                 + ", Chance of rain: " + record.rainChance
                 + ", Summary: " + record.summary;
+            } else {
+                document.getElementById("readRecord").innerHTML
+                = "There is no such record."
             }
     });
 }
