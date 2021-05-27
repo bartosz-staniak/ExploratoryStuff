@@ -156,7 +156,11 @@ function getOneRecord() {
         + getOneid, function(record){
             if (record != null) {
                 document.getElementById("readRecord").innerHTML
-                = "Id: " + record.id + ", City: " + record.location;
+                = "Id: " + record.id
+                + ", City: " + record.location
+                + ", Temperature in C: " + record.temperatureC
+                + ", Chance of rain: " + record.rainChance
+                + ", Summary: " + record.summary;
             }
     });
 }
