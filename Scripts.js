@@ -138,6 +138,7 @@ function hideDebug () {
     var toggleButtonName = document.getElementById("hideDebug");
     if (toggleDebug.style.display === "block"){
         toggleDebug.style.display = "none";
+        toggleButtonName.innerHTML = "Show debug";
     }
     else
         toggleDebug.style.display = "block";
