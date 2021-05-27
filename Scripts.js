@@ -129,7 +129,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
                 += "| Id: "
                 + resource[i].id + " | City: " + resource[i].location
                 + " | Temperature in C: " + resource[i].temperatureC
-                + " | Chance of rain: " + resource[i].rainChance
+                + " | Chance of rain: " + resource[i].rainChance + "%"
                 + " | Summary: " + resource[i].summary + " |"
                 + "<br>";
             }
