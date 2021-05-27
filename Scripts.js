@@ -148,3 +148,7 @@ function hideDebug () {
         toggleButtonName.innerHTML = "Hide debug";
     }
 }
+
+$.getJSON("", function(){
+
+});
