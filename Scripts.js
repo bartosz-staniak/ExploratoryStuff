@@ -159,7 +159,7 @@ function getOneRecord() {
             if (record.id == getOneid) {
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
-                + ", City: " + record.location
+                + ", Location: " + record.location
                 + ", Temperature in C: " + record.temperatureC +"%"
                 + ", Chance of rain: " + record.rainChance
                 + ", Summary: " + record.summary;
