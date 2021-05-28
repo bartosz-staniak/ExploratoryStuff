@@ -138,7 +138,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
 
 function toggleResource () {
     var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
-    var toggleButtonName = document.getElementById("hideDebug");
+    var toggleButtonName = document.getElementById("toggleResourceBtn");
     if (toggleDisplayGetAll.style.display === "block"){
         toggleDisplayGetAll.style.display = "none";
         toggleButtonName.innerHTML = "Show data";
