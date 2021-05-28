@@ -136,7 +136,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         }
 });
 
-function hideDebug () {
+function hideResource () {
     var toggleDebug = document.getElementById("debug");
     var toggleButtonName = document.getElementById("hideDebug");
     if (toggleDebug.style.display === "block"){
