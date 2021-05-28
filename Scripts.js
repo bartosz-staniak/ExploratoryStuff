@@ -139,13 +139,13 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
 function toggleResource () {
     var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
     var toggleButtonName = document.getElementById("toggleResourceBtn");
-    if (toggleDisplayGetAll.style.display === "block"){
-        toggleDisplayGetAll.style.display = "none";
-        toggleButtonName.innerHTML = "Show data";
-    }
-    else {
+    if (toggleDisplayGetAll.style.display === "none"){
         toggleDisplayGetAll.style.display = "block";
         toggleButtonName.innerHTML = "Hide data";
+    }
+    else {
+        toggleDisplayGetAll.style.display = "none";
+        toggleButtonName.innerHTML = "Show data";
     }
 }
 
