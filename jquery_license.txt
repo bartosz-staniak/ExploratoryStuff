@@ -1,0 +1,1 @@
+This project uses jQuery. The license can be found at https://jquery.org/license/
