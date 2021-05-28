@@ -157,14 +157,13 @@ function getOneRecord() {
         + getOneid, function(record){ // it appears the error messaging does not work
             // due to jQuery implementation
             if (record.id == getOneid) {
-                
+                document.getElementById("readRecord").innerHTML
+                = "Id: " + record.id
+                + ", City: " + record.location
+                + ", Temperature in C: " + record.temperatureC +"%"
+                + ", Chance of rain: " + record.rainChance
+                + ", Summary: " + record.summary;
             }
-            document.getElementById("readRecord").innerHTML
-            = "Id: " + record.id
-            + ", City: " + record.location
-            + ", Temperature in C: " + record.temperatureC +"%"
-            + ", Chance of rain: " + record.rainChance
-            + ", Summary: " + record.summary;
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML
