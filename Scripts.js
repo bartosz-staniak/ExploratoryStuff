@@ -141,11 +141,11 @@ function hideResource () {
     var toggleButtonName = document.getElementById("hideDebug");
     if (toggleDebug.style.display === "block"){
         toggleDebug.style.display = "none";
-        toggleButtonName.innerHTML = "Show debug";
+        toggleButtonName.innerHTML = "Show data";
     }
     else {
         toggleDebug.style.display = "block";
-        toggleButtonName.innerHTML = "Hide debug";
+        toggleButtonName.innerHTML = "Hide data";
     }
 }
 
