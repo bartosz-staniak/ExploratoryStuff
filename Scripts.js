@@ -144,7 +144,7 @@ function toggleResource () {
         toggleButtonName.innerHTML = "Show data";
     }
     else {
-        toggleDebug.style.display = "block";
+        toggleDisplayGetAll.style.display = "block";
         toggleButtonName.innerHTML = "Hide data";
     }
 }
