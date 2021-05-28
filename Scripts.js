@@ -154,8 +154,8 @@ function getOneRecord() {
     var initialParagraphValue = document.getElementById("readRecord").value;
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
-        + getOneid, function(record){ // it appears the error messaging does not work
-            // due to jQuery implementation
+        + getOneid, function(record){ // it appears the error messaging did not work
+            // in else condition due to jQuery implementation
             if (record.id == getOneid) {
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
