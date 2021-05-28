@@ -125,7 +125,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         console.log(someData);
         for (i=0; i<100; i++){
             if (resource[i] != null) {
-                document.getElementById("getAll").innerHTML
+                document.getElementById("DisplayGetAll").innerHTML
                 += "| Id: "
                 + resource[i].id + " | Location: " + resource[i].location
                 + " | Temperature in C: " + resource[i].temperatureC
