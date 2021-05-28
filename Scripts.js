@@ -137,10 +137,10 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
 });
 
 function hideResource () {
-    var toggleDebug = document.getElementById("debug");
+    var toggleDisplayGetAll = document.getElementById("debug");
     var toggleButtonName = document.getElementById("hideDebug");
-    if (toggleDebug.style.display === "block"){
-        toggleDebug.style.display = "none";
+    if (toggleDisplayGetAll.style.display === "block"){
+        toggleDisplayGetAll.style.display = "none";
         toggleButtonName.innerHTML = "Show data";
     }
     else {
