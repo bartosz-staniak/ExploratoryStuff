@@ -161,7 +161,7 @@ function getOneRecord() {
                 = "Id: " + record.id
                 + ", Location: " + record.location
                 + ", Temperature in C: " + record.temperatureC
-                + ", Chance of rain: " + record.rainChance
+                + ", Chance of rain: " + record.rainChance + "%"
                 + ", Summary: " + record.summary;
             }
     });
