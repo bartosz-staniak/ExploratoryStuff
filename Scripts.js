@@ -160,7 +160,7 @@ function getOneRecord() {
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
                 + ", Location: " + record.location
-                + ", Temperature in C: " + record.temperatureC +"%"
+                + ", Temperature in C: " + record.temperatureC
                 + ", Chance of rain: " + record.rainChance
                 + ", Summary: " + record.summary;
             }
