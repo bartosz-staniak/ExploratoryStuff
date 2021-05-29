@@ -1,3 +1,5 @@
+var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
+
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
     var hideousButton = document.getElementById("hideous_btn");
