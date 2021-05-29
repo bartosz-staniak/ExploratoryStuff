@@ -141,7 +141,6 @@ function getWhatever () {
 }
 
 function toggleResource () {
-    var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
     var toggleButtonName = document.getElementById("toggleResourceBtn");
     if (toggleDisplayGetAll.style.display === "none"){
         toggleDisplayGetAll.style.display = "block";
