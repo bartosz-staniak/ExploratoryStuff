@@ -154,9 +154,12 @@ function getWhatever (method) {
         request.onload = (e) => {
         console.log(request.response);
         toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
-        while (request.response != null) {
-            
-        }
+
+
+            var ichar = 0;
+            while (request.response[ichar] != null) {
+
+            }
         }
     }
 }
