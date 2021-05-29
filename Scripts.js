@@ -131,6 +131,9 @@ function getWhatever (method) {
             if (resource != null) {
                 toggleDisplayGetAll.innerHTML = "";
                 for (i=0; i<100; i++) {
+                    if (resource[i] != null) {
+                        
+                    }
                     toggleDisplayGetAll.innerHTML
                     += "| Id: "
                     + resource[i].id + " | Location: " + resource[i].location
