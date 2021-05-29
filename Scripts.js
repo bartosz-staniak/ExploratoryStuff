@@ -153,6 +153,7 @@ function getWhatever (method) {
 
         request.onload = (e) => {
         console.log(request.response);
+        toggleDisplayGetAll.innerHTML = request.response;
         }
     }
 }
