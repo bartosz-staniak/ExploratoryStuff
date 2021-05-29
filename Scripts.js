@@ -175,3 +175,5 @@ function getOneRecord() {
     = "There is no such record.";
     }
 }
+
+// pure JS requests
