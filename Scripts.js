@@ -128,6 +128,7 @@ function getWhatever () {
         console.log(someData);
         for (i=0; i<100; i++){
             if (resource[i] != null) {
+                toggleDisplayGetAll.innerHTML = "";
                 toggleDisplayGetAll.innerHTML
                 += "| Id: "
                 + resource[i].id + " | Location: " + resource[i].location
