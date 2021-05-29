@@ -153,7 +153,7 @@ function getWhatever (method) {
 
         request.onload = (e) => {
         console.log(request.response);
-        toggleDisplayGetAll.innerHTML = request.response[1];
+        toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
         }
     }
 }
