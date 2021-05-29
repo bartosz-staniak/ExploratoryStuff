@@ -121,6 +121,9 @@ $(document).ready(function(){
 
 // CORS issue appears to have been solved
 function getWhatever (method) {
+    if (method == 'jQuery') {
+        
+    }
     $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
     function(resource){
         console.log(resource); // this is just debug
