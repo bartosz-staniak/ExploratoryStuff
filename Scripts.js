@@ -132,15 +132,14 @@ function getWhatever (method) {
                 toggleDisplayGetAll.innerHTML = "";
                 for (i=0; i<100; i++) {
                     if (resource[i] != null) {
-                        
+                        toggleDisplayGetAll.innerHTML
+                        += "| Id: "
+                        + resource[i].id + " | Location: " + resource[i].location
+                        + " | Temperature in C: " + resource[i].temperatureC
+                        + " | Chance of rain: " + resource[i].rainChance + "%"
+                        + " | Summary: " + resource[i].summary + " |"
+                        + "<br>";
                     }
-                    toggleDisplayGetAll.innerHTML
-                    += "| Id: "
-                    + resource[i].id + " | Location: " + resource[i].location
-                    + " | Temperature in C: " + resource[i].temperatureC
-                    + " | Chance of rain: " + resource[i].rainChance + "%"
-                    + " | Summary: " + resource[i].summary + " |"
-                    + "<br>";
                 }
             }
         });
