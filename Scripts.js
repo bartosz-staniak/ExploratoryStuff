@@ -119,9 +119,7 @@ $(document).ready(function(){
 
 // CORS issue appears to have been solved
 function getWhatever {
-    
-}
-$.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
+    $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
     function(resource){
         console.log(resource); // this is just debug
         var someData = resource[4].id;
@@ -138,6 +136,7 @@ $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
             }
         }
 });
+}
 
 function toggleResource () {
     var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
