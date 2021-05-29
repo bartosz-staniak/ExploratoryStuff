@@ -190,14 +190,3 @@ function getOneRecord() {
     = "There is no such record.";
     }
 }
-
-// pure JS requests
-var request = new XMLHttpRequest();
-var url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
-
-request.open("GET", url);
-request.send();
-
-request.onload = (e) => {
-    console.log(request.response);
-}
