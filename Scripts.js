@@ -143,6 +143,8 @@ function getWhatever (method) {
                 }
             }
         });
+    } else if (method == 'JS') {
+
     }
 }
 
