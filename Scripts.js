@@ -122,27 +122,26 @@ $(document).ready(function(){
 // CORS issue appears to have been solved
 function getWhatever (method) {
     if (method == 'jQuery') {
-        
-    }
-    $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
-    function(resource){
-        console.log(resource); // this is just debug
-        var someData = resource[4].id;
-        console.log(someData);
-        
-        if (resource != null) {
-            toggleDisplayGetAll.innerHTML = "";
-            for (i=0; i<100; i++) {
-                toggleDisplayGetAll.innerHTML
-                += "| Id: "
-                + resource[i].id + " | Location: " + resource[i].location
-                + " | Temperature in C: " + resource[i].temperatureC
-                + " | Chance of rain: " + resource[i].rainChance + "%"
-                + " | Summary: " + resource[i].summary + " |"
-                + "<br>";
+        $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
+        function(resource){
+            console.log(resource); // this is just debug
+            var someData = resource[4].id;
+            console.log(someData);
+                
+            if (resource != null) {
+                toggleDisplayGetAll.innerHTML = "";
+                for (i=0; i<100; i++) {
+                    toggleDisplayGetAll.innerHTML
+                    += "| Id: "
+                    + resource[i].id + " | Location: " + resource[i].location
+                    + " | Temperature in C: " + resource[i].temperatureC
+                    + " | Chance of rain: " + resource[i].rainChance + "%"
+                    + " | Summary: " + resource[i].summary + " |"
+                    + "<br>";
+                }
             }
-        }
-});
+        });
+    }
 }
 
 function toggleResource () {
