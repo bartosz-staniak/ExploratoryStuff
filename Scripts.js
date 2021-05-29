@@ -182,3 +182,7 @@ var url = 'https://localhost:44391/api/weatherforecast/';
 
 request.open("GET", url);
 request.send();
+
+request.onload = (e) => {
+    console.log(request.response);
+}
