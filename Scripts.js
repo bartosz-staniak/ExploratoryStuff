@@ -127,7 +127,7 @@ function getWhatever () {
         var someData = resource[4].id;
         console.log(someData);
         
-        if (resource[i] != null) {
+        if (resource != null) {
             for (i=0; i<100; i++) {
                 toggleDisplayGetAll.innerHTML = "";
                 toggleDisplayGetAll.innerHTML
