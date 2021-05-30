@@ -162,6 +162,8 @@ function getWhatever (method) {
                     
                 } else if (request.response[ichar] == '[') {
 
+                } else if (request.response[ichar] == '"') {
+                    
                 }
                 
                 else {
