@@ -209,6 +209,10 @@ function toggleResource () {
     }
 }
 
+function secondToggleResource() {
+    toggleResource();
+}
+
 function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
