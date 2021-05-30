@@ -156,12 +156,11 @@ function getWhatever (method) {
         console.log(request.response);
         // toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
 
+            customJSbtn.style.display = "none";
+
             toggleDisplayGetAll.innerHTML = "";
             var ichar = 0;
             while (request.response[ichar] != null) {
-
-                customJSbtn.style.display = "none";
-
                 if (request.response[ichar] == '{'){
                     
                 } else if (request.response[ichar] == '[') {
