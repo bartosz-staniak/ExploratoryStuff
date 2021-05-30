@@ -183,7 +183,7 @@ function getWhatever (method) {
         }
     } else if (method == 'fetch') {
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
-        fetch url;
+        fetch (url);
     }
 }
 
