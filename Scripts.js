@@ -182,6 +182,9 @@ function getWhatever (method) {
             }
         }
     } else if (method == 'fetch') {
+
+        var resource;
+
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
         toggleDisplayGetAll.innerHTML = fetch (url)
         .then(resource);
