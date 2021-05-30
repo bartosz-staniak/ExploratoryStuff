@@ -181,6 +181,8 @@ function getWhatever (method) {
                 ichar++;
             }
         }
+    } else if (method == 'fetch') {
+        
     }
 }
 
