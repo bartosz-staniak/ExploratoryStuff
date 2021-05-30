@@ -158,7 +158,7 @@ function getWhatever (method) {
 
             var ichar = 0;
             while (request.response[ichar] != null) {
-                toggleDisplayGetAll.innerHTML =
+                toggleDisplayGetAll.innerHTML +=
                 request.response[ichar];
                 ichar++;
             }
