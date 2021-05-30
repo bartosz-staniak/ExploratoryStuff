@@ -159,10 +159,9 @@ function getWhatever (method) {
             var ichar = 0;
             while (request.response[ichar] != null) {
                 if (request.response[ichar] != '{'){
-                    
+                    toggleDisplayGetAll.innerHTML +=
+                    request.response[ichar];
                 }
-                toggleDisplayGetAll.innerHTML +=
-                request.response[ichar];
                 ichar++;
             }
         }
