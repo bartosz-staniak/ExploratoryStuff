@@ -143,7 +143,7 @@ function getWhatever (method) {
                 }
             }
         });
-    } else if (method == 'JS') {
+    } else if (method == 'JScustomPrint') {
         // pure JS requests
         var request = new XMLHttpRequest();
         var url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
