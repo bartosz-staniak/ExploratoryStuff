@@ -170,7 +170,7 @@ function getWhatever (method) {
                 } else if (request.response[ichar] == ',') {
                     toggleDisplayGetAll.innerHTML += ', ';
                 } else if (request.response[ichar] == ':') {
-                    toggleDisplayGetAll.innerHTML == ': ';
+                    toggleDisplayGetAll.innerHTML += ': ';
                 }
                 
                 else {
