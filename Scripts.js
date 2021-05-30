@@ -156,7 +156,7 @@ function getWhatever (method) {
         console.log(request.response);
         // toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
 
-            customJSbtn.style.display = "none";
+            // customJSbtn.style.display = "none"; // looks like needs to be async or something
 
             toggleDisplayGetAll.innerHTML = "";
             var ichar = 0;
