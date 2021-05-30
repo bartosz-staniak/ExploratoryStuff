@@ -152,7 +152,7 @@ function getWhatever (method) {
         request.open("GET", url);
         request.send();
 
-        request.onload = (e) => {
+        request.onload = () => {
         console.log(request.response);
         // toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
 
@@ -182,7 +182,7 @@ function getWhatever (method) {
             }
         }
     } else if (method == 'fetch') {
-        
+
     }
 }
 
