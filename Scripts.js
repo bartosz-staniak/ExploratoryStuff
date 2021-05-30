@@ -1,4 +1,5 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
+var customJSbtn = document.getElementById("GetWhateverJS");
 
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
