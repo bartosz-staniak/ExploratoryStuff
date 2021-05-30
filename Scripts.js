@@ -160,7 +160,7 @@ function getWhatever (method) {
             var ichar = 0;
             while (request.response[ichar] != null) {
 
-                customJSbtn.style.display = "none";
+                // customJSbtn.style.display = "none"; // needs to be async or something
 
                 if (request.response[ichar] == '{'){
                     
