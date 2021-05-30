@@ -169,7 +169,7 @@ function getWhatever (method) {
                 } else if (request.response[ichar] == '"') {
 
                 } else if (request.response[ichar] == '}') {
-                    toggleDisplayGetAll.innerHTML += '<BR>';
+                    toggleDisplayGetAll.innerHTML += '<BR>' + '<hr>';
                     ichar++;
                 } else if (request.response[ichar] == ',') {
                     toggleDisplayGetAll.innerHTML += ', ';
