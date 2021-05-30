@@ -73,6 +73,7 @@ function enableEditor() {
     var display_results_btn_switch = document.getElementById("display_results_btn");
     var editor_output_switch = document.getElementById("editor_output");
     var enable_editor_btn = document.getElementById("enable_editor_btn");
+    var apiDiv = document.getElementById("apiDiv");
 
     if (enable_editor_btn.innerHTML === "Show the editor") {
         enable_editor_btn.innerHTML = "Hide the editor";
