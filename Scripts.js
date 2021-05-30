@@ -139,7 +139,8 @@ function getWhatever (method) {
                         + " | Temperature in C: " + resource[i].temperatureC
                         + " | Chance of rain: " + resource[i].rainChance + "%"
                         + " | Summary: " + resource[i].summary + " |"
-                        + "<br>";
+                        + "<br>"
+                        + "<hr>";
                     }
                 }
             }
