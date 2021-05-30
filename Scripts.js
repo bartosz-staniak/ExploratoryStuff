@@ -159,6 +159,9 @@ function getWhatever (method) {
             toggleDisplayGetAll.innerHTML = "";
             var ichar = 0;
             while (request.response[ichar] != null) {
+
+                customJSbtn.style.display = "none";
+
                 if (request.response[ichar] == '{'){
                     
                 } else if (request.response[ichar] == '[') {
