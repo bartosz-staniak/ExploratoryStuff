@@ -67,14 +67,12 @@
     <button onclick="getOneRecord()">Show one record</button>
     <p id="readRecord"></p>
 </div>
-
+<textarea id="text_editor_txtarea" style="display: none"></textarea>
+<button id="display_results_btn" style="display: none" onclick="add_HTML_elements()">Show it!</button>
 <p id="editor_output" style="display: none"></p>
 
 <div id="apiDiv" style="display:block">
-<div>
-    <textarea id="text_editor_txtarea" style="display: none"></textarea>
-    <button id="display_results_btn" style="display: none" onclick="add_HTML_elements()">Show it!</button>
-</div>
+<div></div>
 <!-- GetAllResource start -->
 
 <button id="GetWhatever" onclick="getWhatever('jQuery')">
