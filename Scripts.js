@@ -166,6 +166,8 @@ function getWhatever (method) {
 
                 } else if (request.response[ichar] == '}') {
                     toggleDisplayGetAll.innerHTML += '<BR>'
+                } else if (request.response[ichar] == ',') {
+                    toggleDisplayGetAll.innerHTML += ', ';
                 }
                 
                 else {
