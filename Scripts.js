@@ -188,7 +188,9 @@ function getWhatever (method) {
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
         fetch (url)
         .then(resource => resource.json())
-        .then(toggleDisplayGetAll.innerHTML = resource);
+        .then(resource);
+
+        // toggleDisplayGetAll.innerHTML = 
     }
 }
 
