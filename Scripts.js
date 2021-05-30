@@ -155,7 +155,7 @@ function getWhatever (method) {
         console.log(request.response);
         // toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
 
-
+            toggleDisplayGetAll.innerHTML = "";
             var ichar = 0;
             while (request.response[ichar] != null) {
                 if (request.response[ichar] == '{'){
