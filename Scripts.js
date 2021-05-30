@@ -161,10 +161,9 @@ function getWhatever (method) {
                 if (request.response[ichar] != '{'){
                     
                 } else {
-                    
+                    toggleDisplayGetAll.innerHTML +=
+                    request.response[ichar];
                 }
-                toggleDisplayGetAll.innerHTML +=
-                request.response[ichar];
                 ichar++;
             }
         }
