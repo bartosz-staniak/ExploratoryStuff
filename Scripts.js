@@ -100,6 +100,10 @@ function enableEditor() {
         editor_output_switch.style.display = "block";
     } else {
         editor_output_switch.style.display = "none";
+    } if () {
+
+    } else {
+        
     }
 }
 
