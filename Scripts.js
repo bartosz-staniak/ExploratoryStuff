@@ -152,7 +152,7 @@ function getWhatever (method) {
         request.open("GET", url);
         request.send();
 
-        request.onload = () => {
+        request.onload = (e) => {
         console.log(request.response);
         // toggleDisplayGetAll.innerHTML = request.response[1]; //only one char is returned
 
