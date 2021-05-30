@@ -160,6 +160,8 @@ function getWhatever (method) {
             while (request.response[ichar] != null) {
                 if (request.response[ichar] != '{'){
                     
+                } else {
+                    
                 }
                 toggleDisplayGetAll.innerHTML +=
                 request.response[ichar];
