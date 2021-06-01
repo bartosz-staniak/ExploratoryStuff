@@ -241,12 +241,12 @@ function getOneRecord() {
     }
 }
 
+var targetForm = document.getElementById("htmlForm");
+targetForm.addEventListener('submit', stopRefresh);
+
 var dateTimeInput = document.getElementById("dateTimeInput");
 if (dateTimeInput == "") {
     function stopRefresh(event) {
         event.preventDefault();
     }
 }
-
-var targetForm = document.getElementById("htmlForm");
-targetForm.addEventListener('submit', stopRefresh);
