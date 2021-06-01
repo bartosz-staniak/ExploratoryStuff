@@ -243,3 +243,7 @@ function getOneRecord() {
 
 var targetForm = document.getElementById("htmlForm");
 targetForm.addEventListener('submit', stopRefresh);
+function stopRefresh(event) {
+    event.prevenDefault();
+}
+    
