@@ -241,8 +241,10 @@ function getOneRecord() {
     }
 }
 
+/* this code currently block the form
 var targetForm = document.getElementById("htmlForm");
 targetForm.addEventListener('submit', stopRefresh);
 function stopRefresh(event) {
     event.preventDefault();
 }
+*/
