@@ -240,3 +240,5 @@ function getOneRecord() {
     = "There is no such record.";
     }
 }
+
+var targetForm = document.getElementById("htmlForm");
