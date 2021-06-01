@@ -244,7 +244,7 @@ function getOneRecord() {
 var targetForm = document.getElementById("htmlForm");
 targetForm.addEventListener('submit', stopRefresh);
 
-var dateTimeInput = document.getElementById("dateTimeInput");
+var dateTimeInput = document.getElementById("dateTimeInput").value;
 if (dateTimeInput.value == "") {
     function stopRefresh(event) {
         event.preventDefault();
