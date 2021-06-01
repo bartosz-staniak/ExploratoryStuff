@@ -245,7 +245,7 @@ var targetForm = document.getElementById("htmlForm");
 targetForm.addEventListener('submit', stopRefresh);
 
 var dateTimeInput = document.getElementById("dateTimeInput");
-if (dateTimeInput == "") {
+if (dateTimeInput.value == "") {
     function stopRefresh(event) {
         event.preventDefault();
     }
