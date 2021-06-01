@@ -248,5 +248,10 @@ var dateTimeInput = document.getElementById("dateTimeInput").value;
 if (dateTimeInput.value == "") {
     function stopRefresh(event) {
         event.preventDefault();
-    }
+    } 
+
+} else if (dateTimeInput.value == null) {
+    function stopRefresh(event) {
+        event.preventDefault();
+    } 
 }
