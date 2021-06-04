@@ -252,3 +252,5 @@ function stopRefresh(event) {
 function showImageDiv() {
     document.getElementById("imageDiv").style.display = "block";
 }
+
+setTimeout(showImageDiv, 5000); 
