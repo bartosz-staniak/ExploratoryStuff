@@ -248,3 +248,7 @@ function stopRefresh(event) {
     event.preventDefault();
 }
 */
+
+function showImageDiv() {
+    document.getElementById("imageDiv").style.display = "block";
+}
