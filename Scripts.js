@@ -253,4 +253,4 @@ function showImageDiv() {
     document.getElementById("imageDiv").style.display = "block";
 }
 
-setTimeout(showImageDiv, 5000); 
+setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
