@@ -243,9 +243,9 @@ function getOneRecord() {
 }
 // --- API GET functions end ---
 
-var postRequest = new XMLHttpRequest();
-
 // --- API POST functions start ---
+
+var postRequest = new XMLHttpRequest();
 
 // --- API POST functions end ---
 
