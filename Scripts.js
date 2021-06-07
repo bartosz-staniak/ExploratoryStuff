@@ -247,6 +247,17 @@ function getOneRecord() {
 
 var postRequest = new XMLHttpRequest();
 
+var jsonLoad = JSON.stringify(
+    {
+        dateTime : "00-00-00",
+        location : "aPlace",
+        temperaure : "20",
+        rainChance : "20",
+        summary : "fair",
+        submittedBy : "someone"
+    }
+);
+
 // --- API POST functions end ---
 
 /* this code currently block the form
