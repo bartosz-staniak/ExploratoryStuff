@@ -258,6 +258,8 @@ var jsonLoad = JSON.stringify(
     }
 );
 
+postRequest.open("POST", "https://localhost:44391/api/weatherforecast/");
+
 // --- API POST functions end ---
 
 /* this code currently block the form
