@@ -241,12 +241,11 @@ function getOneRecord() {
     = "There is no such record.";
     }
 }
+// --- API GET functions end ---
 
 // --- API POST functions start ---
 
 // --- API POST functions end ---
-
-// --- API GET functions end ---
 
 /* this code currently block the form
 var targetForm = document.getElementById("htmlForm");
