@@ -105,7 +105,22 @@
     </div>
     <div>
         <div>
-            
+            <form action="https://localhost:44391/api/weatherforecast/"
+                method="POST" id="htmlForm">
+                <label for="dateTime">Date and time</label><br>
+                <input id="dateTimeInput" name="dateTime" type="datetime"><br>
+                <label for="location">Location</label><br>
+                <input name="location"><br>
+                <label for="temperature">Temperature in Celsius</label><br>
+                <input name="temperature"><br>
+                <label for="rainChance">Chance of rain</label><br>
+                <input name="rainChance"><br>
+                <label for="summary">Summary</label><br>
+                <input name="summary"><br>
+                <label for="submittedBy">Submitted by</label><br>
+                <input name="submittedBy"><br>
+                <input type="submit">
+            </form>
         </div>
         <h4>API post actions</h4>
         <form action="https://localhost:44391/api/weatherforecast/"
