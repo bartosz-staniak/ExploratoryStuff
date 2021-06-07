@@ -242,6 +242,10 @@ function getOneRecord() {
     }
 }
 
+// --- API POST functions start ---
+
+// --- API POST functions end ---
+
 // --- API GET functions end ---
 
 /* this code currently block the form
