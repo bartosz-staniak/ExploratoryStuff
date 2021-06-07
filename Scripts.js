@@ -125,6 +125,7 @@ $(document).ready(function(){
     });
 });
 
+// --- API GET functions start ---
 // CORS issue appears to have been solved
 function getWhatever (method) {
     if (method == 'jQuery') {
@@ -240,6 +241,8 @@ function getOneRecord() {
     = "There is no such record.";
     }
 }
+
+// --- API GET functions end ---
 
 /* this code currently block the form
 var targetForm = document.getElementById("htmlForm");
