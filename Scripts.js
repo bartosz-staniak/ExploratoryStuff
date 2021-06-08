@@ -246,24 +246,23 @@ function getOneRecord() {
 // --- API POST functions start ---
 
 function sendRequest() {
-    
+    var postRequest = new XMLHttpRequest();
+
+    var jsonLoad = JSON.stringify(
+        {
+            dateTime : "00-00-00",
+            location : "aPlace",
+            temperaure : "20",
+            rainChance : "20",
+            summary : "fair",
+            submittedBy : "someone"
+        }
+    );
+
+    postRequest.open("POST", "https://localhost:44391/api/weatherforecast/");
+    postRequest.setRequestHeader("Content-Type", "application/json");
+    postRequest.send(jsonLoad);
 }
-var postRequest = new XMLHttpRequest();
-
-var jsonLoad = JSON.stringify(
-    {
-        dateTime : "00-00-00",
-        location : "aPlace",
-        temperaure : "20",
-        rainChance : "20",
-        summary : "fair",
-        submittedBy : "someone"
-    }
-);
-
-postRequest.open("POST", "https://localhost:44391/api/weatherforecast/");
-postRequest.setRequestHeader("Content-Type", "application/json");
-postRequest.send(jsonLoad);
 
 // --- API POST functions end ---
 
