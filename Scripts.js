@@ -247,7 +247,7 @@ function getOneRecord() {
 
 function sendRequest() {
     var postRequest = new XMLHttpRequest();
-    var postLocation;
+    var postLocation = document.getElementById("PostLocation").value;
 
     var jsonLoad = JSON.stringify(
         {
