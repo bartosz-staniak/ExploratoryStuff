@@ -249,6 +249,7 @@ function sendRequest() {
     var postRequest = new XMLHttpRequest();
     var postDateTime = document.getElementById("PostDateTime").value;
     var postLocation = document.getElementById("PostLocation").value;
+    var postTemperature = document.getElementById("PostTemperature").value;
 
     var jsonLoad = JSON.stringify(
         {
