@@ -252,7 +252,7 @@ function sendRequest() {
 
     var jsonLoad = JSON.stringify(
         {
-            dateTime : "00-00-00",
+            dateTime : "" + postDateTime,
             location : "" + postLocation,
             temperaure : "20",
             rainChance : "20",
