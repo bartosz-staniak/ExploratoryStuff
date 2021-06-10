@@ -251,6 +251,7 @@ function sendRequest() {
     var postLocation = document.getElementById("PostLocation").value;
     var postTemperature = document.getElementById("PostTemperature").value;
     var postRainChance = document.getElementById("PostRainChance").value;
+    var postSummary = document.getElementById("PostSummary").value;
 
     var jsonLoad = JSON.stringify(
         {
