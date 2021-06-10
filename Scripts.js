@@ -250,6 +250,7 @@ function sendRequest() {
     var postDateTime = document.getElementById("PostDateTime").value;
     var postLocation = document.getElementById("PostLocation").value;
     var postTemperature = document.getElementById("PostTemperature").value;
+    var postRainChance = document.getElementById("PostRainChance").value;
 
     var jsonLoad = JSON.stringify(
         {
