@@ -258,7 +258,7 @@ function sendRequest() {
         {
             dateTime : "" + postDateTime, // this may need fixing on API side
             location : "" + postLocation,
-            temperaure : "" + postTemperature,
+            temperature : "" + postTemperature,
             rainChance : "" + postRainChance,
             summary : "" + postSummary,
             submittedBy : "" + postSubmitter
