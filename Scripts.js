@@ -256,7 +256,7 @@ function sendRequest() {
 
     var jsonLoad = JSON.stringify(
         {
-            dateTime : "" + postDateTime, // this may need fixing on API side
+            dateAndTime : "" + postDateTime, // this may need fixing on API side
             location : "" + postLocation,
             temperatureC : "" + postTemperature,
             rainChance : "" + postRainChance,
