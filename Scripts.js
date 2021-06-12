@@ -236,6 +236,10 @@ function getOneRecord() {
                 + ", Summary: " + record.summary;
 
                 document.getElementById("getOneId").value = record.id;
+                document.getElementById("getOneLocation").value = record.location;
+                document.getElementById("getOneTemperature").value = record.temperatureC;
+                document.getElementById("getOneChance").value = record.rainChance;
+                document.getElementById("getOneSummary").value = record.summary;
             }
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
