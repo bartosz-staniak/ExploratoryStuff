@@ -228,6 +228,8 @@ function getOneRecord() {
         + getOneid, function(record){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
             if (record.id == getOneid) {
+                document.getElementById("RecordPUT").style.display = "block";
+
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
                 + ", Location: " + record.location
