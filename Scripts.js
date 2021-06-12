@@ -235,7 +235,7 @@ function getOneRecord() {
                 + ", Chance of rain: " + record.rainChance + "%"
                 + ", Summary: " + record.summary;
 
-                document.getElementById("recordId").value = record.id;
+                document.getElementById("getOneId").value = record.id;
             }
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
