@@ -234,6 +234,8 @@ function getOneRecord() {
                 + ", Temperature in C: " + record.temperatureC
                 + ", Chance of rain: " + record.rainChance + "%"
                 + ", Summary: " + record.summary;
+
+                document.getElementById("recordId").value = record.id;
             }
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
