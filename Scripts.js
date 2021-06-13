@@ -223,14 +223,14 @@ function secondToggleResource() {
 function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
-    var ModifyRecordBtn = document.getElementById("ModifyRecordBtn");
+    var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
             if (record.id == getOneid) {
 
-                ModifyRecordBtn.style.display = "block";
+                modifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
                 + ", Location: " + record.location
