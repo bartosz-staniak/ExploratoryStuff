@@ -247,10 +247,9 @@ function getOneRecord() {
             }
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
-        document.getElementById("readRecord").innerHTML
-    = "There is no such record.";
-    modifyRecordBtn.style.display = "none";
-
+        document.getElementById("readRecord").innerHTML= "There is no such record.";
+        modifyRecordBtn.style.display = "none";
+    
     }
 }
 // --- API GET functions end ---
