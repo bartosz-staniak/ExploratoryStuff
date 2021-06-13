@@ -256,7 +256,7 @@ function getOneRecord() {
 // --- API GET functions end ---
 
 function updateRecord() {
-    document.getElementById("RecordPUT").style.display = "block";
+    updateRecordInputs.style.display = "block";
 }
 
 // --- API POST functions start ---
