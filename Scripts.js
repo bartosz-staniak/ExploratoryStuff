@@ -230,8 +230,7 @@ function getOneRecord() {
             // in else condition due to jQuery implementation
             if (record.id == getOneid) {
 
-                document.getElementById("ModifyRecordBtn")
-                .style.display = "block";
+                ModifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
                 = "Id: " + record.id
                 + ", Location: " + record.location
