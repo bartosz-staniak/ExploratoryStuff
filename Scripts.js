@@ -1,5 +1,6 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
+var updateRecordInputs = document.getElementById("RecordPUT");
 
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
@@ -224,7 +225,6 @@ function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
     var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
-    var updateRecordInputs = document.getElementById("RecordPUT");
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){ // it appears the error messaging did not work
