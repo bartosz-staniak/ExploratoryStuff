@@ -223,6 +223,7 @@ function secondToggleResource() {
 function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
+    var ModifyRecordBtn = document.getElementById("ModifyRecordBtn");
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){ // it appears the error messaging did not work
