@@ -224,6 +224,7 @@ function getOneRecord() {
     var getOneid = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
     var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
+    var updateRecordInputs = document.getElementById("RecordPUT");
     console.log(getOneid) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
         + getOneid, function(record){ // it appears the error messaging did not work
@@ -249,6 +250,7 @@ function getOneRecord() {
         document.getElementById("readRecord").innerHTML
     = "There is no such record.";
     modifyRecordBtn.style.display = "none";
+
     }
 }
 // --- API GET functions end ---
