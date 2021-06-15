@@ -258,6 +258,10 @@ function modifyRecord() {
     updateRecordInputs.style.display = "block";
 }
 
+// --- API PUT function start ---
+
+// --- API PUT function end ---
+
 // --- API POST functions start ---
 
 function sendRequest() {
