@@ -254,7 +254,7 @@ function getOneRecord() {
 }
 // --- API GET functions end ---
 
-function updateRecord() {
+function modifyRecord() {
     updateRecordInputs.style.display = "block";
 }
 
