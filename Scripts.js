@@ -260,6 +260,10 @@ function modifyRecord() {
 
 // --- API PUT function start ---
 
+function updateRecord() {
+    
+}
+
 // --- API PUT function end ---
 
 // --- API POST functions start ---
