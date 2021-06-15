@@ -233,7 +233,7 @@ function getOneRecord() {
 
                 modifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
-                = "Id: " + record.id
+                = "Id: " + record.id + "DateAndTime: " + record.dateAndTime
                 + ", Location: " + record.location
                 + ", Temperature in C: " + record.temperatureC
                 + ", Chance of rain: " + record.rainChance + "%"
