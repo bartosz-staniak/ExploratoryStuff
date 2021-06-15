@@ -261,13 +261,13 @@ function modifyRecord() {
 // --- API PUT function start ---
 
 function updateRecord() {
-    var postRequest = new XMLHttpRequest();
-    var postDateTime = document.getElementById("PostDateTime").value;
-    var postLocation = document.getElementById("PostLocation").value;
-    var postTemperature = document.getElementById("PostTemperature").value;
-    var postRainChance = document.getElementById("PostRainChance").value;
-    var postSummary = document.getElementById("PostSummary").value;
-    var postSubmitter = document.getElementById("PostSubmitter").value;
+    var putRequest = new XMLHttpRequest();
+    var putDateTime = document.getElementById("PostDateTime").value;
+    var putLocation = document.getElementById("PostLocation").value;
+    var putTemperature = document.getElementById("PostTemperature").value;
+    var putRainChance = document.getElementById("PostRainChance").value;
+    var putSummary = document.getElementById("PostSummary").value;
+    var putSubmitter = document.getElementById("PostSubmitter").value;
 }
 
 // --- API PUT function end ---
