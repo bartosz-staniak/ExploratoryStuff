@@ -250,8 +250,6 @@ function getOneRecord() {
         document.getElementById("readRecord").innerHTML = "There is no such record.";
         modifyRecordBtn.style.display = "none";
         updateRecordInputs.style.display = "none";
-    } else {
-
     }
 }
 // --- API GET functions end ---
