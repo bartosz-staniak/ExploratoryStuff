@@ -251,6 +251,9 @@ function getOneRecord() {
         modifyRecordBtn.style.display = "none";
         updateRecordInputs.style.display = "none";
         Timeout(5000);
+        function checkAgain() {
+            
+        }
         if (document.getElementById("readRecord").innerHTML.value == "Requesting data...") {
             document.getElementById("readRecord").innerHTML = "There is no such record.";
             modifyRecordBtn.style.display = "none";
