@@ -246,7 +246,9 @@ function getOneRecord() {
                 document.getElementById("getOneSummary").value = record.summary;
             }
     });
-    
+    if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
+        
+    }        
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "There is no such record.";
         modifyRecordBtn.style.display = "none";
