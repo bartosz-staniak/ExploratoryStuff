@@ -248,6 +248,8 @@ function getOneRecord() {
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
+        modifyRecordBtn.style.display = "none";
+        updateRecordInputs.style.display = "none";
         Timeout(5000);
         if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
             document.getElementById("readRecord").innerHTML = "There is no such record.";
