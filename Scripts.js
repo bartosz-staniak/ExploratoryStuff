@@ -247,7 +247,7 @@ function getOneRecord() {
             }
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
-        
+        document.getElementById("readRecord").innerHTML = "Requesting data...";
     }        
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "There is no such record.";
