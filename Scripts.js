@@ -249,12 +249,13 @@ function getOneRecord() {
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
         Timeout(5000);
+        if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
+            document.getElementById("readRecord").innerHTML = "There is no such record.";
+            modifyRecordBtn.style.display = "none";
+            updateRecordInputs.style.display = "none";
+        }
     }        
-    if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
-        document.getElementById("readRecord").innerHTML = "There is no such record.";
-        modifyRecordBtn.style.display = "none";
-        updateRecordInputs.style.display = "none";
-    }
+    
 }
 // --- API GET functions end ---
 
