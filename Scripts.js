@@ -245,6 +245,8 @@ function getOneRecord() {
                 document.getElementById("getOneChance").value = record.rainChance;
                 document.getElementById("getOneSummary").value = record.summary;
             }
+    }).fail(function() {
+        document.getElementById("readRecord").innerHTML = "Request failed."
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
