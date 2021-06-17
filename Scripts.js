@@ -246,7 +246,7 @@ function getOneRecord() {
                 document.getElementById("getOneSummary").value = record.summary;
             }
     }).fail(function(response) {
-        document.getElementById("readRecord").innerHTML = "Request failed."
+        document.getElementById("readRecord").innerHTML = "Request failed." + response
     });
     if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
