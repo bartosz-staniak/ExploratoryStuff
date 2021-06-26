@@ -15,7 +15,7 @@ function getOpinion() {
 }
 
 function removeOpinion() {
-    document.getElementById('datalist').innerText = "";
+    document.getElementById('datalist').innerText = " ";
 }
 
 function hideShow() {
