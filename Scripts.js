@@ -14,6 +14,10 @@ function getOpinion() {
     }
 }
 
+function removeOpinion() {
+    
+}
+
 function hideShow() {
     var onOff = document.getElementById("remove_it");
     var buttonName = document.getElementById("hideous_btn");
