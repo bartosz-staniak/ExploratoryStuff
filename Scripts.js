@@ -14,7 +14,7 @@ function getOpinion() {
     }
 }
 
-function removeOpinion() {
+function removeTextFromInput() {
     // try again later
 }
 
