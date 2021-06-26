@@ -1,9 +1,9 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
-var opinion = document.getElementById('dataList').value;
 var updateRecordInputs = document.getElementById("RecordPUT");
 
 function getOpinion() {
+    var opinion = document.getElementById('dataList').value;
     var hideousButton = document.getElementById("hideous_btn");
     if (opinion == "nice!") {
         hideousButton.style.display = "none";
