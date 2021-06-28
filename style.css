@@ -11,3 +11,7 @@ div {
     margin: 20px;
     background-color: white;
 }
+
+p.redundant {
+    color: gray;
+}
