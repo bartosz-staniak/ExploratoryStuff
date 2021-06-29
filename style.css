@@ -12,6 +12,6 @@ div {
     background-color: white;
 }
 
-p.redundant {
+*.redundant {
     color: gray;
 }
