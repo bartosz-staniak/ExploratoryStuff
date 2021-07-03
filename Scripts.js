@@ -3,7 +3,7 @@ var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
 
 function removeRedundant() {
-    
+    var redundantElements = document.getElementsByClassName("redundant");
 }
 
 function getOpinion() {
