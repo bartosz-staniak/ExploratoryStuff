@@ -5,6 +5,9 @@ var updateRecordInputs = document.getElementById("RecordPUT");
 function removeRedundant() {
     var redundantElements = document.getElementsByClassName("redundant");
     var total = (redundantElements.length);
+    for (let i = 0; i < total; i++) {
+        redundantElements[i].style.display = "none";
+    }
 }
 
 function getOpinion() {
