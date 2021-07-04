@@ -4,7 +4,7 @@ var updateRecordInputs = document.getElementById("RecordPUT");
 
 function removeRedundant() {
     var redundantElements = document.getElementsByClassName("redundant");
-    console.log(redundantElements.length);
+    var total = (redundantElements.length);
 }
 
 function getOpinion() {
