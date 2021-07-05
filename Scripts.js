@@ -6,12 +6,23 @@ var removeRedundantButton = document.getElementById("removeRedundantButton");
 function removeRedundant() {
     var redundantElements = document.getElementsByClassName("redundant");
     var total = (redundantElements.length);
-    for (let i = 0; i < total; i++) {
-        redundantElements[i].style.display = "none";
+    var show = "Show redundant elements";
+    var remove = "Remove redundant elements";
+    function blockNone(blockNone) {
+        for (let i = 0; i < total; i++) {
+            redundantElements[i].style.display = blockNone;
     }
+    
+    /*for (let i = 0; i < total; i++) {
+        redundantElements[i].style.display = "none";
+    }*/
     var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
     if (RedundantPresent == "Rem"){
-        removeRedundantButton.innerHTML = "Show redundant elements";
+        removeRedundantButton.innerHTML = show;
+        blockNone("none");
+    } else {
+        removeRedundantButton.innerHTML = remove;
+        blockNone("block");
     }
 }
 
