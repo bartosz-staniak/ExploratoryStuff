@@ -1,6 +1,7 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
+var removeRedundantButton = document.getElementById("removeRedundantButton");
 
 function removeRedundant() {
     var redundantElements = document.getElementsByClassName("redundant");
