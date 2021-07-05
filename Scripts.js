@@ -9,6 +9,7 @@ function removeRedundant() {
     for (let i = 0; i < total; i++) {
         redundantElements[i].style.display = "none";
     }
+    var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
     if (removeRedundantButton.innerHTML.match(/rem/gi)){
         removeRedundantButton.innerHTML = "Show redundant elements";
     }
