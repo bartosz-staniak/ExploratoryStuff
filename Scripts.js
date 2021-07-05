@@ -11,8 +11,9 @@ function removeRedundant() {
     function blockNone(attribute) {
         for (let i = 0; i < total; i++) {
             redundantElements[i].style.display = attribute;
+        }
     }
-    
+
     /*for (let i = 0; i < total; i++) {
         redundantElements[i].style.display = "none";
     }*/
