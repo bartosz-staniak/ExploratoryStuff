@@ -9,6 +9,9 @@ function removeRedundant() {
     for (let i = 0; i < total; i++) {
         redundantElements[i].style.display = "none";
     }
+    if (removeRedundantButton.innerHTML.match("Remove")){
+        removeRedundantButton.innerHTML = "Show redundant elements";
+    }
 }
 
 function getOpinion() {
