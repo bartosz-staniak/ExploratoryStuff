@@ -10,7 +10,7 @@ function removeRedundant() {
         redundantElements[i].style.display = "none";
     }
     var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
-    if (removeRedundantButton.innerHTML.match(/rem/gi)){
+    if (RedundantPresent == "Rem"){
         removeRedundantButton.innerHTML = "Show redundant elements";
     }
 }
