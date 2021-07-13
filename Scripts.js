@@ -2,6 +2,7 @@ var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
 var removeRedundantButton = document.getElementById("removeRedundantButton");
+var redundantElements = document.getElementsByClassName("redundant");
 
 window.onload = function () {
     // anonymous function
