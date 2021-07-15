@@ -7,7 +7,7 @@ var redundantElements = document.getElementsByClassName("redundant");
 window.onload = function () {
     // anonymous function
     for (let i = 0; i < total; i++) {
-        redundantElements[i].style.display = attribute;
+        redundantElements[i].style.display = "none";
     }
 }
 
