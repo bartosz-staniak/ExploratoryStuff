@@ -13,8 +13,6 @@ window.onload = function () {
 }
 
 function removeRedundant() {
-    // var redundantElements = document.getElementsByClassName("redundant");
-    // var total = (redundantElements.length);
     var show = "Show redundant elements";
     var remove = "Remove redundant elements";
     function blockNone(attribute) {
