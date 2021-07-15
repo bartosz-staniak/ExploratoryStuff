@@ -3,6 +3,7 @@ var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
 var removeRedundantButton = document.getElementById("removeRedundantButton");
 var redundantElements = document.getElementsByClassName("redundant");
+var totalRedundantElements = redundantElements.length;
 
 window.onload = function () {
     // anonymous function
