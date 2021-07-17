@@ -12,7 +12,7 @@ window.onload = function () {
     }
 }
 
-function removeRedundant() {
+function toggleRedundant() {
     var show = "Show redundant elements";
     var remove = "Remove redundant elements";
     function blockNone(attribute) {
