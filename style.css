@@ -16,3 +16,7 @@ div {
     color: gray;
     border: 3px solid gray;
 }
+
+.bugged {
+    border:indianred;
+}
