@@ -32,6 +32,10 @@ function toggleRedundant() {
     }
 }
 
+function toggleBugged() {
+    
+}
+
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
     var hideousButton = document.getElementById("hideous_btn");
