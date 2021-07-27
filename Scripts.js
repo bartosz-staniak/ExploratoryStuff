@@ -33,7 +33,24 @@ function toggleRedundant() {
 }
 
 function toggleBugged() {
+    // it's just copied for now
+    var show = "Show redundant elements";
+    var remove = "Remove redundant elements";
+    function blockNone(attribute) {
+        for (let i = 0; i < totalRedundantElements; i++) {
+            redundantElements[i].style.display = attribute;
+        }
+    }
     
+    var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
+    if (RedundantPresent == "Rem"){
+        removeRedundantButton.innerHTML = show;
+        blockNone("none");
+    } else {
+        removeRedundantButton.innerHTML = remove;
+        blockNone("block");
+    }
+}
 }
 
 function getOpinion() {
