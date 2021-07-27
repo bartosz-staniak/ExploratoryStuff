@@ -34,11 +34,11 @@ function toggleRedundant() {
 
 function toggleBugged() {
     // it's just copied for now
-    var show = "Show redundant elements";
-    var remove = "Remove redundant elements";
+    var show = "Show bugged elements";
+    var remove = "Remove bugged elements";
     function blockNone(attribute) {
         for (let i = 0; i < totalRedundantElements; i++) {
-            redundantElements[i].style.display = attribute;
+            buggedElements[i].style.display = attribute;
         }
     }
     
