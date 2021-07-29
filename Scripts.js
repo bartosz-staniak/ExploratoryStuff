@@ -4,6 +4,7 @@ var updateRecordInputs = document.getElementById("RecordPUT");
 var removeRedundantButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
+var removeBuggedButton = document.getElementById("buggedElementsToggle");
 var buggedElements = document.getElementsByClassName("bugged");
 
 window.onload = function () {
