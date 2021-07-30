@@ -6,6 +6,7 @@ var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
 var removeBuggedButton = document.getElementById("buggedElementsToggle");
 var buggedElements = document.getElementsByClassName("bugged");
+var totalBuggedElements = buggedElements.length;
 
 window.onload = function () {
     // anonymous function
