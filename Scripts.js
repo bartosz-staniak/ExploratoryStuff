@@ -39,7 +39,7 @@ function toggleBugged() {
     var show = "Show bugged elements";
     var remove = "Remove bugged elements";
     function blockNone(attribute) {
-        for (let i = 0; i < totalRedundantElements; i++) {
+        for (let i = 0; i < totalBuggedElements; i++) {
             buggedElements[i].style.display = attribute;
         }
     }
