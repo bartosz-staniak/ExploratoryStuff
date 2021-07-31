@@ -1,9 +1,11 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
+// -----
 var removeRedundantButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
+// -----
 var removeBuggedButton = document.getElementById("buggedElementsToggle");
 var buggedElements = document.getElementsByClassName("bugged");
 var totalBuggedElements = buggedElements.length;
