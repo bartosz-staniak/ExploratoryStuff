@@ -53,7 +53,6 @@ function toggleBugged() {
         blockNone("block");
     }
 }
-}
 
 function getOpinion() {
     var opinion = document.getElementById('dataList').value;
