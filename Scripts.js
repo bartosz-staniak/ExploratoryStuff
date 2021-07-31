@@ -44,12 +44,12 @@ function toggleBugged() {
         }
     }
     
-    var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
-    if (RedundantPresent == "Rem"){
-        removeRedundantButton.innerHTML = show;
+    var buggedPresent = removeBuggedButton.innerHTML.match(/rem/gi);
+    if (buggedPresent == "Rem"){
+        removeBuggedButton.innerHTML = show;
         blockNone("none");
     } else {
-        removeRedundantButton.innerHTML = remove;
+        removeBuggedButton.innerHTML = remove;
         blockNone("block");
     }
 }
