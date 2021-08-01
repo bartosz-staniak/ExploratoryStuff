@@ -41,7 +41,7 @@ function toggleDefunct() {
     var show = "Show not functioning elements";
     var remove = "Remove not functioning elements";
     function blockNone(attribute) {
-        for (let i = 0; i < totalDeunfctElements; i++) {
+        for (let i = 0; i < totalDefunctElements; i++) {
             defunctElements[i].style.display = attribute;
         }
     }
