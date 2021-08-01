@@ -6,9 +6,9 @@ var removeRedundantButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
 // -----
-var removeBuggedButton = document.getElementById("buggedElementsToggle");
-var buggedElements = document.getElementsByClassName("bugged");
-var totalBuggedElements = buggedElements.length;
+var removeDefunctButton = document.getElementById("defunctElementsToggle");
+var defunctElements = document.getElementsByClassName("defunct");
+var totalDefunctElements = defunctElements.length;
 
 window.onload = function () {
     // anonymous function
@@ -36,22 +36,22 @@ function toggleRedundant() {
     }
 }
 
-function toggleBugged() {
+function toggleDefunct() {
     // it's just copied for now
-    var show = "Show bugged elements";
-    var remove = "Remove bugged elements";
+    var show = "Show not functioning elements";
+    var remove = "Remove not functioning elements";
     function blockNone(attribute) {
-        for (let i = 0; i < totalBuggedElements; i++) {
-            buggedElements[i].style.display = attribute;
+        for (let i = 0; i < totalDeunfctElements; i++) {
+            defunctElements[i].style.display = attribute;
         }
     }
     
-    var buggedPresent = removeBuggedButton.innerHTML.match(/rem/gi);
-    if (buggedPresent == "Rem"){
-        removeBuggedButton.innerHTML = show;
+    var defunctPresent = removeDefunctButton.innerHTML.match(/rem/gi);
+    if (defunctPresent == "Rem"){
+        removeDefunctButton.innerHTML = show;
         blockNone("none");
     } else {
-        removeBuggedButton.innerHTML = remove;
+        removeDefunctButton.innerHTML = remove;
         blockNone("block");
     }
 }
