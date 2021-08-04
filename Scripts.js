@@ -3,12 +3,12 @@ var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
 // -----
 var removeRedundantButton = document.getElementById("redundantElementsToggle");
-var redundantElements = document.getElementsByClassName("redundant");
+var redundantElements = document.getElementsByClassName("r edundant");
 var totalRedundantElements = redundantElements.length;
 // -----
-var removeDefunctButton = document.getElementById("defunctElementsToggle");
-var defunctElements = document.getElementsByClassName("defunct");
-var totalDefunctElements = defunctElements.length;
+var removeWipButton = document.getElementById("wipElementsToggle");
+var wipElements = document.getElementsByClassName("wip");
+var totalWipElements = wipElements.length;
 
 window.onload = function () {
     // anonymous function
@@ -36,22 +36,22 @@ function toggleRedundant() {
     }
 }
 
-function toggleDefunct() {
+function toggleWip() {
     // it's just copied for now
     var show = "Show not functioning elements";
     var remove = "Remove not functioning elements";
     function blockNone(attribute) {
-        for (let i = 0; i < totalDefunctElements; i++) {
-            defunctElements[i].style.display = attribute;
+        for (let i = 0; i < totalWipElements; i++) {
+            wipElements[i].style.display = attribute;
         }
     }
     
-    var defunctPresent = removeDefunctButton.innerHTML.match(/rem/gi);
-    if (defunctPresent == "Rem"){
-        removeDefunctButton.innerHTML = show;
+    var wipPresent = removeWipButton.innerHTML.match(/rem/gi);
+    if (wipPresent == "Rem"){
+        removeWipButton.innerHTML = show;
         blockNone("none");
     } else {
-        removeDefunctButton.innerHTML = remove;
+        removeWipButton.innerHTML = remove;
         blockNone("block");
     }
 }
