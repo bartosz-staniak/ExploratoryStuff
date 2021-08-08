@@ -6,12 +6,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body id="slide_it">
-    <h2 id="currentDateTime" class="redundant"
-        onmouseover="document.getElementById('currentDateTime').innerHTML = Date()"
-        onmouseleave="document.getElementById('currentDateTime')
+    <h2 id="currentDateTimeRedundant" class="redundant"
+        onmouseover="document.getElementById('currentDateTimeRedundant')
+        .innerHTML = Date()"
+        onmouseleave="document.getElementById('currentDateTimeRedundant')
         .innerHTML = 'Put the cursor here to display current date and time.'">
         Put the cursor here to display current date and time.
     </h2>
+    <h2></h2>
 <div  id="slide_it_too">
     <button class="redundant" id="enable_editor_btn" onclick="enableEditor()">Show the editor</button>
     <div id="space_for_editor">
