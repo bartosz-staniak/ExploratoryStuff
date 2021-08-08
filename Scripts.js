@@ -6,6 +6,8 @@ var removeRedundantButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
 // -----
+
+// -----
 var removeWipButton = document.getElementById("wipElementsToggle");
 var wipElements = document.getElementsByClassName("wip");
 var totalWipElements = wipElements.length;
