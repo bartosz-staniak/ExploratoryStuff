@@ -22,7 +22,9 @@ window.onload = function () {
 
 window.onchange = function () {
     if (RedundantPresent == removeRedundantButton.innerHTML.match(/show/gi)){
-
+        for (let i=0; i < totalNonRedundantElements; i++) {
+            nonRedundantElements[i].style.display = "block";
+        }
     }
 }
 
