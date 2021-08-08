@@ -23,16 +23,7 @@ window.onload = function () {
 function toggleNonRedundant() {
     // there may be a way to write a single function for these for loops
     // and for the loop in toggleRedundant() function
-    var redundantNotPresent = removeRedundantButton.innerHTML.match(/show/gi);
-    if (redundantNotPresent == "Show"){
-        for (let i=0; i < totalNonRedundantElements; i++) {
-            nonRedundantElements[i].style.display = "block";
-        }
-    } else {
-        for (let i=0; i < totalNonRedundantElements; i++) {
-            nonRedundantElements[i].style.display = "none";
-        }
-    }
+    
 }
 
 function toggleRedundant() {
@@ -51,6 +42,17 @@ function toggleRedundant() {
     } else {
         removeRedundantButton.innerHTML = remove;
         blockNone("block");
+    }
+
+    var redundantNotPresent = removeRedundantButton.innerHTML.match(/show/gi);
+    if (redundantNotPresent == "Show"){
+        for (let i=0; i < totalNonRedundantElements; i++) {
+            nonRedundantElements[i].style.display = "block";
+        }
+    } else {
+        for (let i=0; i < totalNonRedundantElements; i++) {
+            nonRedundantElements[i].style.display = "none";
+        }
     }
 }
 
