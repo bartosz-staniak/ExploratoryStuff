@@ -21,9 +21,15 @@ window.onload = function () {
 }
 
 window.onchange = function () {
+    // there may be a way to write a single function for these for loops
+    // and for the loop in toggleRedundant() function
     if (RedundantPresent == removeRedundantButton.innerHTML.match(/show/gi)){
         for (let i=0; i < totalNonRedundantElements; i++) {
             nonRedundantElements[i].style.display = "block";
+        }
+    } else {
+        for (let i=0; i < totalNonRedundantElements; i++) {
+            nonRedundantElements[i].style.display = "none";
         }
     }
 }
