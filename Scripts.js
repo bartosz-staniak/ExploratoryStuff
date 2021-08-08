@@ -20,7 +20,7 @@ window.onload = function () {
     }
 }
 
-document.getElementById("slide.it").onchange = function () {
+document.getElementById("slide_it").onchange = function () {
     // there may be a way to write a single function for these for loops
     // and for the loop in toggleRedundant() function
     var redundantNotPresent = removeRedundantButton.innerHTML.match(/show/gi);
