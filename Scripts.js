@@ -7,6 +7,7 @@ var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
 // -----
 var nonRedundantElements = document.getElementsByClassName("nonRedundant");
+var totalNonRedundantElements = nonRedundantElements.length;
 // -----
 var removeWipButton = document.getElementById("wipElementsToggle");
 var wipElements = document.getElementsByClassName("wip");
