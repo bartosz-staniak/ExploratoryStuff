@@ -19,12 +19,6 @@ window.onload = function () {
         redundantElements[i].style.display = "none";
     }
 }
-// the follwing function is not working
-function toggleNonRedundant() {
-    // there may be a way to write a single function for these for loops
-    // and for the loop in toggleRedundant() function
-    
-}
 
 function toggleRedundant() {
     var show = "Show redundant elements";
