@@ -17,6 +17,12 @@ window.onload = function () {
     }
 }
 
+window.onchange = function () {
+    if (RedundantPresent == removeRedundantButton.innerHTML.match(/rem/gi)){
+        
+    }
+}
+
 function toggleRedundant() {
     var show = "Show redundant elements";
     var remove = "Remove redundant elements";
