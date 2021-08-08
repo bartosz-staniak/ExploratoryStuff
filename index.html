@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body id="slide_it">
-    <h2 id="currentDateTimeRedundant" class="redundant"
+    <h2 id="currentDateTimeRedundant" class="redundant" onchange="toggleNonRedundant()"
         onmouseover="document.getElementById('currentDateTimeRedundant')
         .innerHTML = Date()"
         onmouseleave="document.getElementById('currentDateTimeRedundant')
