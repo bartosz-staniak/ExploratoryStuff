@@ -18,8 +18,8 @@ window.onload = function () {
 }
 
 window.onchange = function () {
-    if (RedundantPresent == removeRedundantButton.innerHTML.match(/rem/gi)){
-        
+    if (RedundantPresent == removeRedundantButton.innerHTML.match(/show/gi)){
+
     }
 }
 
