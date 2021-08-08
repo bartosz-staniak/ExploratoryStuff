@@ -17,6 +17,10 @@ div {
     border: 3px solid gray;
 }
 
+*.nonRedundant {
+    color: black;
+}
+
 .wip {
     border: 15px solid indianred;
 }
