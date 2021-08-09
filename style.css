@@ -23,4 +23,5 @@ div {
 
 .wip {
     border: 15px solid indianred;
+    opacity: 0.6;
 }
