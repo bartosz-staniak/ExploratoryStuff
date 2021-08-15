@@ -359,7 +359,7 @@ function updateRecord() {
         }
     );
 
-    putRequest.open("POST", "https://localhost:44391/api/weatherforecast/");
+    putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/");
     putRequest.setRequestHeader("Content-Type", "application/json");
     putRequest.send(jsonLoad);
 }
