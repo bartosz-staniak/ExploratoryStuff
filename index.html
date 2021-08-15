@@ -180,7 +180,19 @@
     <div class="wip" id="apiPutDiv">
         <h4>API PUT action</h4>
         <div class="wip">
-            
+            <label for="PostDateTime">Include Date and time in the request:</label><br>
+            <input name="PostDateTime" id="PostDateTime"><br>
+            <label for="PostLocation">Include location in the request:</label><br>
+            <input name="PostLocation" id="PostLocation"><br>
+            <label for="PostTemperature">Include temperature in Celsius in the request:</label><br>
+            <input name="PostTemperature" id="PostTemperature"><br>
+            <label for="PostRainChance">Include chance of rain in the request:</label><br>
+            <input name="PostRainChance" id="PostRainChance"><br>
+            <label for="PostSummary">Include summary in the request:</label><br>
+            <input name="PostSummary" id="PostSummary"><br>
+            <label for="PostSubmitter">Include submitter in the request:</label><br>
+            <input name="PostSubmitter" id="PostSubmitter"><br>
+            <button onClick="sendRequest()">Send data</button>
         </div>
     </div>
     <a href="#slide_it">Top of the page</a>
