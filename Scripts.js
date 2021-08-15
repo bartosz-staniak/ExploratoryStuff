@@ -341,11 +341,11 @@ function modifyRecord() {
 function updateRecord() {
     var putRequest = new XMLHttpRequest();
     var putId = document.getElementById("getOneId").value;
-    var putDateTime = document.getElementById("PostDateTime").value;
-    var putLocation = document.getElementById("PostLocation").value;
-    var putTemperature = document.getElementById("PostTemperature").value;
-    var putRainChance = document.getElementById("PostRainChance").value;
-    var putSummary = document.getElementById("PostSummary").value;
+    var putDateTime = document.getElementById("getOneDateAndTime").value;
+    var putLocation = document.getElementById("getOneLocation").value;
+    var putTemperature = document.getElementById("getOneTemperature").value;
+    var putRainChance = document.getElementById("getOneChance").value;
+    var putSummary = document.getElementById("getOneSummary").value;
     var putSubmitter = document.getElementById("PostSubmitter").value;
 
     var jsonUpdateLoad = JSON.stringify(
