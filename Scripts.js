@@ -345,6 +345,12 @@ function updateRecord() {
     var putRainChance = document.getElementById("PostRainChance").value;
     var putSummary = document.getElementById("PostSummary").value;
     var putSubmitter = document.getElementById("PostSubmitter").value;
+
+    var jsonUpdateLoad = JSON.stringify(
+        {
+
+        }
+    )
 }
 
 // --- API PUT function end ---
