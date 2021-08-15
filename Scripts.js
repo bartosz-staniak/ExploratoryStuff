@@ -339,6 +339,7 @@ function modifyRecord() {
 
 function updateRecord() {
     var putRequest = new XMLHttpRequest();
+    var putId = document.getElementById("getOneId").value;
     var putDateTime = document.getElementById("PostDateTime").value;
     var putLocation = document.getElementById("PostLocation").value;
     var putTemperature = document.getElementById("PostTemperature").value;
