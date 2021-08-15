@@ -357,7 +357,7 @@ function updateRecord() {
             summary : "" + putSummary,
             submittedBy : "" + putSubmitter
         }
-    )
+    );
 }
 
 // --- API PUT function end ---
