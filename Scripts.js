@@ -350,7 +350,12 @@ function updateRecord() {
 
     var jsonUpdateLoad = JSON.stringify(
         {
-
+            dateAndTime : postDateTime, // Date issue fixed
+            location : "" + postLocation,
+            temperatureC : "" + postTemperature,
+            rainChance : "" + postRainChance,
+            summary : "" + postSummary,
+            submittedBy : "" + postSubmitter
         }
     )
 }
