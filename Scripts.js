@@ -346,7 +346,7 @@ function updateRecord() {
     var putTemperature = document.getElementById("getOneTemperature").value;
     var putRainChance = document.getElementById("getOneChance").value;
     var putSummary = document.getElementById("getOneSummary").value;
-    var putSubmitter = document.getElementById("PostSubmitter").value;
+    var putSubmitter = document.getElementById("PostOneSubmittedBy").value;
 
     var jsonUpdateLoad = JSON.stringify(
         {
