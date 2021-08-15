@@ -358,6 +358,10 @@ function updateRecord() {
             submittedBy : "" + putSubmitter
         }
     );
+
+    postRequest.open("POST", "https://localhost:44391/api/weatherforecast/");
+    postRequest.setRequestHeader("Content-Type", "application/json");
+    postRequest.send(jsonLoad);
 }
 
 // --- API PUT function end ---
