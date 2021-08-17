@@ -18,12 +18,18 @@ window.onload = function () {
     for (let i = 0; i < totalRedundantElements; i++) {
         redundantElements[i].style.display = "none";
     }
+    
+}
+
+function dateTime () {
     const dateAndTime = new Date();
     var date = dateAndTime.toLocaleDateString();
     var time = dateAndTime.toLocaleTimeString();
     document.getElementById('currentDateTime')
     .innerHTML = "Date: " + date + " Time: " + time;
 }
+
+setInterval(dateTime, 1000);
 
 function toggleRedundant() {
     var show = "Show redundant elements";
