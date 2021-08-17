@@ -18,7 +18,8 @@ window.onload = function () {
     for (let i = 0; i < totalRedundantElements; i++) {
         redundantElements[i].style.display = "none";
     }
-    document.getElementById('currentDateTime').innerHTML = Date();
+    const date = new Date();
+    document.getElementById('currentDateTime').innerHTML = date;
 }
 
 function toggleRedundant() {
