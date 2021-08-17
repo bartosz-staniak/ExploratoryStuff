@@ -19,7 +19,8 @@ window.onload = function () {
         redundantElements[i].style.display = "none";
     }
     const date = new Date();
-    document.getElementById('currentDateTime').innerHTML = date.toLocaleDateString();
+    document.getElementById('currentDateTime')
+    .innerHTML = date.toLocaleDateString();
 }
 
 function toggleRedundant() {
