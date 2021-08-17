@@ -18,9 +18,11 @@ window.onload = function () {
     for (let i = 0; i < totalRedundantElements; i++) {
         redundantElements[i].style.display = "none";
     }
-    const date = new Date();
+    const dateAndTime = new Date();
+    var date = dateAndTime.toLocaleDateString();
+    var time = dateAndTime.toLocaleTimeString();
     document.getElementById('currentDateTime')
-    .innerHTML = date.toLocaleDateString();
+    .innerHTML = "Date: " + date + " Time: " + time;
 }
 
 function toggleRedundant() {
