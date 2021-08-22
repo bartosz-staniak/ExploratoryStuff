@@ -30,6 +30,6 @@ div {
     color: red;
 }
 
-table:not(.body):hover {
+table:hover:not(.body) {
     transform: scaleX(0.5);
 }
