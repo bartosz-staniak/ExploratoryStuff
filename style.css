@@ -25,3 +25,7 @@ div {
     border: 15px solid indianred;
     opacity: 0.9;
 }
+
+* {
+    color: red;
+}
