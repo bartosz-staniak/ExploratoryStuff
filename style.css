@@ -31,5 +31,5 @@ div {
 }
 
 *:hover {
-    transform: scaleX(0,5);
+    transform: scaleX(0.5);
 }
