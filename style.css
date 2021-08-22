@@ -26,6 +26,6 @@ div {
     opacity: 0.9;
 }
 
-* {
+*:active {
     color: red;
 }
