@@ -29,3 +29,7 @@ div {
 *:active {
     color: red;
 }
+
+*:hover {
+    transform: scale(2,2);
+}
