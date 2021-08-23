@@ -31,5 +31,5 @@ div {
 }
 
 *:hover:not(body):not(html):not(div) {
-    transform: scaleX(0.5);
+    transform: scaleX(2);
 }
