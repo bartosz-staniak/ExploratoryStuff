@@ -30,6 +30,6 @@ div {
     color: red;
 }
 
-*:hover:not(.slide_it):not(html):not(div) {
+*:hover:not(body):not(html):not(div) {
     transform: scaleX(0.5);
 }
