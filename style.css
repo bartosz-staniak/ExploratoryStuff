@@ -17,6 +17,10 @@ div {
     background-color: white;
 }
 
+p.link {
+    float:none;
+}
+
 *.redundant {
     color: gray;
     border: 3px solid gray;
