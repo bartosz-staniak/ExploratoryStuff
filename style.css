@@ -12,7 +12,7 @@ div {
     background-color: white;
 }
 
-p.link {
+h.link {
     display: inline;
     border: 5px solid white;
 }
