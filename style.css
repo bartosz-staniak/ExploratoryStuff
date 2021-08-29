@@ -12,9 +12,8 @@ div {
     background-color: white;
 }
 
-h6.link {
+a.link {
     display: inline-block;
-    border: 5px solid white;
 }
 
 *.redundant {
