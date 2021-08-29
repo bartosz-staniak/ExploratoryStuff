@@ -13,7 +13,7 @@ div {
 }
 
 p.link {
-    float:unset;
+    display: inline;
 }
 
 *.redundant {
