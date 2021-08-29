@@ -13,7 +13,7 @@ div {
 }
 
 p.link {
-    float:none;
+    float:unset;
 }
 
 *.redundant {
