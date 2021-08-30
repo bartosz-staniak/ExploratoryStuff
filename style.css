@@ -20,6 +20,10 @@ a.link {
     display: inline-block;
 }
 
+button.link {
+    display: inline-block;
+}
+
 *.redundant {
     color: gray;
     border: 3px solid gray;
