@@ -419,6 +419,6 @@ function showImageDiv() {
 
 setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
 
-function magnifyElement(){
+function demagnifyElements(){
     document.styleSheets[0].deleteRule();
 }
