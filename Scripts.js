@@ -422,7 +422,7 @@ setTimeout(showImageDiv, 5000); // most of the tests failed after this change
 function demagnifyElements(){
     var magnificationState = document
     .getElementById('magnificationButton').innerHTML.match(/enable/gi);
-    if (magnificationState == "enable") {
+    if (magnificationState == "Enable") {
         document.styleSheets[0]
         .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
     } else {
