@@ -427,8 +427,12 @@ function demagnifyElements(){
     if (magnificationState == "Enable") {
         document.styleSheets[0]
         .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
+
+        magnificationButton.innerHTML = 'Disable magnification';
     } else {
         document.styleSheets[0].deleteRule();
+
+        magnificationButton.innerHTML = "Enable magnification";
     }
     
 }
