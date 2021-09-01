@@ -420,6 +420,8 @@ function showImageDiv() {
 setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
 
 function demagnifyElements(){
+    var magnificationButton = document.getElementById('magnificationButton');
+
     var magnificationState = document
     .getElementById('magnificationButton').innerHTML.match(/enable/gi);
     if (magnificationState == "Enable") {
