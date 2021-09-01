@@ -430,7 +430,7 @@ function demagnifyElements(){
 
         magnificationButton.innerHTML = 'Disable magnification';
     } else {
-        document.styleSheets[0].deleteRule();
+        document.styleSheets[0].deleteRule(0);
 
         magnificationButton.innerHTML = "Enable magnification";
     }
