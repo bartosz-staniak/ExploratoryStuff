@@ -420,6 +420,13 @@ function showImageDiv() {
 setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
 
 function demagnifyElements(){
-    document.styleSheets[0]
-    .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
+    var magnificaionState = document
+    .getElementById('magnificationButton').innerHTML.match(/enable/gi);
+    if (magnificationState == "enable") {
+        document.styleSheets[0]
+        .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
+    } else {
+        document.styleSheets[0].deleteRule();
+    }
+    
 }
