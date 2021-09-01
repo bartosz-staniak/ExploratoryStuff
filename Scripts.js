@@ -420,5 +420,6 @@ function showImageDiv() {
 setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
 
 function demagnifyElements(){
-    document.styleSheets[0].insertRule('input { color:red;');
+    document.styleSheets[0]
+    .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
 }
