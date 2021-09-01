@@ -420,5 +420,5 @@ function showImageDiv() {
 setTimeout(showImageDiv, 5000); // most of the tests failed after this change 
 
 function demagnifyElements(){
-    document.styleSheets[0].deleteRule();
+    document.styleSheets[0].insertRule('h2 { color:red;');
 }
