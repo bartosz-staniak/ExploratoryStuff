@@ -426,7 +426,8 @@ function demagnifyElements(){
     .getElementById('magnificationButton').innerHTML.match(/enable/gi);
     if (magnificationState == "Enable") {
         document.styleSheets[0]
-        .insertRule('*:hover:not(body):not(html):not(div) {transform: scale(2,3);}');
+        .insertRule
+        ('*:hover:not(body):not(html):not(div) {transform: scale(2,3); background: white}');
 
         magnificationButton.innerHTML = 'Disable magnification';
     } else {
