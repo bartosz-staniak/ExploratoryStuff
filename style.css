@@ -34,6 +34,6 @@ button.link {
     opacity: 0.9;
 }
 
-*:active {
+*:active:not(body):not(html):not(div) {
     color: red;
 }
