@@ -286,6 +286,10 @@ function getWhatever (method) {
 
         // toggleDisplayGetAll.innerHTML = 
     }
+
+    function getLocations(){
+        
+    }
 }
 
 function toggleResource () {
