@@ -295,7 +295,7 @@ function getWhatever (method) {
 function getLocations(){
     const url = 'https://localhost:44391/api/another';
     fetch (url)
-    .then(resource => resource.json())
+    .then(resource => resource.text())
     .then(resource => {
         locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
     }
