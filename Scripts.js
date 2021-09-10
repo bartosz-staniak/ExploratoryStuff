@@ -298,7 +298,7 @@ function getLocations(){
     .then(resource => resource.formData())
     .then(resource => {
         // locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
-        locationsDisplayParagraph.innerHTML = JSON.stringify(resource.getAll());
+        locationsDisplayParagraph.innerHTML = JSON.stringify(resource.getAll(Location));
     }
         );
 }
