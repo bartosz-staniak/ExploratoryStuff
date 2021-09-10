@@ -297,7 +297,7 @@ function getLocations(){
     fetch (url)
     .then(resource => resource.json())
     .then(resource => {
-        locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
+        // locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
     }
         );
 }
