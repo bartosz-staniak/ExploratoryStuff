@@ -1,4 +1,7 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
+
+var locationsDisplayParagraph = document.getElementById("locationsDisplay");
+
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateRecordInputs = document.getElementById("RecordPUT");
 // -----
