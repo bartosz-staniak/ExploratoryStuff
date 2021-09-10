@@ -297,10 +297,10 @@ function getLocations(){
     fetch (url)
     .then(resource => resource.json())
     .then(resource => {
-        var parsedResource = JSON.parse(resource);
+        /* var parsedResource = JSON.parse(resource);
         for (let i=0; i<parsedResource.length; i++){
             locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
-        }
+        } */
         // locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
     }
         );
