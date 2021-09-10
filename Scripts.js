@@ -290,15 +290,16 @@ function getWhatever (method) {
         // toggleDisplayGetAll.innerHTML = 
     }
 
-    function getLocations(){
-        const url = 'https://localhost:44391/api/another';
-        fetch (url)
-        .then(resource => resource.json())
-        .then(resource => {
-            locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
-        }
-            );
+}
+
+function getLocations(){
+    const url = 'https://localhost:44391/api/another';
+    fetch (url)
+    .then(resource => resource.json())
+    .then(resource => {
+        locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
     }
+        );
 }
 
 function toggleResource () {
