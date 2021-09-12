@@ -299,9 +299,7 @@ function getLocations(){
         if(!resource.ok) {
             locationsDisplayParagraph.innerHTML = "Request failed."
         }
-        else {
-            resource => resource.json();
-        }
+        return resource.json();
     })
     .then(resource => resource.json())
     .then(resource => {
