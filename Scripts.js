@@ -301,7 +301,7 @@ function getLocations(){
         for (let i=0; i<parsedResource.length; i++){
             locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
         } */
-        var strigifiedResource = JSON.stringify(resource);
+        var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
