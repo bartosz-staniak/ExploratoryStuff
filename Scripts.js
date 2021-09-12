@@ -302,8 +302,8 @@ function getLocations(){
             locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
         } */
 
-        // locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
-        locationsDisplayParagraph.innerHTML = resource[0];
+        locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
+        // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
         );
 }
