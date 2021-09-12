@@ -299,6 +299,9 @@ function getLocations(){
         if(!resource.ok) {
             locationsDisplayParagraph = "Request failed."
         }
+        else {
+            resource => resource.json();
+        }
     })
     .then(resource => resource.json())
     .then(resource => {
