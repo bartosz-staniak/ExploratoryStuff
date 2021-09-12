@@ -301,7 +301,9 @@ function getLocations(){
         for (let i=0; i<parsedResource.length; i++){
             locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
         } */
-        locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
+
+        // locationsDisplayParagraph.innerHTML = JSON.stringify(resource);
+        locationsDisplayParagraph.innerHTML = resource[0];
     }
         );
 }
