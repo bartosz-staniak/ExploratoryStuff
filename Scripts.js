@@ -297,7 +297,7 @@ function getLocations(){
     fetch (url)
     .then (resource => {
         if(!resource.ok) {
-            locationsDisplayParagraph = "Request failed."
+            locationsDisplayParagraph.innerHTML = "Request failed."
         }
         else {
             resource => resource.json();
