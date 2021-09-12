@@ -295,6 +295,11 @@ function getWhatever (method) {
 function getLocations(){
     const url = 'https://localhost:44391/api/another';
     fetch (url)
+    .then (resource => {
+        if(!resource.ok) {
+            locationsDisplayParagraph = "Request failed."
+        }
+    })
     .then(resource => resource.json())
     .then(resource => {
         /* var parsedResource = JSON.parse(resource);
