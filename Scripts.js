@@ -301,7 +301,7 @@ function getLocations(){
         }
         return resource.json();
     })
-    .then(resource => resource.json())
+    // .then(resource => resource.json())
     .then(resource => {
         /* var parsedResource = JSON.parse(resource);
         for (let i=0; i<parsedResource.length; i++){
