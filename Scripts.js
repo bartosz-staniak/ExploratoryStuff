@@ -312,7 +312,10 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
-        );
+        )
+    .catch(error => {
+        locationsDisplayParagraph.innerHTML = "Request failed.";
+    });
 }
 
 function toggleResource () {
