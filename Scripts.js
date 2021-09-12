@@ -313,7 +313,7 @@ function getLocations(){
     }
         )
     .catch(error => {
-        locationsDisplayParagraph.innerHTML = "Request failed.";
+        locationsDisplayParagraph.innerHTML = "Request to retrieved data failed.";
     });
 }
 
