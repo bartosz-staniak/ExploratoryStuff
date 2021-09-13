@@ -312,7 +312,7 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
         var ichar = 0;
-        while (stringifiedResource[ichar] != null) {
+        while (stringifiedResource[ichar] != null) { //this is an infinite loop
             if (stringifiedResource[ichar] == "{") {
 
             }
