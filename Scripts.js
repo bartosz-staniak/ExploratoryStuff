@@ -310,6 +310,8 @@ function getLocations(){
         } */
         var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;
+
+        var ichar = 0;
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
         )
