@@ -313,7 +313,7 @@ function getLocations(){
 
         var ichar = 0;
         for (let i = 0; i < stringifiedResource.length; i++) {
-            if (stringifiedResource[ichar] == ":") {
+            if (stringifiedResource[i] == ":") {
                 i++;
                 // when debugging it printed characters yet did not end the loop on the comma
                 while (stringifiedResource[i] != "," || stringifiedResource[i] != null) {
