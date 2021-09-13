@@ -313,7 +313,7 @@ function getLocations(){
 
         var ichar = 0;
         while (stringifiedResource[ichar] != null) {
-            if (stringifiedResource[ichar] == ":") {
+            /*if (stringifiedResource[ichar] == ":") {
                 ichar++;
                 while (stringifiedResource[ichar] != ","
                 || stringifiedResource[ichar] != null) {
@@ -324,7 +324,7 @@ function getLocations(){
             }
             else {
                 // do nothing
-            }
+            }*/
             ichar++;
         }
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
