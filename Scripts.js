@@ -313,11 +313,16 @@ function getLocations(){
 
         var ichar = 0;
         while (stringifiedResource[ichar] != null) {
-            if (stringifiedResource[ichar] == "{") {
-
+            if (stringifiedResource[ichar] == ":") {
+                ichar++;
+                while (stringifiedResource[ichar] != ";") {
+                    locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
+                    ichar++;
+                }
+                locationsDisplayParagraphII.innerHTML += '<br>';
             }
             else {
-                locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
+                // do nothing
             }
             ichar++;
         }
