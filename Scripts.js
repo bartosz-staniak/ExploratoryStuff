@@ -312,20 +312,20 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
         var ichar = 0;
-        while (stringifiedResource[ichar] != null) {
+        for (let i = 0; i < stringifiedResource.length; i++) {
             if (stringifiedResource[ichar] == ":") {
-                ichar++;
+                i++;
                 // when debugging it printed characters yet did not end the loop on the comma
-                while (stringifiedResource[ichar] != "," || stringifiedResource[ichar] != null) {
-                    locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
-                    ichar++;
+                while (stringifiedResource[i] != "," || stringifiedResource[i] != null) {
+                    locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
+                    i++;
                 }
                 locationsDisplayParagraphII.innerHTML += '<br>';
             }
             else {
                 // do nothing
             }
-            ichar++;
+            i++;
         }
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
