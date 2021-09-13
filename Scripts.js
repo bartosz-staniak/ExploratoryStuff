@@ -315,7 +315,8 @@ function getLocations(){
         while (stringifiedResource[ichar] != null) {
             if (stringifiedResource[ichar] == ":") {
                 ichar++;
-                while (stringifiedResource[ichar] != "," || null) {
+                while (stringifiedResource[ichar] != ","
+                || stringifiedResource[ichar] != null) {
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
                     ichar++;
                 }
