@@ -315,7 +315,7 @@ function getLocations(){
         while (stringifiedResource[ichar] != null) {
             if (stringifiedResource[ichar] == ":") {
                 ichar++;
-                // when debugging it printed characters yet did not skip the comma
+                // when debugging it printed characters yet did not end the loop on the comma
                 while (stringifiedResource[ichar] != "," || stringifiedResource[ichar] != null) {
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
                     ichar++;
