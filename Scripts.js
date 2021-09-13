@@ -313,10 +313,10 @@ function getLocations(){
 
         var ichar = 0;
         while (stringifiedResource[ichar] != null) {
-            /*if (stringifiedResource[ichar] == ":") {
+            if (stringifiedResource[ichar] == ":") {
                 ichar++;
-                while (stringifiedResource[ichar] != ","
-                || stringifiedResource[ichar] != null) {
+                // when debugging it printed characters yet did not skip the comma
+                while (stringifiedResource[ichar] != "," || stringifiedResource[ichar] != null) {
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[ichar];
                     ichar++;
                 }
@@ -324,7 +324,7 @@ function getLocations(){
             }
             else {
                 // do nothing
-            }*/
+            }
             ichar++;
         }
         // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
