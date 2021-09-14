@@ -317,7 +317,7 @@ function getLocations(){
                 i++;
                 // when debugging it printed characters yet did not end the loop on the comma
                 while (stringifiedResource[i] != "," || stringifiedResource[i] != undefined) {
-                    if (stringifiedResource === ",") {
+                    if (stringifiedResource[i] === ",") {
                         break;
                     }
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
