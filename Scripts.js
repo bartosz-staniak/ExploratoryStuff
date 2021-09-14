@@ -322,7 +322,9 @@ function getLocations(){
                     } else if (stringifiedResource[i] === '"') {
                         // do nothing
                     }
-                    locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
+                    else {
+                        locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
+                    }
                     i++;
                 }
                 locationsDisplayParagraphII.innerHTML += '<br>';
