@@ -319,6 +319,8 @@ function getLocations(){
                 while (stringifiedResource[i] != "," || stringifiedResource[i] != undefined) {
                     if (stringifiedResource[i] === ",") {
                         break;
+                    } else if (stringifiedResource[i] === '"') {
+
                     }
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
                     i++;
