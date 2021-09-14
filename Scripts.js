@@ -311,6 +311,8 @@ function getLocations(){
         var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
+        locationsDisplayParagraphII.innerHTML = resource;
+
         /*var ichar = 0;
         for (let i = 0; i < stringifiedResource.length; i++) {
             if (stringifiedResource[i] == ":") {
