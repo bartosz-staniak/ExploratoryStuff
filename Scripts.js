@@ -311,6 +311,7 @@ function getLocations(){
         var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
+        const extractedResources = JSON.parse(resource);
         locationsDisplayParagraphII.innerHTML = resource;
 
         /*var ichar = 0;
