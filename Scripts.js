@@ -312,7 +312,7 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
         const extractedResources = JSON.parse(resource);
-        locationsDisplayParagraphII.innerHTML = resource;
+        locationsDisplayParagraphII.innerHTML = extractedResources;
 
         /*var ichar = 0;
         for (let i = 0; i < stringifiedResource.length; i++) {
