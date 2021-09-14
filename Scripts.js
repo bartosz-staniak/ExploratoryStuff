@@ -312,7 +312,7 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;
 
         const extractedResources = JSON.parse(resource);
-        locationsDisplayParagraphII.innerHTML = extractedResources;
+        locationsDisplayParagraphII.innerHTML = extractedResources[0].location;
 
         /*var ichar = 0;
         for (let i = 0; i < stringifiedResource.length; i++) {
@@ -341,7 +341,7 @@ function getLocations(){
     }
         )
     .catch(error => {
-        locationsDisplayParagraph.innerHTML = "Request to retrieved data failed.";
+        locationsDisplayParagraph.innerHTML = "Request to retrieve data failed.";
     });
 }
 
