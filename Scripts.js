@@ -320,7 +320,7 @@ function getLocations(){
                     if (stringifiedResource[i] === ",") {
                         break;
                     } else if (stringifiedResource[i] === '"') {
-
+                        // do nothing
                     }
                     locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
                     i++;
