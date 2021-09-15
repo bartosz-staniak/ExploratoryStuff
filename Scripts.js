@@ -308,11 +308,11 @@ function getLocations(){
         for (let i=0; i<parsedResource.length; i++){
             locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
         } */
-        var stringifiedResource = JSON.stringify(resource);
-        locationsDisplayParagraph.innerHTML = stringifiedResource;
+        /*var stringifiedResource = JSON.stringify(resource);
+        locationsDisplayParagraph.innerHTML = stringifiedResource;*/
 
-        // const extractedResources = JSON.parse(resource);
-        // locationsDisplayParagraphII.innerHTML = extractedResources[0].location;
+        const extractedResources = JSON.parse(resource);
+        locationsDisplayParagraphII.innerHTML = extractedResources[0].location;
 
         /*var ichar = 0;
         for (let i = 0; i < stringifiedResource.length; i++) {
