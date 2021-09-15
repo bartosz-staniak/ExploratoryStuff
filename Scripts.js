@@ -309,6 +309,7 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML = stringifiedResource;*/
 
         locationsDisplayParagraphII.innerHTML = resource[0].location;
+        console.log(Object.keys(resource).length);
     }
         )
     .catch(error => {
