@@ -304,39 +304,11 @@ function getLocations(){
     })
     // .then(resource => resource.json())
     .then(resource => {
-        /* var parsedResource = JSON.parse(resource);
-        for (let i=0; i<parsedResource.length; i++){
-            locationsDisplayParagraph.innerHTML = "" + parsedResource[i].location;
-        } */
+        
         /*var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;*/
 
         locationsDisplayParagraphII.innerHTML = resource[0].location;
-
-        /*var ichar = 0;
-        for (let i = 0; i < stringifiedResource.length; i++) {
-            if (stringifiedResource[i] == ":") {
-                i++;
-                // when debugging it printed characters yet did not end the loop on the comma
-                while (stringifiedResource[i] != "," || stringifiedResource[i] != "undefined") {
-                    if (stringifiedResource[i] === ",") {
-                        break;
-                    } else if (stringifiedResource[i] === '"') {
-                        // do nothing
-                    }
-                    else {
-                        locationsDisplayParagraphII.innerHTML += stringifiedResource[i];
-                    }
-                    i++;
-                }
-                locationsDisplayParagraphII.innerHTML += '<br>';
-            }
-            else {
-                // do nothing
-            }
-            i++;
-        }*/
-        // locationsDisplayParagraph.innerHTML = resource[0]; // it prints [object Object]
     }
         )
     .catch(error => {
