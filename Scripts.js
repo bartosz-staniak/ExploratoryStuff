@@ -308,7 +308,6 @@ function getLocations(){
         /*var stringifiedResource = JSON.stringify(resource);
         locationsDisplayParagraph.innerHTML = stringifiedResource;*/
 
-        locationsDisplayParagraphII.innerHTML = resource[0].location;
         console.log(Object.keys(resource).length);
 
         for (let i=0; i < Object.keys(resource).length; i++) {
