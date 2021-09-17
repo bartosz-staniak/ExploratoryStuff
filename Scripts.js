@@ -314,7 +314,8 @@ function getLocations(){
         for (let i=0; i < Object.keys(resource).length; i++) {
             locationsDisplayParagraphII.innerHTML += "Location: " +
             resource[i].location
-            + " " + "Location size: " + resource[i].location_Size;
+            + " " + "Location size: " + resource[i].location_Size
+            + "<br>";
         }
     }
         )
