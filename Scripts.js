@@ -367,7 +367,7 @@ function getOneRecord() {
     }).fail(function(response) {
         document.getElementById("readRecord").innerHTML = "Request failed." + response
     });
-    if (document.getElementById("readRecord").innerHTML.value == initialParagraphValue) {
+    if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
         modifyRecordBtn.style.display = "none";
         updateRecordInputs.style.display = "none";
