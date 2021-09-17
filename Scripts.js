@@ -314,7 +314,7 @@ function getLocations(){
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
             resource[i].location
             + ", " + "Location size: " + resource[i].location_Size
-            + ", " + "Population: " 
+            + ", " + "Population: " + resource[i].Population
             + "<br>";
         }
     }
