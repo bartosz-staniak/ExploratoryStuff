@@ -311,7 +311,7 @@ function getLocations(){
         console.log(Object.keys(resource).length);
 
         for (let i=0; i < Object.keys(resource).length; i++) {
-            locationsDisplayParagraphII.innerHTML += [i] + ". Location: " +
+            locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
             resource[i].location
             + ", " + "Location size: " + resource[i].location_Size
             + "<br>";
