@@ -316,7 +316,16 @@ function getLocations(){
             + ", " + "Location size: " + resource[i].location_Size
             + ", " + "Population: " + resource[i].population
             + "<br>";
+
+            locationsDisplayParagraph.innerHTML
+                +=  "<table>"
+                    + "<tr>"
+                        + "<td> Location </td>"
+                        + "<td> Location size </td>"
+                        + "<td> Population </td>"
+                    + "</tr>"
         }
+        locationsDisplayParagraph.innerHTML += "</table>"
     }
         )
     .catch(error => {
