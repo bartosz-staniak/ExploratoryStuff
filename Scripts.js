@@ -310,20 +310,20 @@ function getLocations(){
 
         console.log(Object.keys(resource).length);
 
-        for (let i=0; i < Object.keys(resource).length; i++) {
-            locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
-            resource[i].location
-            + ", " + "Location size: " + resource[i].location_Size
-            + ", " + "Population: " + resource[i].population
-            + "<br>";
-
-            locationsDisplayParagraph.innerHTML
+        locationsDisplayParagraph.innerHTML
                 +=  "<table>"
                     + "<tr>"
                         + "<td> Location </td>"
                         + "<td> Location size </td>"
                         + "<td> Population </td>"
                     + "</tr>"
+
+        for (let i=0; i < Object.keys(resource).length; i++) {
+            locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
+            resource[i].location
+            + ", " + "Location size: " + resource[i].location_Size
+            + ", " + "Population: " + resource[i].population
+            + "<br>";
         }
         locationsDisplayParagraph.innerHTML += "</table>"
     }
