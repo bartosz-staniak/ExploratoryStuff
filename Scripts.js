@@ -324,6 +324,13 @@ function getLocations(){
             + ", " + "Location size: " + resource[i].location_Size
             + ", " + "Population: " + resource[i].population
             + "<br>";
+
+            locationsDisplayParagraph.innerHTML
+                += "<tr>"
+                + "<td>" + resource[i].location + "</td>"
+                + "<td>" + resource[i].location_Size + "</td>"
+                + "<td>" + resource[i].population + "</td>"
+                + "</tr>"
         }
         locationsDisplayParagraph.innerHTML += "</table>"
     }
