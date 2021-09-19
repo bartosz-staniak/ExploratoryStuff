@@ -1,7 +1,7 @@
 var toggleDisplayGetAll = document.getElementById("DisplayGetAll");
 
 var locationsDisplayParagraph = document.getElementById("locationsDisplay");
-var locationsData = document.getElementsByName("locationsData");
+var locationsData = document.getElementsId("locationsData");
 var locationsDisplayParagraphII = document.getElementById("locationsDisplayII");
 
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
