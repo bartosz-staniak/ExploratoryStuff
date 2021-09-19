@@ -313,9 +313,9 @@ function getLocations(){
         locationsDisplayParagraph.innerHTML
                 +=  "<table>"
                     + "<tr>"
-                        + "<td> Location </td>"
-                        + "<td> Location size </td>"
-                        + "<td> Population </td>"
+                        + "<th> Location </th>"
+                        + "<th> Location size </th>"
+                        + "<th> Population </th>"
                     + "</tr>"
 
         for (let i=0; i < Object.keys(resource).length; i++) {
