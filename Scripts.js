@@ -318,7 +318,7 @@ function getLocations(){
             + ", " + "Population: " + resource[i].population
             + "<br>";
 
-            getElementById('locationsData').innerHTML
+            locationsData.innerHTML
                 += "<tr>"
                 + "<td>" + resource[i].location + "</td>"
                 + "<td>" + resource[i].location_Size + "</td>"
