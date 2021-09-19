@@ -332,6 +332,10 @@ function getLocations(){
     });
 }
 
+function sortTable() {
+    
+}
+
 function toggleResource () {
     var toggleButtonName = document.getElementById("toggleResourceBtn");
     if (toggleDisplayGetAll.style.display === "none"){
