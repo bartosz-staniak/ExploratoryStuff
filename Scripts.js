@@ -335,7 +335,7 @@ function getLocations(){
                 + "<td>" + resource[i].population + "</td>"
                 + "</tr>"
         }
-        // locationsDisplayParagraph.innerHTML += "</table>"
+        locationsDisplayParagraph.innerHTML += "</table>"
     }
         )
     .catch(error => {
