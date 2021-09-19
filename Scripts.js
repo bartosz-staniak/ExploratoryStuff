@@ -335,7 +335,8 @@ function getLocations(){
 function sortTable() {
     let row, tableBody;
     tableBody = getElementById("locationsData");
-}
+    row = document.getElementsByTagName("tr")[0];
+    console.log(row);
 
 function toggleResource () {
     var toggleButtonName = document.getElementById("toggleResourceBtn");
