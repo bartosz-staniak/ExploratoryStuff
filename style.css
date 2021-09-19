@@ -24,6 +24,10 @@ label {
     display: inline-block;
 }
 
+tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
 *.redundant {
     color: gray;
     border: 3px solid gray;
