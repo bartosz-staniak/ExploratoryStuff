@@ -335,7 +335,7 @@ function getLocations(){
 function sortTable() {
     let row, tableBody;
     tableBody = document.getElementById("locationsData");
-    row = document.getElementsByTagName("tr")[0];
+    row = document.getElementsByTagName("tr")[1];
     console.log(row);
 }
 
