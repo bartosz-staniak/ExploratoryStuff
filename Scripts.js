@@ -333,7 +333,8 @@ function getLocations(){
 }
 
 function sortTable() {
-    
+    let row, tableBody;
+    tableBody = getElementById("locationsData");
 }
 
 function toggleResource () {
