@@ -333,9 +333,9 @@ function getLocations(){
                 + "<td>" + resource[i].location + "</td>"
                 + "<td>" + resource[i].location_Size + "</td>"
                 + "<td>" + resource[i].population + "</td>"
-                + "</tr>"
+                + "</tr>";
         }
-        locationsDisplayParagraph.innerHTML += "</table>"
+        locationsDisplayParagraph.innerHTML += "</table>";
     }
         )
     .catch(error => {
