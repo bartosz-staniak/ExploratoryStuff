@@ -310,17 +310,6 @@ function getLocations(){
 
         console.log(Object.keys(resource).length);
 
-        locationsDisplayParagraph.innerHTML
-                +=  "<table>"
-                    + "<thead>"
-                        + "<tr>"
-                            + "<th> Location </th>"
-                            + "<th> Location size </th>"
-                            + "<th> Population </th>"
-                        + "</tr>"
-                    + "</thead>"
-                    + "<tbody id='locationsData'></tbody>";
-
         for (let i=0; i < Object.keys(resource).length; i++) {
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
             resource[i].location
@@ -335,7 +324,6 @@ function getLocations(){
                 + "<td>" + resource[i].population + "</td>"
                 + "</tr>";
         }
-        locationsDisplayParagraph.innerHTML += "</table>";
     }
         )
     .catch(error => {
