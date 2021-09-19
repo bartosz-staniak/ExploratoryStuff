@@ -319,7 +319,7 @@ function getLocations(){
                             + "<th> Population </th>"
                         + "</tr>"
                     + "</thead>"
-                    + "<tbody id='locationsData'></tbody>"
+                    + "<tbody id='locationsData'></tbody>";
 
         for (let i=0; i < Object.keys(resource).length; i++) {
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
