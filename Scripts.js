@@ -312,7 +312,7 @@ function getLocations(){
         console.log(Object.keys(resource).length);
 
         if (Object.keys(resource).length>0){
-            locationsDisplayParagraphII.innerHTML = "";
+            locationsData.innerHTML = "";
         }
         for (let i=0; i < Object.keys(resource).length; i++) {
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
