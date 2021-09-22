@@ -28,6 +28,10 @@ table {
     border: 1px solid lightgrey;
 }
 
+th {
+    border: 1px solid lightgray;
+}
+
 tr:nth-child(even) {
     background-color: lightgreen;
 }
