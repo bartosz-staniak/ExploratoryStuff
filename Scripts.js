@@ -18,6 +18,10 @@ var removeWipButton = document.getElementById("wipElementsToggle");
 var wipElements = document.getElementsByClassName("wip");
 var totalWipElements = wipElements.length;
 
+//--- test
+
+var threeDigits = document.getElementById("threeDigits");
+
 window.onload = function () {
     // anonymous function
     for (let i = 0; i < totalRedundantElements; i++) {
@@ -326,14 +330,33 @@ function getLocations(){
                 += "<tr>"
                 + "<td>" + resource[i].location + "</td>"
                 + "<td>" + resource[i].location_Size + "</td>"
-                + "<td>" + resource[i].population + "</td>"
+                + "<td>" + Number(resource[i].population).toLocaleString() + "</td>"
                 + "</tr>";
         }
+        var threeD = Number(resource[0].population).toLocaleString();
+        threeDigits.value = threeD;
     }
         )
     .catch(error => {
         locationsDisplayParagraph.innerHTML = "Request to retrieve data failed.";
     });
+}
+
+function threeDigitsFun() {
+    var inter = threeDigits.value;
+    // var loopInter = "";
+
+    /*for( i=0; i < inter.length; i++) {
+        if (inter[i] == '" "') {
+
+        } else {
+            loopInter += inter[i];
+        }
+    }*/
+
+    inter = inter.replace(/\s/g, '');
+    var threeThree = Number(inter);
+    threeDigits.value = Number(threeThree).toLocaleString();
 }
 
 function sortTable() {
