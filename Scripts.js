@@ -354,9 +354,10 @@ function threeDigitsFun() {
         }
     }*/
 
-    inter = inter.replace(/\s/g, '');
-    var threeThree = Number(inter);
-    threeDigits.value = Number(threeThree).toLocaleString();
+    //inter = inter.replace(/\s/g, ''); 
+    inter = inter.replace(/[,\s]+|[,\s]+/g, '');
+    var preThreeDigits = Number(inter);
+    threeDigits.value = Number(preThreeDigits).toLocaleString();
 }
 
 function sortTable() {
