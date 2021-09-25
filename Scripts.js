@@ -323,7 +323,7 @@ function getLocations(){
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
             resource[i].location
             + ", " + "Location size: " + resource[i].location_Size
-            + ", " + "Population: " + resource[i].population
+            + ", " + "Population: " + Number(resource[i].population).toLocaleString()
             + "<br>";
 
             locationsData.innerHTML
