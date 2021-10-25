@@ -450,7 +450,7 @@ function updateRecord() {
         return;
     }
     
-    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.\s+./g)){
+    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s]+./g)){
         return;
     }
     else if (document.getElementById("PostOneSubmittedBy").value == "") {
