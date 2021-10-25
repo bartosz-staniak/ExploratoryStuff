@@ -91,122 +91,121 @@
 <button id="display_results_btn" style="display: none" onclick="add_HTML_elements()">Show it!</button>
 <p id="editor_output" style="display: none"></p>
 
-<div class="container">
-    <div id="apiDiv" style="display:block">
-        <h3>API Communication <a href="#slide_it">Back to the top</a></h3>
 
-        <div>
-                <h4>API GET actions</h4>
-            <!-- Get one record start -->
+<div id="apiDiv" style="display:block">
+    <h3>API Communication <a href="#slide_it">Back to the top</a></h3>
 
-            <div id="getWeatherDiv">
-                <div>
-                    Insert an id number of a weather record:
-                    <br>
-                    <input id="recordId"></input>
-                    <button id="getRecordById" onclick="getOneRecord()">Show one record</button>
-                    <p id="readRecord"></p>
-                    <button id="ModifyRecordBtn"
-                    style="display:none"
-                    onclick="modifyRecord()">Modify record</button>
-                    <div id="RecordPUT" style="display: none">
-                        <!-- wip class removed because of PUT CORS issue solved-->
-                        Id
-                        <input id="getOneId"><br>
-                        Date and time
-                        <input id="getOneDateAndTime" type="datetime-local">
-                        Location
-                        <input id="getOneLocation"><br>
-                        Temperature
-                        <input id = "getOneTemperature"><br>
-                        Chance of rain
-                        <input id = "getOneChance"><br>
-                        Summary
-                        <input id = "getOneSummary"><br>
-                        Submitted by
-                        <input id = "PostOneSubmittedBy"><br>
-                        <button onclick="updateRecord()">Update record</button>
-                    </div>
-                </div>
+    <div>
+            <h4>API GET actions</h4>
+        <!-- Get one record start -->
 
-                <!-- Get one record end -->
-
-                <!-- GetAllResource start -->
-
-                <div>
-                    Get all weather records
-                    <br>
-                    <button id="GetWhatever" onclick="getWhatever('jQuery')">
-                        Get data from API using jQuery</button>
-                    <button id="GetWhateverJScustomBtn" onclick="getWhatever('JScustomPrint')">
-                        Get data from API using custom JS</button>
-                    <Button onclick="getWhatever('fetch')">Fetch data from API</Button>
-                    <button id="toggleResourceBtn2" onclick="secondToggleResource()">Toggle data</button>
-                    <p id="DisplayGetAll" style="display: none"></p>
-                    <button id="toggleResourceBtn" onclick="toggleResource()">Show data</button>
-                </div>
-            </div>
+        <div id="getWeatherDiv">
             <div>
-                Get location records
+                Insert an id number of a weather record:
                 <br>
-                <button onclick="getLocations()">Get location data from API</button>
-                <p id="locationsDisplay">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th id="sortByLocation">Location</th>
-                                <th id="sortBySize" onclick="sortTable()">Location size</th>
-                                <th id="sortByPopulation">Population</th>
-                            </tr>
-                        </thead>
-                        <tbody id="locationsData"></tbody>
-                    </table>
-                </p>
-                <p id="locationsDisplayII"></p>
-                <input id="threeDigits" onkeyup="threeDigitsFun()"></input>
+                <input id="recordId"></input>
+                <button id="getRecordById" onclick="getOneRecord()">Show one record</button>
+                <p id="readRecord"></p>
+                <button id="ModifyRecordBtn"
+                style="display:none"
+                onclick="modifyRecord()">Modify record</button>
+                <div id="RecordPUT" style="display: none">
+                    <!-- wip class removed because of PUT CORS issue solved-->
+                    Id
+                    <input id="getOneId"><br>
+                    Date and time
+                    <input id="getOneDateAndTime" type="datetime-local">
+                    Location
+                    <input id="getOneLocation"><br>
+                    Temperature
+                    <input id = "getOneTemperature"><br>
+                    Chance of rain
+                    <input id = "getOneChance"><br>
+                    Summary
+                    <input id = "getOneSummary"><br>
+                    Submitted by
+                    <input id = "PostOneSubmittedBy"><br>
+                    <button onclick="updateRecord()">Update record</button>
+                </div>
             </div>
 
-            <!-- GetAllResource end -->
+            <!-- Get one record end -->
+
+            <!-- GetAllResource start -->
+
+            <div>
+                Get all weather records
+                <br>
+                <button id="GetWhatever" onclick="getWhatever('jQuery')">
+                    Get data from API using jQuery</button>
+                <button id="GetWhateverJScustomBtn" onclick="getWhatever('JScustomPrint')">
+                    Get data from API using custom JS</button>
+                <Button onclick="getWhatever('fetch')">Fetch data from API</Button>
+                <button id="toggleResourceBtn2" onclick="secondToggleResource()">Toggle data</button>
+                <p id="DisplayGetAll" style="display: none"></p>
+                <button id="toggleResourceBtn" onclick="toggleResource()">Show data</button>
+            </div>
         </div>
         <div>
-            <h4>API POST actions</h4>
-            <div class="wip">
-                <p><b>HTML form</b></p>
-                <form action="https://localhost:44391/api/weatherforecast/"
-                    method="POST" id="htmlForm">
-                    <label for="dateTime">Date and time</label><br>
-                    <input id="dateTimeInput" name="dateTime" type="datetime-local"/>
-                    <!-- <input id="dateTimeInput" name="dateTime" type="datetime"> --><br>
-                    <label for="location">Location</label><br>
-                    <input name="location"><br>
-                    <label for="temperature">Temperature in Celsius</label><br>
-                    <input name="temperature"><br>
-                    <label for="rainChance">Chance of rain</label><br>
-                    <input name="rainChance"><br>
-                    <label for="summary">Summary</label><br>
-                    <input name="summary"><br>
-                    <label for="submittedBy">Submitted by</label><br>
-                    <input name="submittedBy"><br>
-                    <input type="submit">
-                </form>
-            </div>
-            <div>
-                <p id="XHR"><b>XHR</b><a href="#slide_it"> Back to the top</a></p>
-                <label for="PostDateTime">Include Date and time in the request:</label><br>
-                <input id="PostDateTime" type="datetime-local"/>
-                <!-- <input name="PostDateTime" id="PostDateTime" required="required"> --><br>
-                <label for="PostLocation">Include location in the request:</label><br>
-                <input name="PostLocation" id="PostLocation" required="required"><br>
-                <label for="PostTemperature">Include temperature in Celsius in the request:</label><br>
-                <input name="PostTemperature" id="PostTemperature" required="required"><br>
-                <label for="PostRainChance">Include chance of rain in the request:</label><br>
-                <input name="PostRainChance" id="PostRainChance" required="required"><br>
-                <label for="PostSummary">Include summary in the request:</label><br>
-                <input name="PostSummary" id="PostSummary" required="required"><br>
-                <label for="PostSubmitter">Include submitter in the request:</label><br>
-                <input name="PostSubmitter" id="PostSubmitter" required="required"><br>
-                <button onClick="sendRequest()">Send data</button>
-            </div>
+            Get location records
+            <br>
+            <button onclick="getLocations()">Get location data from API</button>
+            <p id="locationsDisplay">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="sortByLocation">Location</th>
+                            <th id="sortBySize" onclick="sortTable()">Location size</th>
+                            <th id="sortByPopulation">Population</th>
+                        </tr>
+                    </thead>
+                    <tbody id="locationsData"></tbody>
+                </table>
+            </p>
+            <p id="locationsDisplayII"></p>
+            <input id="threeDigits" onkeyup="threeDigitsFun()"></input>
+        </div>
+
+        <!-- GetAllResource end -->
+    </div>
+    <div>
+        <h4>API POST actions</h4>
+        <div class="wip">
+            <p><b>HTML form</b></p>
+            <form action="https://localhost:44391/api/weatherforecast/"
+                method="POST" id="htmlForm">
+                <label for="dateTime">Date and time</label><br>
+                <input id="dateTimeInput" name="dateTime" type="datetime-local"/>
+                <!-- <input id="dateTimeInput" name="dateTime" type="datetime"> --><br>
+                <label for="location">Location</label><br>
+                <input name="location"><br>
+                <label for="temperature">Temperature in Celsius</label><br>
+                <input name="temperature"><br>
+                <label for="rainChance">Chance of rain</label><br>
+                <input name="rainChance"><br>
+                <label for="summary">Summary</label><br>
+                <input name="summary"><br>
+                <label for="submittedBy">Submitted by</label><br>
+                <input name="submittedBy"><br>
+                <input type="submit">
+            </form>
+        </div>
+        <div>
+            <p id="XHR"><b>XHR</b><a href="#slide_it"> Back to the top</a></p>
+            <label for="PostDateTime">Include Date and time in the request:</label><br>
+            <input id="PostDateTime" type="datetime-local"/>
+            <!-- <input name="PostDateTime" id="PostDateTime" required="required"> --><br>
+            <label for="PostLocation">Include location in the request:</label><br>
+            <input name="PostLocation" id="PostLocation" required="required"><br>
+            <label for="PostTemperature">Include temperature in Celsius in the request:</label><br>
+            <input name="PostTemperature" id="PostTemperature" required="required"><br>
+            <label for="PostRainChance">Include chance of rain in the request:</label><br>
+            <input name="PostRainChance" id="PostRainChance" required="required"><br>
+            <label for="PostSummary">Include summary in the request:</label><br>
+            <input name="PostSummary" id="PostSummary" required="required"><br>
+            <label for="PostSubmitter">Include submitter in the request:</label><br>
+            <input name="PostSubmitter" id="PostSubmitter" required="required"><br>
+            <button onClick="sendRequest()">Send data</button>
         </div>
     </div>
 </div>
