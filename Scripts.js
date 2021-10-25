@@ -213,7 +213,11 @@ function add_HTML_elements () {
     });
 });*/
 
-
+$(document).ready(function(){
+    $("div.container").click(function(){
+        $("div.container > div").slideDown(2000);
+    });
+});
 
 $(document).ready(function(){
     $(".container").mouseup(function(){
