@@ -205,13 +205,16 @@ function add_HTML_elements () {
             .innerHTML = document.getElementById("text_editor_txtarea").value;
 }
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $("#slide_it_button" ).click(function(){
         $("#slide_it_too").slideUp(2000);
         
         // $("#slide_it").slideUp(2200);
     });
-});
+});*/
+
+
+
 $(document).ready(function(){
     $(".container").mouseup(function(){
         // $("#slide_it").slideDown(2000); // bug on sliding down
