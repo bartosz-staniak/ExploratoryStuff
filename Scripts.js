@@ -208,11 +208,12 @@ function add_HTML_elements () {
 $(document).ready(function(){
     $("#slide_it_button" ).click(function(){
         $("#slide_it_too").slideUp(2000);
+        
         // $("#slide_it").slideUp(2200);
     });
 });
 $(document).ready(function(){
-    $("#initialDiv").mouseup(function(){
+    $(".container").mouseup(function(){
         // $("#slide_it").slideDown(2000); // bug on sliding down
         $("#slide_it_too").slideDown(2000);
     });
