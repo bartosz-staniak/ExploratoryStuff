@@ -449,9 +449,14 @@ function updateRecord() {
     if (document.getElementById("getOneSummary").value == ""){
         return;
     }
+    
     if (document.getElementById("PostOneSubmittedBy").value.match(/\s/g)){
         return;
     }
+    else if (document.getElementById("PostOneSubmittedBy").value = "") {
+        return;
+    }
+
     var putId = document.getElementById("getOneId").value;
     var putDateTime = document.getElementById("getOneDateAndTime").value;
     var putLocation = document.getElementById("getOneLocation").value;
