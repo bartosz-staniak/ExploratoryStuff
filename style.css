@@ -32,6 +32,10 @@ label {
     display: inline-block;
 }
 
+span {
+    color: red;
+}
+
 table {
     border: 1px solid lightgrey;
 }
