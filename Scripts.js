@@ -212,7 +212,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $("html").mouseup(function(){
+    $("initialDiv").mouseup(function(){
         // $("#slide_it").slideDown(2000); // bug on sliding down
         $("#slide_it_too").slideDown(2000);
     });
