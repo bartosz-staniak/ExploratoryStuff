@@ -12,6 +12,14 @@ div {
     background-color: white;
 }
 
+div.container {
+    width: 300px;
+    border: 15px solid green;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
 a.link {
     display: inline-block;
 }
