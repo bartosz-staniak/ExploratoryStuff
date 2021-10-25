@@ -215,7 +215,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".container").mouseup(function(){
         // $("#slide_it").slideDown(2000); // bug on sliding down
-        $("#slide_it_too").slideDown(2000);
+        $("div.container + div").slideDown(2000);
     });
 });
 
