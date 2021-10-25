@@ -215,7 +215,9 @@ function add_HTML_elements () {
 
 $(document).ready(function(){
     $("div.container").click(function(){
-        $("div.container > div").slideUp(2000);
+        if (e.shiftClick) {
+            $("div.container > div").slideUp(2000);
+        }
     });
 });
 
