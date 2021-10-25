@@ -449,7 +449,7 @@ function updateRecord() {
     if (document.getElementById("getOneSummary").value == ""){
         return;
     }
-    if (document.getElementById("getOneSubmittedBy").value == ""){
+    if (document.getElementById("PostOneSubmittedBy").value == ""){
         return;
     }
     var putId = document.getElementById("getOneId").value;
