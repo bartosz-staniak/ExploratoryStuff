@@ -19,73 +19,75 @@
         Put the cursor here to display current date and time.
     </h2>
     <h2 id="currentDateTime" class="nonRedundant"></h2>
-<div  id="slide_it_too">
-    <button class="redundant" id="enable_editor_btn" onclick="enableEditor()">Show the editor</button>
-    <div id="space_for_editor">
-        <button id="redundantElementsToggle" 
-        onclick="toggleRedundant()">Show redundant elements</button>
-        <button id="wipElementsToggle" style="background-color:palevioletred;"
-        onclick="toggleWip()">Remove not functioning elements</button>
-        <div id="remove_it">
-            <h2 class="redundant">My first html page in a very long time. Or is it?</h2>
-            <h3 class="redundant">Added yet another heading. A bit smaller this time.</h3>
-                <p class="redundant">This is my first paragraph!
-                    <br>
-                    It's got some text in it.
-                    <div id="imageDiv" style="display:none">
-                    <img id="image" src="image.jpg">
-                    <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
-                    </div>
-                </p>
-                <p class="redundant">
-                    Let's twist things a bit more.
-                </p>
-                <p class="redundant">So I figured I would add another paragraph, to see what the text's XPath looks like when there are no "br" tags.
-                    <br>OK, added a "br" tag here, but I learned how a simple change in the HTML structure can affect the XPath...
-                </p>
-                <p class="redundant">
-                    Would it mean that unique Id attributes of elements would make automation scripts more reliable?
-                    <br>Uniqe and unchanging for each element...
-                </p>
-                <hr>
-                <p title="For some reason I really like it.">
-                    This paragraph contains a toolip when you put the mouse cursor over it!
-                </p>
-                <p>
-                    Choose the right answer:<br>
-                    This page is 
-                    <!-- 
-                    The onmousover caused many tests to fail    
-                    <input list="opinions" id="dataList" onchange="getOpinion()"
-                    onmouseover="this.value=''"> -->
-                    <input list="opinions" id="dataList" onchange="getOpinion()">
-                    <datalist id="opinions">
-                        <option value="nice!">nice!</option>
-                        <option value="not nice.">
-                        <option value="okay.">
-                        <option value="... it's okay. You'll get there someday.">
-                        <option value="I've seen better.">
-                        <option value="Mhm.">
-                        <option value="no, please...">
-                        <option value="erase it!">
-                        <option value="this is awful">
-                        <option value=", Really?">
-                        <option value="... why?">
-                        <option value="awful.">
-                        <option value="horrible.">
-                    </datalist>
-                </p>
+<div>
+    <div  id="slide_it_too">
+        <button class="redundant" id="enable_editor_btn" onclick="enableEditor()">Show the editor</button>
+        <div id="space_for_editor">
+            <button id="redundantElementsToggle" 
+            onclick="toggleRedundant()">Show redundant elements</button>
+            <button id="wipElementsToggle" style="background-color:palevioletred;"
+            onclick="toggleWip()">Remove not functioning elements</button>
+            <div id="remove_it">
+                <h2 class="redundant">My first html page in a very long time. Or is it?</h2>
+                <h3 class="redundant">Added yet another heading. A bit smaller this time.</h3>
+                    <p class="redundant">This is my first paragraph!
+                        <br>
+                        It's got some text in it.
+                        <div id="imageDiv" style="display:none">
+                        <img id="image" src="image.jpg">
+                        <button id="buttonImage" onclick="hideShowImg()">Hide this image</button>
+                        </div>
+                    </p>
+                    <p class="redundant">
+                        Let's twist things a bit more.
+                    </p>
+                    <p class="redundant">So I figured I would add another paragraph, to see what the text's XPath looks like when there are no "br" tags.
+                        <br>OK, added a "br" tag here, but I learned how a simple change in the HTML structure can affect the XPath...
+                    </p>
+                    <p class="redundant">
+                        Would it mean that unique Id attributes of elements would make automation scripts more reliable?
+                        <br>Uniqe and unchanging for each element...
+                    </p>
+                    <hr>
+                    <p title="For some reason I really like it.">
+                        This paragraph contains a toolip when you put the mouse cursor over it!
+                    </p>
+                    <p>
+                        Choose the right answer:<br>
+                        This page is 
+                        <!-- 
+                        The onmousover caused many tests to fail    
+                        <input list="opinions" id="dataList" onchange="getOpinion()"
+                        onmouseover="this.value=''"> -->
+                        <input list="opinions" id="dataList" onchange="getOpinion()">
+                        <datalist id="opinions">
+                            <option value="nice!">nice!</option>
+                            <option value="not nice.">
+                            <option value="okay.">
+                            <option value="... it's okay. You'll get there someday.">
+                            <option value="I've seen better.">
+                            <option value="Mhm.">
+                            <option value="no, please...">
+                            <option value="erase it!">
+                            <option value="this is awful">
+                            <option value=", Really?">
+                            <option value="... why?">
+                            <option value="awful.">
+                            <option value="horrible.">
+                        </datalist>
+                    </p>
+            </div>
+            <button id="hideous_btn" onclick="hideShow()">This page is hideous!</button>
+            <hr>
+            <textarea id="reportHere"></textarea>
+            <br>
+            <button id="submitReport" onclick="storeReport()">Send report</button>
+            <p id="readReport"></p>
+            <button id="clrReportHistory" onclick="deleteReport()">Clear report history</button>
+            <button id="slide_it_button">Slide it up!</button>
         </div>
-        <button id="hideous_btn" onclick="hideShow()">This page is hideous!</button>
-        <hr>
-        <textarea id="reportHere"></textarea>
-        <br>
-        <button id="submitReport" onclick="storeReport()">Send report</button>
-        <p id="readReport"></p>
-        <button id="clrReportHistory" onclick="deleteReport()">Clear report history</button>
-        <button id="slide_it_button">Slide it up!</button>
-    </div>
 
+    </div>
 </div>
 <textarea id="text_editor_txtarea" style="display: none"></textarea>
 <button id="display_results_btn" style="display: none" onclick="add_HTML_elements()">Show it!</button>
