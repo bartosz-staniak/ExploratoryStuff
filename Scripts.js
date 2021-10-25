@@ -440,7 +440,7 @@ function updateRecord() {
     if (document.getElementById("getOneLocation").value == ""){
         return;
     }
-    if (document.getElementById("getOneTemparature").value == ""){
+    if (document.getElementById("getOneTemperature").value == ""){
         return;
     }
     if (document.getElementById("getOneChance").value == ""){
