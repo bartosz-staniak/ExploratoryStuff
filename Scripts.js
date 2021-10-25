@@ -215,7 +215,7 @@ function add_HTML_elements () {
 
 $(document).ready(function(){
     $("div.container").click(function(){
-        if (e.shiftClick) {
+        if (e.shiftKey) {
             $("div.container > div").slideUp(2000);
         }
     });
