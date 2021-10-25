@@ -213,10 +213,10 @@ function add_HTML_elements () {
     });
 });*/
 
-$(document).ready(function(e){
-    if (e.shiftKey) {
-            $("div.container > div").slideUp(2000);
-        }
+$(document).ready(function(){
+    $("div.container").click(function(){
+        $("div.container > div").slideUp(2000);
+    });
 });
 
 $(document).ready(function(){
