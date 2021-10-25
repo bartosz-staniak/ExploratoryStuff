@@ -216,7 +216,7 @@ function add_HTML_elements () {
 $(document).ready(function(){
     $("div.container").click(function(e){
         if (e.shiftKey) {
-            $("this.div.container > div").slideUp(2000);
+            $("div.container > div").slideUp(2000);
         }
     });
 });
