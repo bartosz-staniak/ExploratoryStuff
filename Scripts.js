@@ -431,6 +431,27 @@ function modifyRecord() {
 
 function updateRecord() {
     var putRequest = new XMLHttpRequest();
+    if (document.getElementById("getOneId").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneDateAndTime").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneLocation").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneTemparature").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneChance").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneSummary").value == ""){
+        return;
+    }
+    if (document.getElementById("getOneSubmittedBy").value == ""){
+        return;
+    }
     var putId = document.getElementById("getOneId").value;
     var putDateTime = document.getElementById("getOneDateAndTime").value;
     var putLocation = document.getElementById("getOneLocation").value;
