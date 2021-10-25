@@ -215,7 +215,7 @@ function add_HTML_elements () {
 
 $(document).ready(function(){
     $("div.container").click(function(){
-        $("div.container > div").slideDown(2000);
+        $("div.container > div").slideUp(2000);
     });
 });
 
