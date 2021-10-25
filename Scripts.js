@@ -453,7 +453,7 @@ function updateRecord() {
     if (document.getElementById("PostOneSubmittedBy").value.match(/\s/g)){
         return;
     }
-    else if (document.getElementById("PostOneSubmittedBy").value = "") {
+    else if (document.getElementById("PostOneSubmittedBy").value == "") {
         return;
     }
 
