@@ -232,7 +232,7 @@ function getWhatever (method) {
                 
             if (resource != null) {
                 toggleDisplayGetAll.innerHTML = "";
-                for (i=0; i<100; i++) {
+                for (i=0; i<resource.length; i++) {
                     if (resource[i] != null) { // this was used to fix an error
                         toggleDisplayGetAll.innerHTML
                         += "| Id: "
