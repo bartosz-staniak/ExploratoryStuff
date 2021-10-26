@@ -434,19 +434,30 @@ function updateRecord() {
     if (document.getElementById("getOneId").value == ""){
         return;
     }
+    
     if (document.getElementById("getOneDateAndTime").value == ""){
         return;
     }
-    if (document.getElementById("getOneLocation").value == ""){
+    
+    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
         return;
     }
+    else if (document.getElementById("getOneLocation").value == ""){
+        return;
+    }
+    
     if (document.getElementById("getOneTemperature").value == ""){
         return;
+    
     }
     if (document.getElementById("getOneChance").value == ""){
         return;
     }
-    if (document.getElementById("getOneSummary").value == ""){
+    
+    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+        return;
+    }
+    else if (document.getElementById("getOneSummary").value == ""){
         return;
     }
     
