@@ -439,7 +439,7 @@ function updateRecord() {
         return;
     }
     
-    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+    if (document.getElementById("getOneLocation").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
         return;
     }
     else if (document.getElementById("getOneLocation").value == ""){
@@ -454,7 +454,7 @@ function updateRecord() {
         return;
     }
     
-    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+    if (document.getElementById("getOneSummary").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
         return;
     }
     else if (document.getElementById("getOneSummary").value == ""){
