@@ -453,6 +453,10 @@ function updateRecord() {
     
     if (document.getElementById("getOneChance").value == ""){
         return;
+    } else if (document.getElementById("getOneChance").value > 90) {
+        return;
+    } else if (document.getElementById("getOneChance").value < 0) {
+        return;
     }
     
     if (document.getElementById("getOneSummary").value.match(namesValidationRegex)){
