@@ -434,7 +434,7 @@ function modifyRecord() {
 function updateRecord() {
     var validationErrorsPresent = false;
     var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
-    if (document.getElementById("getOneId").value == ""){
+    if (document.getElementById("getOneId").value != currentId){
         validationErrorsPresent = true;
     }
     
