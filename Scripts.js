@@ -449,8 +449,8 @@ function updateRecord() {
     
     if (document.getElementById("getOneTemperature").value == ""){
         return;
-    
     }
+    
     if (document.getElementById("getOneChance").value == ""){
         return;
     }
