@@ -386,14 +386,14 @@ function secondToggleResource() {
 }
 
 function getOneRecord() {
-    var getOneid = document.getElementById("recordId").value;
+    var getOneId = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
     var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
-    console.log(getOneid) // this is just debug
+    console.log(getOneId) // this is just debug
         $.getJSON("https://localhost:44391/api/weatherforecast/"
-        + getOneid, function(record){ // it appears the error messaging did not work
+        + getOneId, function(record){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
-            if (record.id == getOneid) {
+            if (record.id == getOneId) {
 
                 modifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
