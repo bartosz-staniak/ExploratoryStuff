@@ -473,6 +473,10 @@ function updateRecord() {
         return;
     }
 
+    if (validationErrorsPresent) {
+        return;
+    }
+
     var putId = document.getElementById("getOneId").value;
     var putDateTime = document.getElementById("getOneDateAndTime").value;
     var putLocation = document.getElementById("getOneLocation").value;
