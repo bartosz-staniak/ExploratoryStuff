@@ -440,7 +440,7 @@ function updateRecord() {
         return;
     }
     
-    if (document.getElementById("getOneLocation").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+    if (document.getElementById("getOneLocation").value.match(namesValidationRegex)){
         return;
     }
     else if (document.getElementById("getOneLocation").value == ""){
@@ -455,14 +455,14 @@ function updateRecord() {
         return;
     }
     
-    if (document.getElementById("getOneSummary").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+    if (document.getElementById("getOneSummary").value.match(namesValidationRegex)){
         return;
     }
     else if (document.getElementById("getOneSummary").value == ""){
         return;
     }
     
-    if (document.getElementById("PostOneSubmittedBy").value.match(/^\s.|^\s+|.[\s][\s+]./g)){
+    if (document.getElementById("PostOneSubmittedBy").value.match(namesValidationRegex)){
         return;
     }
     else if (document.getElementById("PostOneSubmittedBy").value == "") {
