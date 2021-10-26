@@ -405,6 +405,7 @@ function getOneRecord() {
                 + "<br>" + "Summary: " + record.summary;
 
                 document.getElementById("getOneId").value = record.id;
+                currentId = record.id;
                 document.getElementById("getOneDateAndTime").value = record.dateAndTime;
                 document.getElementById("getOneLocation").value = record.location;
                 document.getElementById("getOneTemperature").value = record.temperatureC;
