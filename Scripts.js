@@ -397,11 +397,11 @@ function getOneRecord() {
 
                 modifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
-                = "Id: " + record.id + ", Date and time: " + record.dateAndTime
-                + ", Location: " + record.location
-                + ", Temperature in C: " + record.temperatureC
-                + ", Chance of rain: " + record.rainChance + "%"
-                + ", Summary: " + record.summary;
+                = "Id: " + record.id + "<br>" + "Date and time: " + record.dateAndTime
+                + "<br>" + "Location: " + record.location
+                + "<br>" + "Temperature in C: " + record.temperatureC
+                + "<br>" + "Chance of rain: " + record.rainChance + "%"
+                + "<br>" + "Summary: " + record.summary;
 
                 document.getElementById("getOneId").value = record.id;
                 document.getElementById("getOneDateAndTime").value = record.dateAndTime;
