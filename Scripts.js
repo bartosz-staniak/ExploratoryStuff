@@ -430,6 +430,7 @@ function modifyRecord() {
 // --- API PUT function start ---
 
 function updateRecord() {
+    var namesValidationRegex = /^\s.|^\s+|.[\s][\s+]./g;
     var putRequest = new XMLHttpRequest();
     if (document.getElementById("getOneId").value == ""){
         return;
