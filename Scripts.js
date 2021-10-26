@@ -474,7 +474,7 @@ function updateRecord() {
     }
 
     if (validationErrorsPresent) {
-        validationErrorsPresent = true;
+        return;
     }
 
     var putId = document.getElementById("getOneId").value;
