@@ -433,48 +433,48 @@ function updateRecord() {
     var validationErrorsPresent = false;
     var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
     if (document.getElementById("getOneId").value == ""){
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("getOneDateAndTime").value == ""){
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("getOneLocation").value.match(namesValidationRegex)){
-        return;
+        validationErrorsPresent = true;
     }
     else if (document.getElementById("getOneLocation").value == ""){
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("getOneTemperature").value == ""){
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("getOneChance").value == ""){
-        return;
+        validationErrorsPresent = true;
     } else if (document.getElementById("getOneChance").value > 90) {
-        return;
+        validationErrorsPresent = true;
     } else if (document.getElementById("getOneChance").value < 0) {
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("getOneSummary").value.match(namesValidationRegex)){
-        return;
+        validationErrorsPresent = true;
     }
     else if (document.getElementById("getOneSummary").value == ""){
-        return;
+        validationErrorsPresent = true;
     }
     
     if (document.getElementById("PostOneSubmittedBy").value.match(namesValidationRegex)){
-        return;
+        validationErrorsPresent = true;
     }
     else if (document.getElementById("PostOneSubmittedBy").value == "") {
-        return;
+        validationErrorsPresent = true;
     }
 
     if (validationErrorsPresent) {
-        return;
+        validationErrorsPresent = true;
     }
 
     var putId = document.getElementById("getOneId").value;
