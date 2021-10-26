@@ -474,6 +474,8 @@ function updateRecord() {
     }
 
     if (validationErrorsPresent) {
+        document.getElementById("validationMessage").innerHTML
+        = "One or more validation errors occurred.";
         return;
     }
 
