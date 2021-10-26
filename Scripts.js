@@ -431,7 +431,6 @@ function modifyRecord() {
 
 function updateRecord() {
     var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
-    var putRequest = new XMLHttpRequest();
     if (document.getElementById("getOneId").value == ""){
         return;
     }
@@ -492,6 +491,7 @@ function updateRecord() {
         }
     );
 
+    var putRequest = new XMLHttpRequest();
     putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/" + putId);
     putRequest.setRequestHeader("Content-Type", "application/json");
     putRequest.send(jsonUpdateLoad);
