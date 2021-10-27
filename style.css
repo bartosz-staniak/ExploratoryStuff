@@ -68,6 +68,5 @@ tr:nth-child(even) {
 
 #DisplayGetAll {
     overflow: auto;
-    width: 50%;
     height: 100vh;
 }
