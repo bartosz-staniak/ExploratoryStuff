@@ -65,3 +65,7 @@ tr:nth-child(even) {
 *:active:not(body):not(html):not(div) {
     color: red;
 }
+
+#DisplayGetAll {
+    
+}
