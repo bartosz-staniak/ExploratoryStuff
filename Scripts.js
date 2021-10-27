@@ -286,7 +286,8 @@ function getWhatever (method) {
             }
         }
         request.onerror = (e) => {
-            console.log("Request failed.")
+            console.log("Request failed.");
+            toggleDisplayGetAll.innerHTML = "XMLHttpRequest failed."
         }
     } else if (method == 'fetch') {
 
