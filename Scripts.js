@@ -293,7 +293,9 @@ function getWhatever (method) {
         .then(resource => {
             toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
         }
-            );
+            ).catch(error => {
+                toggleDisplayGetAll.innerHTML = "Request to retrieve data failed."
+            });
 
         // toggleDisplayGetAll.innerHTML = 
     }
