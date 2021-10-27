@@ -414,7 +414,7 @@ function getOneRecord() {
                 document.getElementById("getOneChance").value = record.rainChance;
                 document.getElementById("getOneSummary").value = record.summary;
             }
-    }).fail(function(response) {
+    }).fail(function(jqXHR, textStatus, errorThrown) {
         document.getElementById("readRecord").innerHTML = "Request failed." + response.error
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
