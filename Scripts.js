@@ -415,7 +415,7 @@ function getOneRecord() {
                 document.getElementById("getOneSummary").value = record.summary;
             }
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        document.getElementById("readRecord").innerHTML = "Request failed." + response.error
+        document.getElementById("readRecord").innerHTML = "Request failed." + jqXHR
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
