@@ -1,11 +1,11 @@
 body {
-    width: 90%;
+    width: 600px;
     border: 5px solid green;
     padding: 50px;
     margin: auto;
 }
 div {
-    width: 85%;
+    width: 300px;
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
@@ -13,7 +13,7 @@ div {
 }
 
 div.container {
-    width: 85%;
+    width: 300px;
     border: 15px solid rgb(0, 53, 0);
     padding: 5px;
     margin: 5px;
