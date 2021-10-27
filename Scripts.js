@@ -245,6 +245,8 @@ function getWhatever (method) {
                     }
                 }
             }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            toggleDisplayGetAll.innerHTML = "Request failed."
         });
     } else if (method == 'JScustomPrint') {
         // pure JS requests
