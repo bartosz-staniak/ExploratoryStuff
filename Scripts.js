@@ -262,7 +262,7 @@ function getWhatever (method) {
 
             // customJSbtn.style.display = "none"; // looks like needs to be async or something
 
-            toggleDisplayGetAll.innerHTML = request.response.error;
+            toggleDisplayGetAll.innerHTML = e;
             var ichar = 0;
             while (request.response[ichar] != null) {
                 if (request.response[ichar] == '{'){
