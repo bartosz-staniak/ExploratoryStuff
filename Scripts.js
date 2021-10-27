@@ -285,6 +285,9 @@ function getWhatever (method) {
                 ichar++;
             }
         }
+        request.onerror = (e) => {
+            console.log("Request failed.")
+        }
     } else if (method == 'fetch') {
 
         var resource;
