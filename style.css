@@ -62,9 +62,11 @@ tr:nth-child(even) {
     opacity: 0.9;
 }
 
+/*
 *:active:not(body):not(html):not(div) {
     color: red;
 }
+*/
 
 #DisplayGetAll {
     overflow: auto;
