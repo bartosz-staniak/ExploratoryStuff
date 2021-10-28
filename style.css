@@ -37,6 +37,7 @@ span {
 }
 
 span.magnify {
+    stop-color: red;
     display: inline-block;
 }
 
