@@ -313,9 +313,12 @@ function getWhatever (method) {
             for (let i=0; i < Object.keys(resource).length; i++) {
                 document.getElementById("weatherData").innerHTML
                     += "<tr>"
+                    + "<td>" + resource[i].id + "</td>"
+                    + "<td>" + resource[i].dateAndTime + "</td>"
                     + "<td>" + resource[i].location + "</td>"
-                    + "<td>" + resource[i].location_Size + "</td>"
-                    + "<td>" + Number(resource[i].population).toLocaleString() + "</td>"
+                    + "<td>" + resource[i].temperatureC + "</td>"
+                    + "<td>" + resource[i].rainChance + "</td>"
+                    + "<td>" + resource[i].summary + "</td>"
                     + "</tr>";
             }
         }
