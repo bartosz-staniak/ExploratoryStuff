@@ -328,6 +328,7 @@ function getLocations(){
         if (Object.keys(resource).length>0){
             locationsDisplayParagraphII.innerHTML = "";
             locationsData.innerHTML = "";
+            document.getElementById("locationsTable").style.display = "block";
         }
         for (let i=0; i < Object.keys(resource).length; i++) {
             locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
