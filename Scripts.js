@@ -297,8 +297,7 @@ function getWhatever (method) {
         fetch (url)
         .then(resource => {
             resource.json()
-        }
-            )
+        })
         .then(resource => {
             toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
         }
