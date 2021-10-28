@@ -310,7 +310,7 @@ function getWhatever (method) {
         .then(resource => {
             toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
             for (let i=0; i < Object.keys(resource).length; i++) {
-                locationsData.innerHTML
+                document.getElementById("weatherData").innerHTML
                     += "<tr>"
                     + "<td>" + resource[i].location + "</td>"
                     + "<td>" + resource[i].location_Size + "</td>"
