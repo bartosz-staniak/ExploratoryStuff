@@ -303,7 +303,7 @@ function getWhatever (method) {
         
         .then(resource => {
             if(!resource.ok) {
-                throw new error ('Failed to get a response.');
+                throw new Error ('Failed to get a response.');
             }
             return resource.json()
         })
