@@ -315,7 +315,7 @@ function getLocations(){
         if(!resource.ok) {
             throw new Error ('Failed to get a response.');
         }
-        return resource.json();
+        //return resource.json();
     })
     // .then(resource => resource.json())
     .then(resource => {
