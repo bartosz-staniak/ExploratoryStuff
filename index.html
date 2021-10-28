@@ -146,7 +146,18 @@
                     Get data from API using custom JS</button>
                 <Button onclick="getWhatever('fetch')">Fetch data from API</Button>
                 <button id="toggleResourceBtn2" onclick="secondToggleResource()">Toggle data</button>
-                <p id="DisplayGetAll" style="display: none"></p>
+                <p id="DisplayGetAll" style="display: none">
+                    <table id="locationsTable" style="display:none">
+                        <thead>
+                            <tr>
+                                <th id="sortByLocation">Location</th>
+                                <th id="sortBySize" onclick="sortTable()">Location size</th>
+                                <th id="sortByPopulation">Population</th>
+                            </tr>
+                        </thead>
+                        <tbody id="locationsData"></tbody>
+                    </table>
+                </p>
                 <button id="toggleResourceBtn" onclick="toggleResource()">Show data</button>
             </div>
         </div>
