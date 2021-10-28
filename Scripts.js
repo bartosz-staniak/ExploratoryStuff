@@ -296,9 +296,9 @@ function getWhatever (method) {
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
         fetch (url)
         // .then(resource => resource.json()) // arrow function that does not require the return keyword
-        .then(resource => {
+        /*.then(resource => { // arrow function with brackets that requires the return keyword
             return resource.json()
-        })
+        })*/
         .then(resource => {
             return resource.json()
         })
