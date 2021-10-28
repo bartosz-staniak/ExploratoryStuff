@@ -43,7 +43,7 @@ span.magnify {
 
 table {
     border: 1px solid lightgrey;
-    white-space: pre-wrap;
+    white-space: normal;
     width: auto;
 }
 
