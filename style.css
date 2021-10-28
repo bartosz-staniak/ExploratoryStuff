@@ -75,5 +75,5 @@ tr:nth-child(even) {
 
 #DisplayGetAll {
     overflow: auto;
-    height: 100vh;
+    max-height: 100vh;
 }
