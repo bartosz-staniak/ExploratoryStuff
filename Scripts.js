@@ -300,6 +300,9 @@ function getWhatever (method) {
             return resource.json()
         })
         .then(resource => {
+            return resource.json()
+        })
+        .then(resource => {
             toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
         }
             ).catch(error => {
