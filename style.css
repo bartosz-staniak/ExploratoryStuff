@@ -43,6 +43,7 @@ span.magnify {
 
 table {
     border: 1px solid lightgrey;
+    border-spacing: 1px;
     width: auto;
 }
 
