@@ -37,6 +37,7 @@ span {
 }
 
 span.magnify {
+    color: unset;
     display: inline-block;
 }
 
