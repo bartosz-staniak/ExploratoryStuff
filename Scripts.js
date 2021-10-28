@@ -309,6 +309,20 @@ function getWhatever (method) {
         })
         .then(resource => {
             toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
+            for (let i=0; i < Object.keys(resource).length; i++) {
+                locationsDisplayParagraphII.innerHTML += [i+1] + ". Location: " +
+                resource[i].location
+                + ", " + "Location size: " + resource[i].location_Size
+                + ", " + "Population: " + Number(resource[i].population).toLocaleString()
+                + "<br>";
+    
+                locationsData.innerHTML
+                    += "<tr>"
+                    + "<td>" + resource[i].location + "</td>"
+                    + "<td>" + resource[i].location_Size + "</td>"
+                    + "<td>" + Number(resource[i].population).toLocaleString() + "</td>"
+                    + "</tr>";
+            }
         }
             ).catch(error => {
                 toggleDisplayGetAll.innerHTML = "Request to retrieve data failed."
