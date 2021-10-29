@@ -401,7 +401,7 @@ function threeDigitsFun() {
 
 var descending = true;
 
-function sortTableNumerically(column) {
+function sortTableNumerically(column, tableBodyId) {
     let rows, data1, data2, tableBody;
 
     tableBody = document.getElementById("locationsData");
