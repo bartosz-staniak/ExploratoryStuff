@@ -291,6 +291,7 @@ function getWhatever (method) {
             toggleDisplayGetAll.innerHTML = "XMLHttpRequest failed."
         }
     } else if (method == 'fetch') {
+        document.getElementById("weatherData").innerHTML = "";
 
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
         fetch (url)
