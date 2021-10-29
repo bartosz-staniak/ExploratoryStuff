@@ -403,9 +403,9 @@ function sortTable() {
     let row, rows, tableBody;
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
-    row = document.getElementsByTagName("td")[0];
+    row = document.getElementsByTagName("tr")[0];
     console.log(row);
-    console.log(document.getElementsByTagName("td")[2]);
+    console.log(document.getElementsByTagName("tr")[2]);
 }
 
 function toggleResource () {
