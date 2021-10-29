@@ -226,6 +226,8 @@ function getWhatever (method) {
     document.getElementById("weatherTable").style.display = "none";
     toggleDisplayGetAll.innerHTML = "";
     if (method == 'jQuery') {
+        toggleDisplayGetAll.style.display = "block";
+
         $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         function(resource){
             console.log(resource); // this is just debug
