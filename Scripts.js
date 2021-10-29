@@ -410,7 +410,7 @@ function sortTable() {
 
     data1 = rows[0].getElementsByTagName("td")[0];
     data2 = rows[1].getElementsByTagName("td")[1];
-    console.log(data1);
+    console.log(data1, data2);
 
 }
 
