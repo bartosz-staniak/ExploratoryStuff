@@ -223,6 +223,7 @@ $(document).ready(function(){
 // --- API GET functions start ---
 // CORS issue appears to have been solved
 function getWhatever (method) {
+    document.getElementById("weatherTable").style.display = "none";
     if (method == 'jQuery') {
         $.getJSON("https://localhost:44391/api/weatherforecast/GetWhateverItReturns",
         function(resource){
