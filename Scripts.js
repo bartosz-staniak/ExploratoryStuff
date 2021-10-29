@@ -406,7 +406,8 @@ function sortTable() {
     rows = tableBody.rows;
 
     for (i=0; i < tableBody.rows.length; i++) {
-        
+        data1 = rows[i].getElementsByTagName("td")[2];
+        data2 = rows[i].getElementsByTagName("td")[2];
     }
 }
 
