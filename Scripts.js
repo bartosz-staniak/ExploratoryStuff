@@ -400,7 +400,7 @@ function threeDigitsFun() {
 }
 
 function sortTable() {
-    let row, tableBody;
+    let row, rows, tableBody;
     tableBody = document.getElementById("locationsData");
     row = document.getElementsByTagName("tr")[1];
     console.log(row);
