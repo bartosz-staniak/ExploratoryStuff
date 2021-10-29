@@ -405,7 +405,7 @@ function sortTable() {
     rows = tableBody.rows;
     row = document.getElementsByTagName("tr")[0];
     console.log(row);
-    console.log(document.getElementById("tr")[2]);
+    console.log(document.getElementsByTagName("tr")[2]);
 }
 
 function toggleResource () {
