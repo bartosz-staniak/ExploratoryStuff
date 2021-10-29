@@ -434,7 +434,7 @@ function sortTableNumerically(column, tableBodyId) {
     }
 }
 
-function sortTableNumerically(column, tableBodyId) {
+function sortTableAlphabetically(column, tableBodyId) {
     let rows, data1, data2, tableBody;
 
     tableBody = document.getElementById(tableBodyId);
