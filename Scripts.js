@@ -402,6 +402,8 @@ function threeDigitsFun() {
 function sortTable() {
     let rows, data1, data2, tableBody, descending;
 
+    descending = true;
+
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
 
