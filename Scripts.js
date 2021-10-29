@@ -422,6 +422,11 @@ function sortTable() {
         
         console.log(data1, data2);
     }
+    if (descending) {
+        descending = false;
+    } else {
+        descending = true;
+    }
 }
 
 function sortTableTest() {
