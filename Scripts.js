@@ -404,6 +404,10 @@ function sortTable() {
 
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
+
+    for (i=0; i < tableBody.rows.length; i++) {
+        
+    }
 }
 
 function sortTableTest() {
