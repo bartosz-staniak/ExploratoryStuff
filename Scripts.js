@@ -290,9 +290,7 @@ function getWhatever (method) {
             toggleDisplayGetAll.innerHTML = "XMLHttpRequest failed."
         }
     } else if (method == 'fetch') {
-
-        var resource;
-
+        
         const url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
         fetch (url)
         // .then(resource => resource.json()) // arrow function that does not require the return keyword
