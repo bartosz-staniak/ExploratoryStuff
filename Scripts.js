@@ -443,8 +443,6 @@ function sortTableAlphabetically(column, tableBodyId) {
     for (i=0; i < (rows.length - 1); i++) {
         data1 = rows[i].getElementsByTagName("td")[column].innerHTML;
         data2 = rows[i+1].getElementsByTagName("td")[column].innerHTML;
-        data1 = data1.replace(/[^$0-9.]/g, '');
-        data2 = data2.replace(/[^$0-9.]/g, '');
 
         if (descending) {
             if (Number(data2) > Number(data1)) {
