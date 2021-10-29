@@ -467,22 +467,6 @@ function sortTableAlphabetically(column, tableBodyId) {
     }
 }
 
-function sortTableTest() {
-    let row, rows, data1, data2, tableBody;
-    tableBody = document.getElementById("locationsData");
-    rows = tableBody.rows;
-    row = document.getElementsByTagName("tr")[0];
-    console.log(row);
-    console.log(document.getElementsByTagName("tr")[2]);
-    console.log(document.querySelectorAll("#locationsTableHead > tr")[0]);
-
-    data1 = rows[0].getElementsByTagName("td")[0];
-    data2 = rows[1].getElementsByTagName("td")[0];
-    console.log(data1, data2);
-
-    rows[0].parentNode.insertBefore(rows[1], rows[0]);
-}
-
 function toggleResource () {
     var toggleButtonName = document.getElementById("toggleResourceBtn");
     if (weatherDataDisplay.style.display === "none"){
