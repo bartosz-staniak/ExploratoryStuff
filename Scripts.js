@@ -443,9 +443,11 @@ function sortTableAlphabetically(column, tableBodyId) {
     for (i=0; i < (rows.length - 1); i++) {
         data1 = rows[i].getElementsByTagName("td")[column].innerHTML;
         data2 = rows[i+1].getElementsByTagName("td")[column].innerHTML;
+        data1 = data1.toLowerCase();
+        data2 = data2.toLowerCase();
 
         if (descending) {
-            if (data2.toLowerCase() > data1.toLowerCase()) {
+            if (data2 > data1) {
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 i=-1;
             }
