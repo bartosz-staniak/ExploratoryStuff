@@ -412,7 +412,8 @@ function sortTable() {
         data2 = data2.replace(/[^$0-9.]/g, '');
 
         if (data2 > data1) {
-            rows[i].parentNode.insertBefore(rows[i+1], rows[i])
+            rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+            i=0;
         }
 
         console.log(data1, data2);
