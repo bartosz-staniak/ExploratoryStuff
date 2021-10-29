@@ -404,7 +404,7 @@ var descending = true;
 function sortTableNumerically(column, tableBodyId) {
     let rows, data1, data2, tableBody;
 
-    tableBody = document.getElementById("locationsData");
+    tableBody = document.getElementById(tableBodyId);
     rows = tableBody.rows;
 
     for (i=0; i < (rows.length - 1); i++) {
