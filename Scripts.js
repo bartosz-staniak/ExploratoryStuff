@@ -403,7 +403,7 @@ function sortTable() {
     let row, rows, tableBody;
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
-    row = document.getElementsByTagName("tr")[1];
+    row = document.getElementsByTagName("tr")[2];
     console.log(row);
 }
 
