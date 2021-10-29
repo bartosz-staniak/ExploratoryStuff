@@ -434,6 +434,39 @@ function sortTableNumerically(column, tableBodyId) {
     }
 }
 
+function sortTableNumerically(column, tableBodyId) {
+    let rows, data1, data2, tableBody;
+
+    tableBody = document.getElementById(tableBodyId);
+    rows = tableBody.rows;
+
+    for (i=0; i < (rows.length - 1); i++) {
+        data1 = rows[i].getElementsByTagName("td")[column].innerHTML;
+        data2 = rows[i+1].getElementsByTagName("td")[column].innerHTML;
+        data1 = data1.replace(/[^$0-9.]/g, '');
+        data2 = data2.replace(/[^$0-9.]/g, '');
+
+        if (descending) {
+            if (Number(data2) > Number(data1)) {
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                i=-1;
+            }
+        } else {
+            if (Number(data2) < Number(data1)) {
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                i=-1;
+            }
+        }
+        
+        console.log(data1, data2);
+    }
+    if (descending) {
+        descending = false;
+    } else {
+        descending = true;
+    }
+}
+
 function sortTableTest() {
     let row, rows, data1, data2, tableBody;
     tableBody = document.getElementById("locationsData");
