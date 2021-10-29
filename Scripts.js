@@ -408,7 +408,7 @@ function sortTable() {
     console.log(document.getElementsByTagName("tr")[2]);
     console.log(document.querySelectorAll("#locationsTableHead > tr")[0]);
 
-    data1 = rows.getElementsByTagName("td")[0];
+    data1 = rows[0].getElementsByTagName("td")[0];
     console.log(data1);
 
 }
