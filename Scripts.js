@@ -404,12 +404,12 @@ function sortTable() {
 
 function toggleResource () {
     var toggleButtonName = document.getElementById("toggleResourceBtn");
-    if (toggleDisplayGetAll.style.display === "none"){
-        toggleDisplayGetAll.style.display = "block";
+    if (weatherDataDisplay.style.display === "none"){
+        weatherDataDisplay.style.display = "block";
         toggleButtonName.innerHTML = "Hide data";
     }
     else {
-        toggleDisplayGetAll.style.display = "none";
+        weatherDataDisplay.style.display = "none";
         toggleButtonName.innerHTML = "Show data";
     }
 }
