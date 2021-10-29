@@ -151,12 +151,12 @@
                     <table id="weatherTable" style="display: none">
                         <thead>
                             <tr>
-                                <th>Id</th>
-                                <th>Date and time</th>
-                                <th>Location</th>
-                                <th>Temperature</th>
-                                <th>Rain chance</th>
-                                <th>Summary</th>
+                                <th onclick="sortTableNumerically(0, 'weatherData')">Id</th>
+                                <th onclick="sortTableNumerically(1, 'weatherData')">Date and time</th>
+                                <th onclick="sortTableAlphabetically(2, 'weatherData')">Location</th>
+                                <th onclick="sortTableNuemrically(3, 'weatherData')">Temperature</th>
+                                <th onclick="sortTableNuemrically(4, 'weatherData')">Rain chance</th>
+                                <th onclick="sortTableNumerically(5, 'weatherData')">Summary</th>
                             </tr>
                         </thead>
                         <tbody id="weatherData"></tbody>
