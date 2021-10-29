@@ -413,7 +413,6 @@ function sortTableTest() {
     console.log(data1, data2);
 
     rows[0].parentNode.insertBefore(rows[1], rows[0]);
-
 }
 
 function toggleResource () {
