@@ -399,6 +399,8 @@ function threeDigitsFun() {
     threeDigits.value = Number(preThreeDigits).toLocaleString();
 }
 
+var descending = true;
+
 function sortTable() {
     let rows, data1, data2, tableBody;
 
