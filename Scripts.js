@@ -400,7 +400,7 @@ function threeDigitsFun() {
 }
 
 function sortTable() {
-    
+    let rows, data1, data2, tableBody;
 }
 
 function sortTableTest() {
