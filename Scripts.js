@@ -253,6 +253,8 @@ function getWhatever (method) {
             toggleDisplayGetAll.innerHTML = "Request failed."
         });
     } else if (method == 'JScustomPrint') {
+        toggleDisplayGetAll.style.display = "block";
+
         // pure JS requests
         var request = new XMLHttpRequest();
         var url = 'https://localhost:44391/api/weatherforecast/GetWhateverItReturns';
