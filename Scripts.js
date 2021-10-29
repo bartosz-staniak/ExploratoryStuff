@@ -414,14 +414,12 @@ function sortTable() {
         data2 = data2.replace(/[^$0-9.]/g, '');
 
         if (descending) {
-            
+            if (Number(data2) > Number(data1)) {
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                i=-1;
+            }
         }
         
-        if (Number(data2) > Number(data1)) {
-            rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-            i=-1;
-        }
-
         console.log(data1, data2);
     }
 }
