@@ -411,6 +411,10 @@ function sortTable() {
         data1 = data1.replace(/[^$0-9.]/g, '');
         data2 = data2.replace(/[^$0-9.]/g, '');
 
+        if (data2 > data1) {
+            rows[i].parentNode.insertBefore(rows[i+1], rows[i])
+        }
+
         console.log(data1, data2);
     }
 }
