@@ -408,8 +408,8 @@ function sortTable() {
     for (i=0; i < tableBody.rows.length; i++) {
         data1 = rows[i].getElementsByTagName("td")[2];
         data2 = rows[i].getElementsByTagName("td")[2];
-        data1 = data1.replace(/[^0-9.]/g, '');
-        data2 = data2.replace(/[^0-9.]/g, '');
+        data1 = data1.replace(/[^$0-9.]/g, '');
+        data2 = data2.replace(/[^$0-9.]/g, '');
 
         console.log(data1, data2);
     }
