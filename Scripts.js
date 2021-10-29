@@ -399,7 +399,7 @@ function threeDigitsFun() {
     threeDigits.value = Number(preThreeDigits).toLocaleString();
 }
 
-function sortTable() {
+function sortTableTest() {
     let row, rows, data1, data2, tableBody;
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
