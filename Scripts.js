@@ -445,7 +445,7 @@ function sortTableAlphabetically(column, tableBodyId) {
         data2 = rows[i+1].getElementsByTagName("td")[column].innerHTML;
 
         if (descending) {
-            if (data2.innerHTML.toLowerCase() > data1.innerHTML.toLowerCase()) {
+            if (data2.toLowerCase() > data1.toLowerCase()) {
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 i=-1;
             }
