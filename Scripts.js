@@ -307,6 +307,7 @@ function getWhatever (method) {
         })
         .then(resource => {
             // toggleDisplayGetAll.innerHTML = JSON.stringify(resource);
+            document.getElementById("weatherTable").style.display = "table";
             for (let i=0; i < Object.keys(resource).length; i++) {
                 document.getElementById("weatherData").innerHTML
                     += "<tr>"
