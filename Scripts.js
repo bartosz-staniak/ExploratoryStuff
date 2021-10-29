@@ -412,6 +412,8 @@ function sortTable() {
     data2 = rows[1].getElementsByTagName("td")[0];
     console.log(data1, data2);
 
+    rows[0].parentNode.insertBefore(rows[1], rows[0]);
+
 }
 
 function toggleResource () {
