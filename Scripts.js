@@ -407,7 +407,7 @@ function sortTable() {
 
     for (i=0; i < tableBody.rows.length; i++) {
         data1 = rows[i].getElementsByTagName("td")[2].innerHTML;
-        data2 = rows[i].getElementsByTagName("td")[2].innerHTML;
+        data2 = rows[i+1].getElementsByTagName("td")[2].innerHTML;
         data1 = data1.replace(/[^$0-9.]/g, '');
         data2 = data2.replace(/[^$0-9.]/g, '');
 
