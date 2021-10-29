@@ -413,7 +413,7 @@ function sortTable() {
 
         if (data2 > data1) {
             rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-            i=0;
+            i--;
         }
 
         console.log(data1, data2);
