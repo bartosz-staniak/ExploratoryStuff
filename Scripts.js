@@ -405,7 +405,7 @@ function sortTable() {
     tableBody = document.getElementById("locationsData");
     rows = tableBody.rows;
 
-    for (i=0; i < (tableBody.rows.length - 1); i++) {
+    for (i=0; i < (rows.length - 1); i++) {
         data1 = rows[i].getElementsByTagName("td")[2].innerHTML;
         data2 = rows[i+1].getElementsByTagName("td")[2].innerHTML;
         data1 = data1.replace(/[^$0-9.]/g, '');
