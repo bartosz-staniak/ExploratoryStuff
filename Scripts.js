@@ -445,12 +445,12 @@ function sortTableAlphabetically(column, tableBodyId) {
         data2 = rows[i+1].getElementsByTagName("td")[column].innerHTML;
 
         if (descending) {
-            if (Number(data2) > Number(data1)) {
+            if (data2 > data1) {
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 i=-1;
             }
         } else {
-            if (Number(data2) < Number(data1)) {
+            if (data2 < data1) {
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 i=-1;
             }
