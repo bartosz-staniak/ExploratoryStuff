@@ -409,7 +409,8 @@ function sortTable() {
     console.log(document.querySelectorAll("#locationsTableHead > tr")[0]);
 
     data1 = rows.getElementsByTagName("td")[0];
-    
+    console.log(data1);
+
 }
 
 function toggleResource () {
