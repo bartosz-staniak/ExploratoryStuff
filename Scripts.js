@@ -328,6 +328,7 @@ function getWhatever (method) {
             }
         }
             ).catch(error => {
+                toggleDisplayGetAll.style.display = "block";
                 toggleDisplayGetAll.innerHTML = "Request to retrieve data failed."
             });
 
