@@ -27,6 +27,11 @@ a.link {
     text-decoration: none;
 }
 
+a.link:hover, a.link:active {
+    background-color: green;
+    color: white;
+}
+
 button.link {
     display: inline-block;
 }
