@@ -22,6 +22,7 @@ div.container {
 
 a.link {
     background-color: lightgreen;
+    color: black;
     display: inline-block;
     text-decoration: none;
 }
