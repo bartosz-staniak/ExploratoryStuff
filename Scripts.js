@@ -523,7 +523,7 @@ function getOneRecord() {
 }
 
 var currentLocation;
-function getOneRecord() {
+function getOneLocationRecord() {
     var getOneId = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
     var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
