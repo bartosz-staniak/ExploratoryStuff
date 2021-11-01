@@ -539,13 +539,10 @@ function getOneLocationRecord() {
                 + "<br>" + "Location size: " + locationRecord.location_Size
                 + "<br>" + "Population: " + locationRecord.population
 
-                document.getElementById("getOneId").value = record.id;
-                currentId = record.id;
-                document.getElementById("getOneDateAndTime").value = record.dateAndTime;
-                document.getElementById("getOneLocation").value = record.location;
-                document.getElementById("getOneTemperature").value = record.temperatureC;
-                document.getElementById("getOneChance").value = record.rainChance;
-                document.getElementById("getOneSummary").value = record.summary;
+                document.getElementById("getOneLocationName").value = locationRecord.location;
+                currentLocation = locationRecord.location;
+                document.getElementById("getOneLocationSize").value = locationRecord.location_Size;
+                document.getElementById("getOneLocationPopulation").value = locationRecord.population;
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readRecord").innerHTML = "Request failed." // + errorThrown
