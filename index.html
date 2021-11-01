@@ -187,31 +187,25 @@
             </div>
             <div class="wip">
                 <span class="magnify">Insert location name:</span>
-                <input id="recordId"></input>
-                <button id="getRecordById" onclick="getOneRecord()">Show one record</button>
-                <p id="readRecord"></p>
-                <button id="ModifyRecordBtn"
+                <input id="LocationRecordId"></input>
+                <button id="getLocationRecordById" onclick="getOneLocationRecord()">Show one location record</button>
+                <p id="readLocationRecord"></p>
+                <button id="ModifyLocationRecordBtn"
                 style="display:none"
-                onclick="modifyRecord()">Modify record</button>
-                <div id="RecordPUT" style="display: none">
+                onclick="modifyLocationRecord()">Modify location record</button>
+                <div id="RecordLocationPUT" style="display: none">
                     <!-- wip class removed because of PUT CORS issue solved-->
                     Id
-                    <input id="getOneId" disabled><br>
-                    Date and time
-                    <input id="getOneDateAndTime" type="datetime-local"><span>*</span>
-                    Location
-                    <input id="getOneLocation"><span>*</span><br>
-                    Temperature
-                    <input id = "getOneTemperature"><span>*</span><br>
-                    Chance of rain
-                    <input id = "getOneChance"><span>*</span><br>
-                    Summary
-                    <input id = "getOneSummary"><span>*</span><br>
+                    <input id="getOneLocationName" disabled><br>
+                    Location size
+                    <input id="getOneLocationSzie"><span>*</span><br>
+                    Population
+                    <input id="getOneLocationPopulation"><span>*</span><br>
                     Submitted by
-                    <input id = "PostOneSubmittedBy"><span>*</span><br>
-                    <button onclick="updateRecord()">Update record</button>
+                    <input id = "PostOneLocationSubmittedBy"><span>*</span><br>
+                    <button onclick="updateLocationRecord()">Update location record</button>
                     <br>
-                    <span id="validationMessage"></span>
+                    <span id="LocationValidationMessage"></span>
                 </div>
             </div>
         </div>
