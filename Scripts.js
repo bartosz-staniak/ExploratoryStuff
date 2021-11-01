@@ -524,14 +524,14 @@ function getOneRecord() {
 
 var currentLocation;
 function getOneLocationRecord() {
-    var getOneLocationId = document.getElementById("LocationRecordId").value;
+    var getOneLocationName = document.getElementById("LocationRecordName").value;
     var initialLocationParagraphValue = document.getElementById("readLocationRecord").value;
     var modifyLocationRecordBtn = document.getElementById("ModifyLocationRecordBtn");
     console.log(getOneLocationId) // this is just debug
         $.getJSON("https://localhost:44391/api/another/"
         + getOneLocationId, function(locationRecord){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
-            if (locationRecord.id == getOneLocationId) {
+            if (locationRecord.location == getOneLocationName) {
 
                 modifyLocationRecordBtn.style.display = "block";
                 document.getElementById("readLocationRecord").innerHTML
