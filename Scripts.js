@@ -522,7 +522,7 @@ function getOneRecord() {
     
 }
 
-var currentId;
+var currentLocation;
 function getOneRecord() {
     var getOneId = document.getElementById("recordId").value;
     var initialParagraphValue = document.getElementById("readRecord").value;
