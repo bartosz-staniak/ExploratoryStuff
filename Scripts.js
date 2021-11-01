@@ -533,13 +533,11 @@ function getOneLocationRecord() {
             // in else condition due to jQuery implementation
             if (LocationRecord.id == getOneLocationId) {
 
-                modifyRecordBtn.style.display = "block";
-                document.getElementById("readRecord").innerHTML
-                = "Id: " + record.id + "<br>" + "Date and time: " + record.dateAndTime
-                + "<br>" + "Location: " + record.location
-                + "<br>" + "Temperature in C: " + record.temperatureC
-                + "<br>" + "Chance of rain: " + record.rainChance + "%"
-                + "<br>" + "Summary: " + record.summary;
+                modifyLocationRecordBtn.style.display = "block";
+                document.getElementById("readLocationRecord").innerHTML
+                = "Location: " + LocationRecord.location +
+                + "<br>" + "Location size: " + LocationRecord.location_Size
+                + "<br>" + "Population: " + LocationRecord.population
 
                 document.getElementById("getOneId").value = record.id;
                 currentId = record.id;
