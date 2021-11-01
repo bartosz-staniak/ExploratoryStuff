@@ -524,7 +524,7 @@ function getOneRecord() {
 
 var currentLocation;
 function getOneLocationRecord() {
-    var getOneLocationName = document.getElementById("LocationRecordName").value;
+    var getOneLocationName = document.getElementById("locationRecordName").value;
     var initialLocationParagraphValue = document.getElementById("readLocationRecord").value;
     var modifyLocationRecordBtn = document.getElementById("ModifyLocationRecordBtn");
     console.log(getOneLocationId) // this is just debug
