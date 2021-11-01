@@ -522,6 +522,44 @@ function getOneRecord() {
     
 }
 
+var currentId;
+function getOneRecord() {
+    var getOneId = document.getElementById("recordId").value;
+    var initialParagraphValue = document.getElementById("readRecord").value;
+    var modifyRecordBtn = document.getElementById("ModifyRecordBtn");
+    console.log(getOneId) // this is just debug
+        $.getJSON("https://localhost:44391/api/weatherforecast/"
+        + getOneId, function(record){ // it appears the error messaging did not work
+            // in else condition due to jQuery implementation
+            if (record.id == getOneId) {
+
+                modifyRecordBtn.style.display = "block";
+                document.getElementById("readRecord").innerHTML
+                = "Id: " + record.id + "<br>" + "Date and time: " + record.dateAndTime
+                + "<br>" + "Location: " + record.location
+                + "<br>" + "Temperature in C: " + record.temperatureC
+                + "<br>" + "Chance of rain: " + record.rainChance + "%"
+                + "<br>" + "Summary: " + record.summary;
+
+                document.getElementById("getOneId").value = record.id;
+                currentId = record.id;
+                document.getElementById("getOneDateAndTime").value = record.dateAndTime;
+                document.getElementById("getOneLocation").value = record.location;
+                document.getElementById("getOneTemperature").value = record.temperatureC;
+                document.getElementById("getOneChance").value = record.rainChance;
+                document.getElementById("getOneSummary").value = record.summary;
+            }
+    }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
+        document.getElementById("readRecord").innerHTML = "Request failed." // + errorThrown
+    });
+    if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
+        document.getElementById("readRecord").innerHTML = "Requesting data...";
+        modifyRecordBtn.style.display = "none";
+        updateRecordInputs.style.display = "none";
+    }        
+    
+}
+
 // --- API GET functions end ---
 
 function modifyRecord() {
