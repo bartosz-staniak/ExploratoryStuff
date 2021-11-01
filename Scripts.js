@@ -528,8 +528,8 @@ function getOneLocationRecord() {
     var initialLocationParagraphValue = document.getElementById("readLocationRecord").value;
     var modifyLocationRecordBtn = document.getElementById("ModifyLocationRecordBtn");
     console.log(getOneLocationId) // this is just debug
-        $.getJSON("https://localhost:44391/api/weatherforecast/"
-        + getOneId, function(record){ // it appears the error messaging did not work
+        $.getJSON("https://localhost:44391/api/another/"
+        + getOneLocationId, function(record){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
             if (record.id == getOneId) {
 
