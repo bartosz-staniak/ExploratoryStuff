@@ -545,10 +545,10 @@ function getOneLocationRecord() {
                 document.getElementById("getOneLocationPopulation").value = locationRecord.population;
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
-        document.getElementById("readRecord").innerHTML = "Request failed." // + errorThrown
+        document.getElementById("readLocationRecord").innerHTML = "Request failed." // + errorThrown
     });
-    if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
-        document.getElementById("readRecord").innerHTML = "Requesting data...";
+    if (document.getElementById("readLocationRecord").innerHTML == initialParagraphValue) {
+        document.getElementById("readLocationRecord").innerHTML = "Requesting data...";
         modifyRecordBtn.style.display = "none";
         updateRecordInputs.style.display = "none";
     }        
