@@ -166,23 +166,25 @@
             </div>
         </div>
         <div>
-            <span class="magnify">Get location records</span>
-            <br>
-            <button onclick="getLocations()">Get location data from API</button>
-            <p id="locationsDisplay">
-                <table id="locationsTable" style="display:none">
-                    <thead id="locationsTableHead">
-                        <tr>
-                            <th onclick="sortTableAlphabetically(0, 'locationsData')">Location</th>
-                            <th onclick="sortTableAlphabetically(1, 'locationsData')">Location size</th>
-                            <th onclick="sortTableNumerically(2, 'locationsData')">Population</th>
-                        </tr>
-                    </thead>
-                    <tbody id="locationsData"></tbody>
-                </table>
-            </p>
-            <p id="locationsDisplayII"></p>
-            <input id="threeDigits" onkeyup="threeDigitsFun()"></input>
+            <div>
+                <span class="magnify">Get location records</span>
+                <br>
+                <button onclick="getLocations()">Get location data from API</button>
+                <p id="locationsDisplay">
+                    <table id="locationsTable" style="display:none">
+                        <thead id="locationsTableHead">
+                            <tr>
+                                <th onclick="sortTableAlphabetically(0, 'locationsData')">Location</th>
+                                <th onclick="sortTableAlphabetically(1, 'locationsData')">Location size</th>
+                                <th onclick="sortTableNumerically(2, 'locationsData')">Population</th>
+                            </tr>
+                        </thead>
+                        <tbody id="locationsData"></tbody>
+                    </table>
+                </p>
+                <p id="locationsDisplayII"></p>
+                <input id="threeDigits" onkeyup="threeDigitsFun()"></input>
+            </div>
         </div>
 
         <!-- GetAllResource end -->
