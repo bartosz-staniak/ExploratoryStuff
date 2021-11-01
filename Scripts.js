@@ -529,9 +529,9 @@ function getOneLocationRecord() {
     var modifyLocationRecordBtn = document.getElementById("ModifyLocationRecordBtn");
     console.log(getOneLocationId) // this is just debug
         $.getJSON("https://localhost:44391/api/another/"
-        + getOneLocationId, function(record){ // it appears the error messaging did not work
+        + getOneLocationId, function(LocationRecord){ // it appears the error messaging did not work
             // in else condition due to jQuery implementation
-            if (record.id == getOneId) {
+            if (LocationRecord.id == getOneLocationId) {
 
                 modifyRecordBtn.style.display = "block";
                 document.getElementById("readRecord").innerHTML
