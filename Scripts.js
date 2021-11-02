@@ -561,6 +561,9 @@ function modifyRecord(param) {
     if (param == "oneWeatherRecord") {
         updateWeatherRecordInputs.style.display = "block";
     }
+    else if (apram == "oneLocationRecord") {
+        document.getElementById("RecordLocationPUT").style.display = "block";
+    }
 }
 
 // --- API PUT function start ---
