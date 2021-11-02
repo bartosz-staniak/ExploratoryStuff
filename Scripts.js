@@ -655,6 +655,9 @@ function updateLocationRecord() { //wip
     }
 
     var putLocationName = document.getElementById("getOneLocationName").value;
+    var putLocationSize = document.getElementById("getOneLocationSize").value;
+    var putPopulation = document.getElementById("getOneLocationPopulation").value;
+    var putLocationSubmitter = document.getElementById("getOneLocationSubmittedBy").value;
 
     var jsonUpdateLoad = JSON.stringify(
         {
