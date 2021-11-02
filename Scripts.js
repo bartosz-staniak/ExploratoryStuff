@@ -669,7 +669,7 @@ function updateLocationRecord() { //wip
     );
 
     var putRequest = new XMLHttpRequest();
-    putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/" + putLocationName);
+    putRequest.open("PUT", "https://localhost:44391/api/another/" + putLocationName);
     putRequest.setRequestHeader("Content-Type", "application/json");
     putRequest.send(jsonUpdateLoad);
 }
