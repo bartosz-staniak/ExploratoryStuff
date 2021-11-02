@@ -646,7 +646,7 @@ function updateRecord() {
     putRequest.send(jsonUpdateLoad);
 }
 
-function updateRecord() {
+function updateLocationRecord() { //wip
     var validationErrorsPresent = false;
     var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
     if (document.getElementById("getOneId").value != currentId){
