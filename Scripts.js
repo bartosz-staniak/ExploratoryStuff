@@ -650,21 +650,21 @@ function updateLocationRecord() { //wip
     var validationErrorsPresent = false;
     var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
     
-    if (document.getElementById("getOneLocation").value.match(namesValidationRegex)){
+    if (document.getElementById("getOneLocationName").value.match(namesValidationRegex)){
         validationErrorsPresent = true;
     }
 
-    var putLocation = document.getElementById("getOneLocation").value;
+    var putLocationName = document.getElementById("getOneLocationName").value;
 
     var jsonUpdateLoad = JSON.stringify(
         {
-            location : "" + putLocation,
+            location : "" + putLocationName,
             submittedBy : "" + putSubmitter
         }
     );
 
     var putRequest = new XMLHttpRequest();
-    putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/" + putId);
+    putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/" + putLocationName);
     putRequest.setRequestHeader("Content-Type", "application/json");
     putRequest.send(jsonUpdateLoad);
 }
