@@ -535,7 +535,7 @@ function getOneLocationRecord() {
 
                 modifyLocationRecordBtn.style.display = "block";
                 document.getElementById("readLocationRecord").innerHTML
-                = "Location: " + locationRecord.location +
+                = "Location: " + locationRecord.location + "" +
                 + "<br>" + "Location size: " + locationRecord.location_Size
                 + "<br>" + "Population: " + locationRecord.population
 
