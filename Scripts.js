@@ -558,7 +558,7 @@ function getOneLocationRecord() {
 // --- API GET functions end ---
 
 function modifyRecord(param) {
-    if (param == oneWeatherRecord) {
+    if (param == "oneWeatherRecord") {
         updateWeatherRecordInputs.style.display = "block";
     }
 }
