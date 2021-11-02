@@ -659,7 +659,9 @@ function updateLocationRecord() { //wip
     var jsonUpdateLoad = JSON.stringify(
         {
             location : "" + putLocationName,
-            submittedBy : "" + putSubmitter
+            location_Size : "" + putLocationSize,
+            population : "" + putPopulation,
+            submittedBy : "" + putLocationSubmitter
         }
     );
 
