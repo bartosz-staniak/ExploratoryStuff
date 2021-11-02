@@ -646,6 +646,84 @@ function updateRecord() {
     putRequest.send(jsonUpdateLoad);
 }
 
+function updateRecord() {
+    var validationErrorsPresent = false;
+    var namesValidationRegex = /^\s.|^\s+|.[\s][\s+].|.\s$/g;
+    if (document.getElementById("getOneId").value != currentId){
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("getOneDateAndTime").value == ""){
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("getOneLocation").value.match(namesValidationRegex)){
+        validationErrorsPresent = true;
+    }
+    else if (document.getElementById("getOneLocation").value == ""){
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("getOneTemperature").value == ""){
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("getOneChance").value == ""){
+        validationErrorsPresent = true;
+    } else if (document.getElementById("getOneChance").value > 90) {
+        validationErrorsPresent = true;
+    } else if (document.getElementById("getOneChance").value < 0) {
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("getOneSummary").value.match(namesValidationRegex)){
+        validationErrorsPresent = true;
+    }
+    else if (document.getElementById("getOneSummary").value == ""){
+        validationErrorsPresent = true;
+    }
+    
+    if (document.getElementById("PostOneSubmittedBy").value.match(namesValidationRegex)){
+        validationErrorsPresent = true;
+    }
+    else if (document.getElementById("PostOneSubmittedBy").value == "") {
+        validationErrorsPresent = true;
+    }
+
+    if (validationErrorsPresent) {
+        document.getElementById("validationMessage").innerHTML
+        = "One or more validation errors occurred.";
+        return;
+    } else {
+        document.getElementById("validationMessage").innerHTML
+        = "";
+    }
+
+    var putId = document.getElementById("getOneId").value;
+    var putDateTime = document.getElementById("getOneDateAndTime").value;
+    var putLocation = document.getElementById("getOneLocation").value;
+    var putTemperature = document.getElementById("getOneTemperature").value;
+    var putRainChance = document.getElementById("getOneChance").value;
+    var putSummary = document.getElementById("getOneSummary").value;
+    var putSubmitter = document.getElementById("PostOneSubmittedBy").value;
+
+    var jsonUpdateLoad = JSON.stringify(
+        {
+            dateAndTime : putDateTime, // Date issue fixed
+            location : "" + putLocation,
+            temperatureC : "" + putTemperature,
+            rainChance : "" + putRainChance,
+            summary : "" + putSummary,
+            submittedBy : "" + putSubmitter
+        }
+    );
+
+    var putRequest = new XMLHttpRequest();
+    putRequest.open("PUT", "https://localhost:44391/api/weatherforecast/" + putId);
+    putRequest.setRequestHeader("Content-Type", "application/json");
+    putRequest.send(jsonUpdateLoad);
+}
+
 // --- API PUT function end ---
 
 // --- API POST functions start ---
