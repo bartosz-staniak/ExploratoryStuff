@@ -547,7 +547,7 @@ function getOneLocationRecord() {
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readLocationRecord").innerHTML = "Request failed." // + errorThrown
     });
-    if (document.getElementById("readLocationRecord").innerHTML == initialParagraphValue) {
+    if (document.getElementById("readLocationRecord").innerHTML == initialLocationParagraphValue) {
         document.getElementById("readLocationRecord").innerHTML = "Requesting data...";
         modifyRecordBtn.style.display = "none";
         updateWeatherRecordInputs.style.display = "none";
