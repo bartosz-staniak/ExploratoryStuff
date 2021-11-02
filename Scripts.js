@@ -5,7 +5,7 @@ var locationsData = document.getElementById("locationsData");
 var locationsDisplayParagraphII = document.getElementById("locationsDisplayII");
 
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
-var updateRecordInputs = document.getElementById("RecordPUT");
+var updateWeatherRecordInputs = document.getElementById("RecordPUT");
 // -----
 var removeRedundantButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
@@ -517,7 +517,7 @@ function getOneRecord() {
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
         modifyRecordBtn.style.display = "none";
-        updateRecordInputs.style.display = "none";
+        updateWeatherRecordInputs.style.display = "none";
     }        
     
 }
@@ -550,15 +550,15 @@ function getOneLocationRecord() {
     if (document.getElementById("readLocationRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readLocationRecord").innerHTML = "Requesting data...";
         modifyRecordBtn.style.display = "none";
-        updateRecordInputs.style.display = "none";
+        updateWeatherRecordInputs.style.display = "none";
     }        
     
 }
 
 // --- API GET functions end ---
 
-function modifyRecord() {
-    updateRecordInputs.style.display = "block";
+function modifyRecord(param) {
+    updateWeatherRecordInputs.style.display = "block";
 }
 
 // --- API PUT function start ---
