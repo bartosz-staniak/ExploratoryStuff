@@ -30,6 +30,10 @@ window.onload = function () {
     
 }
 
+function alertTrigger () {
+    alert("A test alert");
+}
+
 function dateTime () {
     const dateAndTime = new Date();
     var date = dateAndTime.toLocaleDateString();
