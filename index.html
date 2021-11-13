@@ -11,12 +11,16 @@
     <a class="link" href="#apiDiv">Go to API Communication</a>
     <a class="link" href="#XHR" onmouseover="">Go to XHR form</a>
     <a class="link" href="#RecordPUT">Go to API PUT</a>
+    
     <button id="magnificationButton"
     class="link" onclick="demagnifyElements()"
     style="float : right">Enable magnification</button>
+    
     <br>
-    <button id="alertButton"
-    onclick="alertTrigger()" style="float : right">Trigger an alert</button>
+    
+    <button id="alertButton" onclick="alertTrigger()" 
+    style="float : right">Trigger an alert</button>
+    
     <h2 id="currentDateTimeRedundant" class="redundant"
         onmouseover="document.getElementById('currentDateTimeRedundant')
         .innerHTML = Date()"
@@ -25,6 +29,7 @@
         Put the cursor here to display current date and time.
     </h2>
     <h2 id="currentDateTime" class="nonRedundant"></h2>
+    
 <div id="initialDiv" class="container">
     <div id="slide_it_too">
         <button class="redundant" id="enable_editor_btn" onclick="enableEditor()">Show the editor</button>
