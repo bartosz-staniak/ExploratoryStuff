@@ -34,6 +34,10 @@ function simpleAlertTrigger () {
     alert("A test alert");
 }
 
+function promptTrigger() {
+    
+}
+
 function dateTime () {
     const dateAndTime = new Date();
     var date = dateAndTime.toLocaleDateString();
