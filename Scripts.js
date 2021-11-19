@@ -35,7 +35,7 @@ function simpleAlertTrigger () {
 }
 
 function promptTrigger() {
-    
+    prompt("A test prompt");
 }
 
 function dateTime () {
