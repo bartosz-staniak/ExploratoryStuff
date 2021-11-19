@@ -30,7 +30,7 @@ window.onload = function () {
     
 }
 
-function alertTrigger () {
+function simpleAlertTrigger () {
     alert("A test alert");
 }
 
