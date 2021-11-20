@@ -64,6 +64,10 @@ tr:nth-child(even) {
     background-color: lightgreen;
 }
 
+ul {
+    float:right;
+}
+
 *.redundant {
     color: gray;
     border: 3px solid gray;
