@@ -65,6 +65,7 @@ tr:nth-child(even) {
 }
 
 ul {
+    list-style-type: none;
     float:right;
 }
 
