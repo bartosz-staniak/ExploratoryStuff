@@ -36,6 +36,9 @@ function simpleAlertTrigger () {
 
 function promptTrigger() {
     var promptInput = prompt("A test prompt");
+    if (promptInput != null) {
+        alert(promptInput);
+    }
 }
 
 function dateTime () {
