@@ -739,7 +739,7 @@ function demagnifyElements(){
         document.styleSheets[0]
         .insertRule
         //('*:hover:not(body):not(html):not(li):not(div) {transform: scale(2,3); background: white}');
-        ('*:hover:not(*>*) {transform: scale(2,3); background: white}');
+        ('*:hover:not(*>*):not(html) {transform: scale(2,3); background: white}');
 
         magnificationButton.innerHTML = 'Disable magnification';
     } else {
