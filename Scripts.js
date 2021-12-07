@@ -738,7 +738,7 @@ function demagnifyElements(){
     if (magnificationState == "Enable") {
         document.styleSheets[0]
         .insertRule
-        ('*:hover:not(body, div, form, html, li, ul, p input) {transform: scale(2,3); background: white}');
+        ('*:hover:not(body, div, form, html, li, ul, p input, br label) {transform: scale(2,3); background: white}');
 
         magnificationButton.innerHTML = 'Disable magnification';
     } else {
