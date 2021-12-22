@@ -52,8 +52,8 @@ function dateTime () {
 setInterval(dateTime, 1000);
 
 function toggleRedundant() {
-    var show = "Show redundant elements";
-    var remove = "Remove redundant elements";
+    var showRedundantElementsLabel = "Show redundant elements";
+    var removeRedundantElementsLabel = "Remove redundant elements";
     function blockNone(attribute) {
         for (let i = 0; i < totalRedundantElements; i++) {
             redundantElements[i].style.display = attribute;
@@ -62,10 +62,10 @@ function toggleRedundant() {
     
     var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
     if (RedundantPresent == "Rem"){
-        removeRedundantButton.innerHTML = show;
+        removeRedundantButton.innerHTML = showRedundantElementsLabel;
         blockNone("none");
     } else {
-        removeRedundantButton.innerHTML = remove;
+        removeRedundantButton.innerHTML = removeRedundantElementsLabel;
         blockNone("block");
     }
 
