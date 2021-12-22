@@ -7,7 +7,7 @@ var locationsDisplayParagraphII = document.getElementById("locationsDisplayII");
 var customJSbtn = document.getElementById("GetWhateverJScustomBtn");
 var updateWeatherRecordInputs = document.getElementById("RecordPUT");
 // -----
-var removeRedundantButton = document.getElementById("redundantElementsToggle");
+var redundantElementsToggleButton = document.getElementById("redundantElementsToggle");
 var redundantElements = document.getElementsByClassName("redundant");
 var totalRedundantElements = redundantElements.length;
 // -----
@@ -60,16 +60,16 @@ function toggleRedundant() {
         }
     }
     
-    var RedundantPresent = removeRedundantButton.innerHTML.match(/rem/gi);
+    var RedundantPresent = redundantElementsToggleButton.innerHTML.match(/rem/gi);
     if (RedundantPresent == "Rem"){
-        removeRedundantButton.innerHTML = showRedundantElementsLabel;
+        redundantElementsToggleButton.innerHTML = showRedundantElementsLabel;
         blockNone("none");
     } else {
-        removeRedundantButton.innerHTML = removeRedundantElementsLabel;
+        redundantElementsToggleButton.innerHTML = removeRedundantElementsLabel;
         blockNone("block");
     }
 
-    var redundantNotPresent = removeRedundantButton.innerHTML.match(/show/gi);
+    var redundantNotPresent = redundantElementsToggleButton.innerHTML.match(/show/gi);
     if (redundantNotPresent == "Show"){
         for (let i=0; i < totalNonRedundantElements; i++) {
             nonRedundantElements[i].style.display = "block";
