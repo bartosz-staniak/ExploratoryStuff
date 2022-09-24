@@ -26,7 +26,6 @@ a.link {
     display: inline-block;
     padding: 5px;
     text-decoration: none;
-    transition: background-color 0.5s ease-in-out;
 }
 
 a.link:hover, a.link:active {
