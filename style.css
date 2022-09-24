@@ -30,7 +30,7 @@ a.link {
 
 a.link:hover, a.link:active {
     background-color: lightgreen;
-    color: white;
+    color: black;
     border: 2px solid black;
 }
 
