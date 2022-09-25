@@ -22,6 +22,7 @@ div.container {
 
 a.link {
     background-color: lightgreen;
+    border: 2px solid white;
     color: black;
     display: inline-block;
     padding: 5px;
