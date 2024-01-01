@@ -390,6 +390,7 @@ function getLocations(){
         )
     .catch(error => {
         locationsDisplayParagraph.innerHTML = "Request to retrieve data failed.";
+        locationsDisplayParagraph.style = "background-color:Tomato;"
     });
 }
 
