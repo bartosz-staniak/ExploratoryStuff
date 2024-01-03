@@ -341,6 +341,7 @@ function getWhatever (method) {
             ).catch(error => {
                 toggleDisplayGetAll.style.display = "block";
                 toggleDisplayGetAll.innerHTML = "Request to fetch data failed."
+                toggleDisplayGetAll.style = "color:Red;"
             });
 
         // toggleDisplayGetAll.innerHTML = 
