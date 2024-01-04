@@ -262,6 +262,7 @@ function getWhatever (method) {
             }
         }).fail(function(jqXHR, textStatus, errorThrown) {
             toggleDisplayGetAll.innerHTML = "Request failed."
+            toggleDisplayGetAll.style = "color:Red;"
         });
     } else if (method == 'JScustomPrint') {
         toggleDisplayGetAll.style.display = "block";
