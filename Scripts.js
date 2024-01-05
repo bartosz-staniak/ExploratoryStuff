@@ -306,6 +306,7 @@ function getWhatever (method) {
         request.onerror = (e) => {
             console.log("Request failed.");
             toggleDisplayGetAll.innerHTML = "XMLHttpRequest failed."
+            toggleDisplayGetAll.style = "color:Red;"
         }
     } else if (method == 'fetch') {
         document.getElementById("weatherData").innerHTML = "";
