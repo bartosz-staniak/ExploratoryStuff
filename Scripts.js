@@ -518,6 +518,7 @@ function getOneRecord() {
                 + "<br>" + "Chance of rain: " + record.rainChance + "%"
                 + "<br>" + "Summary: " + record.summary;
 
+                document.getElementById("readRecord").style = "Color.black"
                 document.getElementById("getOneId").value = record.id;
                 currentId = record.id;
                 document.getElementById("getOneDateAndTime").value = record.dateAndTime;
