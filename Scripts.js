@@ -533,7 +533,7 @@ function getOneRecord() {
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
         else
-        document.getElementById("readRecord").innerHTML = "Request failed due to " + jqXHR.status
+        document.getElementById("readRecord").innerHTML = "Request failed due to " + jqXHR.status // untested
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
