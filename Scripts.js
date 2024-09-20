@@ -528,7 +528,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         if (jqXHR.status = 404) {
-            document.getElementById("readRecord").innerHTML = "Request failed."
+            document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
             console.log("testing " + errorThrown + jqXHR.status + " " + jqXHR.responseText);
         }
         //document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
