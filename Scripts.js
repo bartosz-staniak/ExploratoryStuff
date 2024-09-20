@@ -528,8 +528,8 @@ function getOneRecord() {
                 document.getElementById("getOneSummary").value = record.summary;
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
+        document.getElementById("readRecord").style = "Color:red"
         if (jqXHR.status = 404) {
-            document.getElementById("readRecord").style = "Color:red"
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
         //document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
