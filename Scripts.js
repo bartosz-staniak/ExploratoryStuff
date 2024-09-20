@@ -530,6 +530,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readRecord").style = "Color:red"
+        console.log(jqXHR.responseText);
         if (jqXHR.status == "404") {
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
