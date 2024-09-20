@@ -530,7 +530,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readRecord").style = "Color:red"
-        if (jqXHR.status == "404") {
+        else if (jqXHR.status == "404") {
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
         else if (jqXHR.status == "400") {
