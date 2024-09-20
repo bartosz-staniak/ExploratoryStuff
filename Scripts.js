@@ -532,7 +532,6 @@ function getOneRecord() {
         if (jqXHR.status = 404) {
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
-        //document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
