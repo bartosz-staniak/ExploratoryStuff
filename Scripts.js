@@ -528,6 +528,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
+        console.log(errorThrown);
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
