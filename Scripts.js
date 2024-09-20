@@ -527,7 +527,7 @@ function getOneRecord() {
                 document.getElementById("getOneSummary").value = record.summary;
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
-        document.getElementById("readRecord").innerHTML = `Request failed. ${}` // + errorThrown
+        document.getElementById("readRecord").innerHTML = `Request failed. ${errorThrown}` // + errorThrown
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
