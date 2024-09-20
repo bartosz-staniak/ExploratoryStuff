@@ -763,7 +763,7 @@ function demagnifyElements(){
 // Promise tbc
 function doSomething() {
     return new Promise((resolve) => {
-      setTimeout(10000,() => {
+      setTimeout(10,() => {
         // Other things to do before completion of the promise
         console.log("Did something");
         // The fulfillment value of the promise
