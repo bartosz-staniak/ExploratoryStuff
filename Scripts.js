@@ -531,7 +531,7 @@ function getOneRecord() {
             document.getElementById("readRecord").innerHTML = "Request failed."
             console.log("testing " + errorThrown + jqXHR.status + " " + jqXHR.responseText);
         }
-        document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
+        //document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
     });
     if (document.getElementById("readRecord").innerHTML == initialParagraphValue) {
         document.getElementById("readRecord").innerHTML = "Requesting data...";
