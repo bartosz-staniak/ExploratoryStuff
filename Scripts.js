@@ -532,7 +532,6 @@ function getOneRecord() {
         document.getElementById("readRecord").style = "Color:red"
         if (jqXHR.status == "405") { // bugged when the server is offline
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
-            console.log(jqXHR.status);
         }
         else
         document.getElementById("readRecord").innerHTML = "Request failed due to " + jqXHR.status // untested
