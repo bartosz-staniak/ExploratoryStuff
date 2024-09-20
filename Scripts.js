@@ -528,6 +528,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         if (jqXHR.status = 404) {
+            document.getElementById("readRecord").innerHTML = "Request failed."
             console.log("testing " + errorThrown + jqXHR.status + " " + jqXHR.responseText);
         }
         document.getElementById("readRecord").innerHTML = "Request failed." // errorThrown
