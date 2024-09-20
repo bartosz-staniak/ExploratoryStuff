@@ -768,7 +768,7 @@ function doSomething() {
         console.log("Did something");
         // The fulfillment value of the promise
         resolve("https://example.com/");
-      }, 20000);
+      }, 5000);
     });
   }
   
