@@ -534,7 +534,7 @@ function getOneRecord() {
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
         else if (jqXHR.status == "400") {
-
+            document.getElementById("readRecord").innerHTML = "Request failed. Please enter a valid record number."
         }
         else
         document.getElementById("readRecord").innerHTML = "Request failed due to " + jqXHR.status // untested
