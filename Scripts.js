@@ -530,7 +530,7 @@ function getOneRecord() {
             }
     }).fail(function(jqXHR, textStatus, errorThrown) { // revisit detailed error printing later
         document.getElementById("readRecord").style = "Color:red"
-        if (jqXHR.status = 404) { // bugged when the server is offline
+        if (jqXHR.status = 405) { // bugged when the server is offline
             document.getElementById("readRecord").innerHTML = "Request failed. Record not found."
         }
         else
