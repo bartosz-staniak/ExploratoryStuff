@@ -499,6 +499,10 @@ function secondToggleResource() {
     toggleResource();
 }
 
+function toggleGetRecordByIdBtn() {
+    
+}
+
 // setInterval(dateTime, 1000);
 
 var currentId;
