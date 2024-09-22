@@ -499,6 +499,8 @@ function secondToggleResource() {
     toggleResource();
 }
 
+// setInterval(dateTime, 1000);
+
 var currentId;
 function getOneRecord() {
     doSomething();
