@@ -504,7 +504,7 @@ function toggleGetRecordByIdBtn() {
 }
 
 function disableRecordByIdBtn() {
-
+    document.getElementById(getRecordById).disabled = true;
 }
 
 // setInterval(dateTime, 1000);
