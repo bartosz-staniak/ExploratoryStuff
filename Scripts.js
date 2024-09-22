@@ -500,7 +500,11 @@ function secondToggleResource() {
 }
 
 function toggleGetRecordByIdBtn() {
-    
+
+}
+
+function disableRecordByIdBtn() {
+
 }
 
 // setInterval(dateTime, 1000);
