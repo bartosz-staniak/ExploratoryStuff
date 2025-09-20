@@ -441,7 +441,7 @@ function sortTableNumerically(column, tableBodyId) {
             }
         }
         
-        console.log(data1, data2);
+//        console.log(data1, data2);
     }
     if (descending) {
         descending = false;
